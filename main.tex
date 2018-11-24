@@ -223,43 +223,7 @@ $^{12}$C & C$^+\left(2^{2}P\right)\leftarrow~$C$\left(2^{3 }P\right)$ & 90~833&1
 
 \section{Methodology}
 
-\begin{center}
-\begin{table}[H]
-{\scriptsize
-\caption{\label{tab:Summary}{\scriptsize Summary of our main result. The uncertainty in the non-relativistic clamped-point-nucleus (NR-CPN) energy comes from using two different basis set extrapolation formulas. Scalar relativistic effects are included via the X2C (exact 2-component) Hamiltonian, and a further correction is added via the Breit Hamiltonian and QED terms. Finite-mass corrections are added via the diagonal Born-Oppenheimer correction (DBOC).}}
-
-
-\begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
-\hline
-\noalign{\vskip2mm}
-{\scriptsize{}Hamiltonian} &  & \multicolumn{2}{c}{{\scriptsize{}Energy in cm$^{-1}$}} & \multicolumn{2}{c}{\textcolor{black}{\scriptsize{}(Obs - Calc) in cm$^{-1}$}}\tabularnewline[2mm]
-\hline
-\hline
-\noalign{\vskip2mm}
-NR-CPN &  & 90~863&324(810) & \multicolumn{2}{c}{}\tabularnewline
-X2C{\scriptsize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
-\multicolumn{2}{l}{\hspace{-0.75mm}Breit \& QED} & -0&5\multicolumn{2}{c}{} & \tabularnewline
- DBOC &  & -0&5 & \multicolumn{2}{c}{}\tabularnewline
-\noalign{\vskip2mm}
-\hline
-\noalign{\vskip2mm}
-Present  & Theory (total) & \textcolor{red} {90~832}&\textcolor{red}{301(810)} & \qquad  0&707\tabularnewline[2mm]
-\hline
-\noalign{\vskip2mm}
-2017  & Experiment \cite{Haris2017}& 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
-\hline
-\noalign{\vskip2mm}
-2010 & Theory \cite{Klopper2010}& 90~838&75 & \qquad -5&74\tabularnewline
-2017 & Theory \cite{Feller2017}& 90~840&16 & \qquad -7&15\tabularnewline
-2015 & Theory \cite{FN-DMC}& 90~786&66  & \qquad 46&35\tabularnewline[2mm]
-\hline
-\end{tabular*}
-}
-\end{table}
-\par\end{center}
-
-
-We begin with our main result in Table \ref{tab:Summary}, which shows that our computer-predicted ionization energy comes mainly from the Hamiltonian of a non-relativistic, clamped, point-sized nucleus (NR-CPN) Schroedinger equation. This energy was calculated in four stages which we describe in the sub-sections below: (A) We developed larger core-valence (CV) basis sets than previously available for carbon, (B) we calculated the 1- and 2-electron integrals in these basis sets, (C) we solved the NR,CPN Schroedinger equation at the FCI level in our finite-sized basis sets of two different sizes, and (D) we extrapolated the finite basis set results to estimate the energies at the \textbf{c}omplete \textbf{b}asis \textbf{s}et (CBS) limtis. Finally, sub-section (E) describes how  we calculated the size of corrections due to special relativity, QED,  and due to the atom having an unclamed nucleus.
+We begin with our main result in Table \ref{tab:Summary}, which shows that our computer-predicted ionization energy comes mainly from the NR-CPN HamiltonianHamiltonian of a non-relativistic, clamped, point-sized nucleus (NR-CPN) Schroedinger equation. This energy was calculated in four stages which we describe in the sub-sections below: (A) We developed larger core-valence (CV) basis sets than previously available for carbon, (B) we calculated the 1- and 2-electron integrals in these basis sets, (C) we solved the NR,CPN Schroedinger equation at the FCI level in our finite-sized basis sets of two different sizes, and (D) we extrapolated the finite basis set results to estimate the energies at the \textbf{c}omplete \textbf{b}asis \textbf{s}et (CBS) limtits. Finally, sub-section (E) describes how  we addcalculated the size of corrections due to special relativity, QED,  and due to the atom having an unclamped nucleus.
 
 \begin{center}
 \begin{table}[H]
@@ -342,7 +306,7 @@ and $l$-functions appear when $X=8$. To calculate these integrals, we have used 
 
 \subsection{Calculation of NR-CPN energies in finite basis sets without truncating the possible excitation levels (FCIQMC)}
 
-Deterministic FCI calculations were possible for the 5e$^-$ system C$^{+}$ in aug-cc-pCV6Z with about 130$\,$GB of RAM to store the Davidson vectors, but were not possible for the 6e$^-$ neutral C atom in this basis set (which would require almost 9\,TB of RAM), nor for 5e$^-$ in the aug-cc-pCV7Z basis set (which would require almost 55\,TB of RAM).  
+A dDeterministic FCI calculations were possible for the 5e$^-$ system C$^{+}$ in aug-cc-pCV6Z with about 130$\,$GB of RAM to store the Davidson vectors, but were not possible for the 6e$^-$ neutral C atom in this basis set (which would require almost 9\,TB of RAM), nor for 5e$^-$ in the aug-cc-pCV7Z basis set (which would require almost 55\,TB of RAM).  
 
 We therefore use FCIQMC for all NR-CPN calculations. The wavefunction of the relevant system is expanded as a sum
 of all possible Slater determinants given the basis set (full configuration interaction),
