@@ -38,30 +38,32 @@
 \title{\textcolor{black}{ Computer-predicted ionization energy of carbon within $1$\,cm$^{-1}$ of the best experiment}}
 
 \author{Nike Dattani}
-\email{n.dattani@cfa.harvard.edu}
+\email{ndattani@cfa.harvard.edu}
 
 
 
-\affiliation{Harvard-Smithsonian Center for Astrophysics, Atomic and 
-Molecular Physics Division, 02138, Cambridge, MA, USA,}
-\affiliation{McMaster University, Department of Chemistry and Chemical Biology, 606-8103, Hamilton, ON, Canada,}
+
+%\affiliation{McMaster University, Department of Chemistry and Chemical Biology, 606-8103, Hamilton, ON, Canada,}
 \affiliation{Kyoto University, Fukui Institute for Fundamental Chemistry, 606-8103, Kyoto, Japan.}
+\affiliation{Harvard-Smithsonian Center for Astrophysics, Atomic and 
+Molecular Physics Division, 02138, Cambridge, MA, USA.}
+
 
 %\vspace{10mm}
 
 %\affiliation{Oxford University, Hertford College, OX1 3BW, Oxford, UK.}
 
 
-\author{Giovanni LiManni}
-\email{g.limanni@fkf.mpg.de}
+%\author{Giovanni LiManni}
+%\email{g.limanni@fkf.mpg.de}
 
-\selectlanguage{british}%
+%\selectlanguage{british}%
 
-\affiliation{Max Planck Institute for Solid State Systems, Department of Electronic Structure Theory, Suttgart, Germany.}
+%\affiliation{Max Planck Institute for Solid State Systems, Department of Electronic Structure Theory, Suttgart, Germany.}
 
 
 \author{David Feller}
-\email{dfeller@owt.com }
+%\email{dfeller@owt.com }
 
 \selectlanguage{british}%
 
@@ -71,21 +73,21 @@ Molecular Physics Division, 02138, Cambridge, MA, USA,}
 35487-0336, USA,}
 
 
-\author{Jacek Koput}
-\email{koput@amu.edu.pl}
+%\author{Jacek Koput}
+%\email{koput@amu.edu.pl}
 
-\selectlanguage{british}%
+%\selectlanguage{british}%
 
-\affiliation{Adam Mickiewicz University, Department of Chemistry, 61\textendash 614
-Poznan, Poland.}
-\selectlanguage{english}%
+%\affiliation{Adam Mickiewicz University, Department of Chemistry, 60\textendash 780
+%Poznan, Poland.}
+%\selectlanguage{english}%
 
 %\vspace{10mm}
 
 \date{\today}
 \begin{abstract}
 We show that we can predict
-the first ionization energy of carbon to within 0.994~cm$^{-1}$ of the experimental value. This is an improvement of more than a factor of 5 over the preceding best prediction in [Phys. Rev. A \textbf{81}, 022503] and comparable to the accuracies achieved for the smaller atoms up to boron.% The sum of all error contributions in our calculations up to the fifth power of the fine structure constant is estimated to be at most 0.802~cm$^{-1}$, which yields our estimate of contributions in the sixth and higher powers to be: 0.994$~\pm~$0.802~cm$^{-1}$.  
+the first ionization energy of carbon to within 0.994~cm$^{-1}$ of the experimental value. This is an improvement of more than a factor of 5 over the preceding best prediction in [Phys. Rev. A \textbf{81}, 022503] and comparable to the accuracies achieved for the smaller atoms up to boron. The sum of all error contributions in our calculations up to the fifth power of the fine structure constant is estimated to be at most 0.802~cm$^{-1}$, which yields our estimate of contributions in the sixth and higher powers to be: 0.994$~\pm~$0.802~cm$^{-1}$.  
 \end{abstract}
 \selectlanguage{british}%
 
@@ -147,7 +149,7 @@ calculating the energy difference. Therefore, with our approach we achieve agree
 
 
 After adding relativistic and quantum electrodynamics (QED) corrections, and corrections to the clamped nucleus approximation,
-we obtained an IE for the ground state of C
+we obtained an IE for the ground sate of C
 which is in only 0.994~cm$^{-1}$ disagreement with the best known experimental
 estimate. While this is not as impressive as the
 method of variationally optimizing parameters in an explicitly correlated
@@ -195,44 +197,52 @@ C & 6 & \textminus 37&843 333 & VO/ECG(1000) & 2013 Bubin & \cite{Bubin2013} &  
 \end{tabular*}
 \end{table*}
 \par\end{center}
+\unskip
+
 
 \begin{center}
 \begin{table*}
-{\small \caption{\label{tab:excitationEnergies}The most precisely calculated ionization energies for the first 6 atoms, compared to the best known
+{ \caption{\label{tab:excitationEnergies}The most precisely calculated ionization energies for the first 6 atoms, compared to the best known
 experimental measurements to date. The last column indicates that
 if aiming for the best precision, an experimental measurement is still
 the best way to obtain the energy for most atoms, but for Be, the
 energy has been obtained more precisely $\textit{in silico}$ than
-in any experiment to date. The value for carbon of \textcolor{red}{90~832.014}\,cm$^{-1}$ was calculated in the present work.}}
+in any experiment to date. The value for carbon of \textcolor{red}{90~832.014(802)}\,cm$^{-1}$ was calculated in the present work.}}
 
-\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}ccr@{\extracolsep{0pt}.}lcr@{\extracolsep{3pt}.}lcccc}
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}ccr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lccccc}
 \hline 
 \noalign{\vskip2mm}
- & Transition & \multicolumn{2}{c}{\multicolumn{2}{c}{Experiment } &  & \multicolumn{2}{c}{Theory}Theory &  & Calc - Obs & $\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in Obs}}\rvert$ & More precise\tabularnewline
+ & Transition & \multicolumn{2}{c}{Experiment } & \multicolumn{2}{c}{} & Theory &  & Calc - Obs & $\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$ & More precise\tabularnewline
  &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & {[}cm$^{-1}${]} &  & {[}cm$^{-1}${]} &  & \tabularnewline[2mm]
 \hline 
 \hline 
 \noalign{\vskip2mm}
-H & H$^+\left(1^1S\right)\leftarrow~$H$\left(1^2S\right)$ & & & \multicolumn{2}{c}{}  & 109~678&.771~743~07(10) \hspace{-1mm}\footnote{This number is based on the data in \cite{PhysRevLett.95.163003} although it is not explicitly written anywhere there. Two of the authors of \cite{PhysRevLett.95.163003} have presented the number in Table III of \cite{RevModPhys.88.035009}.} &  &  &  & Theory \tabularnewline
-    $^{4}$He & He$^+\left(1^2S\right)\leftarrow~$He$\left(1^1S\right)$ & 198~310&666~37(2) & \cite{Kandula2011}  & 198~310&.665~07(1) & \cite{Pachucki2017}  & -0.001~3 & 65.0 & Theory \tabularnewline
-$^{7}$Li & Li$^+\left(1^{1}S\right)\leftarrow~$Li$\left(2^{2}S\right)$ & 43~487&159~40(18) & \cite{Bushaw2007} & 43~487&.159~0(8) &  \cite{Puchalski2008} & -0.000~4 & 57.1 & Experiment\tabularnewline
-$^{9}$Be & Be$^+\left(2^{2}S\right)\leftarrow~$Be$\left(2^{1}S\right)$ & 75~192&64(6) & \cite{Beigang1983} & 75~192&.699(7) &  \cite{Puchalski2013b} & 0.059 & 0.98 & Theory\tabularnewline
-$^{11}$B & B$^+\left(2^{1}S\right)\leftarrow~$B$\left(2^{2}P\right)$ & 66~928&036(22) & \cite{Kramida2007} & 66~927&.91(21) & \cite{Puchalski2015} & -0.126 & 5.7 & Experiment\tabularnewline
-$^{12}$C & C$^+\left(2^{2}P\right)\leftarrow~$C$\left(2^{3}P\right)$ & 90~833&008(009) & \cite{Haris2017} & \textcolor{red}{{90~832&.014}}  & - & 0.994 & 110.4 &Experiment\tabularnewline[2mm]
+H & H$^+\left(1^1S\right)\leftarrow~$H$\left(1^2S\right)$ & 1&1 & \multicolumn{2}{c}{\cite{}} & 109~678.77174307 &  &  &  & Theory \tabularnewline
+    $^{4}$He & He$^+\left(1^2S\right)\leftarrow~$He$\left(1^1S\right)$ & 198~310&666~37(2) & \multicolumn{2}{c}{\cite{Kandula2011}}  & 198~310.665~07(1) & \cite{Pachucki2017}  & -0.001~3 & 65.0 & Theory \tabularnewline
+$^{7}$Li & Li$^+\left(1^{1}S\right)\leftarrow~$Li$\left(2^{2}S\right)$ & 43~487&159~40(18) & \multicolumn{2}{c}{\cite{Bushaw2007}} & 43~487.159~0(8) &  \cite{Puchalski2008} & -0.000~4 & 57.1 & Experiment\tabularnewline
+$^{9}$Be & Be$^+\left(2^{2}S\right)\leftarrow~$Be$\left(2^{1}S\right)$ & 75~192&64(6) & \multicolumn{2}{c}{\cite{Beigang1983}} & 75~192.699(7) &  \cite{Puchalski2013b} & 0.059 & 0.98 & Theory\tabularnewline
+$^{11}$B & B$^+\left(2^{1}S\right)\leftarrow~$B$\left(2^{2}P\right)$ & 66~928&036(22) & \multicolumn{2}{c}{\cite{Kramida2007}} & 66~927.91(21) & \cite{Puchalski2015} & -0.126 & 5.7 & Experiment\tabularnewline
+$^{12}$C & C$^+\left(2^{2}P\right)\leftarrow~$C$\left(2^{3}P\right)$ & 90~833&008(009) & \multicolumn{2}{c}{\cite{Haris2017}} & \textcolor{red}{{90~832.014(802)}}  & - & 0.994 & 110 &Experiment\tabularnewline[2mm]
 \hline 
 \end{tabular*}
 \end{table*}
 \par\end{center}
+\unskip
 
-\vspace{-20mm}
+%\newpage
+
+%\vspace{5mm}
 
 %\vspace{-5mm}
+%\vfill
 
 \section{Methodology}
 
+%%\vspace{-1060mm}
+
 We begin with our main result in Table \ref{tab:Summary}, which shows that our computer-predicted ionization energy comes mainly from the NR-CPN Hamiltonian. This energy was calculated in four stages which we describe in the sub-sections below: (A) We developed larger core-valence (CV) basis sets than previously available for carbon, (B) we calculated the 1- and 2-electron integrals in these basis sets, (C) we solved the NR,CPN Schr\"{o}dinger equation at the FCI level in our finite-sized basis sets of two different sizes, and (D) we extrapolated the finite basis set results to estimate the energies at the \textbf{c}omplete \textbf{b}asis \textbf{s}et (CBS) limits. Finally, sub-section (E) describes how  we added the corrections due to special relativity, QED,  and due to the atom having an unclamped nucleus.
 
-\vspace{-5mm}
+%\vspace{-30mm}
 
 \begin{center}
 \begin{table}[H]
@@ -256,22 +266,23 @@ X2C{\footnotesize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
 \noalign{\vskip2mm}
 \hline
 \noalign{\vskip2mm}
-Total (theory)  & Present & \textcolor{red} {90~832}&\textcolor{red}{014} & \qquad  -0&994\tabularnewline[2mm]
+Total (theory)  & Present & \textcolor{red} {90~832}&\textcolor{red}{014(802)} & \qquad  -0&994\tabularnewline[2mm]
 \hline
 \noalign{\vskip2mm}
 Experiment   & 2017 \cite{Haris2017}& 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
 \hline
 \noalign{\vskip2mm}
 Theory & 2010 \cite{Klopper2010}& 90~838&75 & \qquad 5&74\tabularnewline
-Theory & 2017 \cite{2017Feller}& 90~840&16 & \qquad 7&15\tabularnewline
+Theory & 2017 \cite{Feller2017}& 90~840&16 & \qquad 7&15\tabularnewline
 Theory & 2015 \cite{FN-DMC}& 90~786&66  & \qquad -46&35\tabularnewline[2mm]
 \hline
 \end{tabular*}
 }
 \end{table}
 \par\end{center}
-
-\vspace{-16mm}
+\unskip
+%\newpage
+%\vspace{-1316mm}
 
 \subsection{Optimization of `tight function' exponents for the aug-cc-pCV7Z and
 aug-cc-pCV8Z basis sets.}
@@ -356,7 +367,7 @@ smaller than 1 $\mu E_{\rm{Hartree}}$. Likewise, to ensure that $\Delta E_{{\rm 
 
 \begin{center}
 \begin{table}[H]
- \caption{\label{tab:finalFCIQMC}{\small Final NR-CPN energies. The break-down of how
+ \caption{\label{tab:finalFCIQMC}{\scriptsize Final NR-CPN energies. The break-down of how
 these energies were obtained, and the Hartree-Fock energies that were
 used for the extrapolations are available in the Supplemental Material.
 Numbers in parenthesis indicate uncertainties in the last digit(s)
@@ -372,15 +383,15 @@ shown, and their determination is described in the Supplemental Material.}}
 \hline
 \hline
 \noalign{\vskip2mm}
-aug-cc-pCV7Z &  & -37&844~251~5(05) & -37&430~345~1(01) & 90~841&955(028)\tabularnewline
-\multirow{1}{*}{aug-cc-pCV8Z} &  & -37&844~355~5(08) & -37&430~412~5(05) & 90~849&987(054)\tabularnewline[2mm]
+aug-cc-pCV7Z &  & -37&844~251~5(05) & -37&430~345~1(01) & 90~841&955(020)\tabularnewline
+\multirow{1}{*}{aug-cc-pCV8Z} &  & -37&844~355~5(08) & -37&430~412~5(05) & 90~849&987(050)\tabularnewline[2mm]
 \hline
 \noalign{\vskip2mm}
-Eq.\eqref{KutzelniggSolved}, $n=3.5$ &  & -37&844~528~6 & -37&430~523~6 & 90~863&604\tabularnewline
+Eq.\eqref{KutzelniggSolved}, $n=\nicefrac{3}{2}$ &  & -37&844~528~6 & -37&430~523~6 & 90~863&604\tabularnewline
 Eq.\eqref{MartinSolved}, $n=4$ &  & -37&844~514~2 & -37&430~514~3 & 90~862&471\tabularnewline[2mm]
 \hline
 \noalign{\vskip2mm}
-Mean ($\sigma$) &  & -37&844~521~4 & -37&843~051~9 & 90~863&037\tabularnewline[2mm]
+Mean ($\sigma$) &  & -37&844~521~4 & -37&843~051~9 & 90~863&037(800)\tabularnewline[2mm]
 \hline
 \end{tabular*}
 \end{table}
@@ -400,8 +411,6 @@ We use two different families of formulas to extrapolate the correlation energie
 %E_{\textrm{corr,CBS}} & %=E_{\textrm{corr},X}-\frac{A}{\left(X+\nice%frac{1}{2}\right)^n}~.
 %\end{align}
 
-\vspace{-5mm}
-
 \begin{align}
 \label{Kutzelnigg}E_{\textrm{CBS}} & =E_{X}-\frac{A}{X^{n}}~,\\
 E_{\textrm{CBS}} & =E_{X}-\frac{A}{\left(X+\nicefrac{1}{2}\right)^n}~.\label{Martin}
@@ -414,9 +423,7 @@ E_{\textrm{CBS}} & =E_{X}-\frac{A}{\left(X+\nicefrac{1}{2}\right)^n}~.\label{Mar
 \label{MartinSolved}E_{\textrm{CBS}} & =E_{X}+\frac{\left(2X-1\right)^n\left(E_X-E_{X-1}\right)}{\left(1+2X\right)^n-\left(2X-1\right)^n}~.
 \end{align}
 
-As explained on page 5 of \cite{Feller2016}, extrapolations to the CBS limit using $n=3$ in Eq.\eqref{Kutzelnigg} tend to over-shoot the CBS limit. The value of $n=3.5$ was therefore used in \cite{Feller2016}, and we have used it in this present study. The values of $E_{\textrm{CBS}}$ obtained from using $n=3.5$ in Eq.\,\eqref{KutzelniggSolved} and $n=4$ in Eq.\eqref{MartinSolved}, for $X=8$ were added to the ROHF energies for $X=8$ and are presented in Table \ref{tab:finalFCIQMC}. The final NR-CPN energy was taken as the mean of both values obtained from extrapolating the correlation energy and adding it to the ROHF energy with $X=8$, and the uncertainty in this mean was estimated as the squ   are root of the unbiased variance of the two values.
-
-\vspace{-5mm}
+As explained on page 5 of \cite{Feller2016}, extrapolations to the CBS limit using $n=3$ in Eq.\eqref{Kutzelnigg} tend to over-shoot the CBS limit. The value of $n=3.5$ was therefore used in \cite{Feller2016}, and we have used it in this present study. The values of $E_{\textrm{CBS}}$ obtained from using $n=3.5$ in Eq.\,\eqref{KutzelniggSolved} and $n=4$ in Eq.\eqref{MartinSolved}, for $X=8$ were added to the ROHF energies for $X=8$ and are presented in Table \ref{tab:finalFCIQMC}. The final NR-CPN energy was taken as the mean of both values obtained from extrapolating the correlation energy and adding it to the ROHF energy with $X=8$, and the uncertainty in this mean was estimated as the square root of the unbiased variance of the two values.
 
 \subsection{Estimation of relativistic, QED, and finite nuclear mass corrections corrections}
 
@@ -436,7 +443,7 @@ The basis set and correlation convergence of the X2C and DBOC corrections is sho
 
 \section{Conclusion}
 
-Table \ref{tab:Summary} summarizes the various contributions to our value of the IE, and compares our final value to experiment and to three recent theoretical estimates. Our value is 0.994\,cm$^{-1}$ smaller than the best experimental value. %Since we included all known contributions up to the fifth power of the fine structure constant in the QED expansion of the energies, we estimate that the contributions of all terms of sixth power and beyond add up to (0.994$\pm$0.802)\,cm$^{-1}$.
+Table \ref{tab:Summary} summarizes the various contributions to our value of the IE, and compares our final value to experiment and to three recent theoretical estimates. Our value is 0.994\,cm$^{-1}$ smaller than the best experimental value, and estimate of the uncertainty in our value is only 0.802\,cm$^{-1}$. Since we included all known contributions up to the fifth power of the fine structure constant in the QED expansion of the energies, we estimate that the contributions of all terms of sixth power and beyond add up to (0.994$\pm$0.802)\,cm$^{-1}$.
 
 The best theoretical estimate of the IE before this work was in \cite{Klopper2010}, and was in disagreement with experiment by more than a factor of 5 more than our present result. We believe that this could have been due to any or all of three things: (1) approximations inherent to the F12 approach used for their NR-CPN energy, (2) the perturbative nature of their scalar relativistic corrections (ie. use the mass velocity and Darwin terms, rather than the X2C Hamiltonian used in the present work) and (3) the CCSD approximation made in their DBOC correction  (as opposed to the CCSDTQ used in the present work which we have shown appears to be converged to the FCI limit).
 
@@ -446,8 +453,8 @@ The best theoretical estimate of the IE before this work was in \cite{Klopper201
 
 %\section{Dicsussion}
 
-%\clearpage
-%\newpage
+\clearpage
+\newpage
 
 \selectlanguage{british}%
 \bibliographystyle{apsrev4-1}
