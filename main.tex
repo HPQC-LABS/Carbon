@@ -307,7 +307,7 @@ and $l$-functions appear when $X=8$. To calculate these integrals, we have used 
 \subsection{Calculation of NR-CPN energies in finite basis sets without truncating the possible excitation levels (FCIQMC)}
 
 A deterministic FCI (full configuration interaction) calculation for the 5e$^-$ C$^+$ ion in the aug-cc-pCV7Z basis set would require almost 55\,TB of RAM, and for the neutral atom would require more. Therefore we use FCIQMC for all NR-CPN calculations. The wavefunction of the relevant system is expanded as a sum
-of all possible Slater determinants given the basis set (full configuration interaction),
+of all possible Slater determinants given the basis set,
 and the coefficients are determined by the number of walkers standing
 on each determinant after a Monte Carlo sampling using the NR-CPN
 Hamiltonian. The method was introduced in \cite{Booth2009a}, and
@@ -338,6 +338,38 @@ can be neglected, we used a sufficiently large value of $N_{{\rm walkers}}$
 for every energy calculation, so that the energy difference between
 using $N_{{\rm walkers}}$ and $\frac{1}{2}N_{{\rm walkers}}$ was
 smaller than 1 $\mu E_{\rm{Hartree}}$. Likewise, to ensure that $\Delta E_{{\rm trial}}$ can be neglected, we used a sufficiently large number of determinants in the trial wavefunction for every energy calculation, such that $\Delta E_{{\rm trial}}$ would also be smaller than 1 $\mu E_{\rm{Hartree}}$. We then ran every calculation for enough macro-iterations $N$ such that $\Delta E_{{\rm stoch}}$ was smaller than $\Delta E_{{\rm trial}}$ and $\Delta E_{{\rm initiator}}$. Further details are presented in the Supplemental Material, including tables which show that all three sources of error in our final numbers are not larger than we claim.
+
+\begin{center}
+\begin{table}[H]
+\caption{\label{tab:finalFCIQMC}Final NR-CPN energies. The break-down of how
+these energies were obtained, and the Hartree-Fock energies that were
+used for the extrapolations are available in the Supplemental Material.
+Numbers in parenthesis indicate uncertainties in the last digit(s)
+shown, and their determination is described in the Supplemental Material.}
+
+{\scriptsize
+\begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
+\hline
+\noalign{\vskip2mm}
+ &  & \multicolumn{2}{c}{C$\left(^{3}P\right)$ $\left[E_{{\rm Hartree}}\right]$} & \multicolumn{2}{c}{C$^{+}$$\left(^{2}P\right)\left[E_{{\rm Hartree}}\right]$} & \multicolumn{2}{c}{$2^{3}P\rightarrow2^{2}P$~{[}cm$^{-1}${]}}\tabularnewline[2mm]
+\hline
+\hline
+\noalign{\vskip2mm}
+aug-cc-pCV7Z &  & -37&844~251~5(005) & -37&430~345~1(001) & 90~841&955(020)\tabularnewline
+\multirow{1}{*}{aug-cc-pCV8Z} &  & -37&844~355~5(008) & -37&430~412~5(005) & 90~849&987(050)\tabularnewline[2mm]
+\hline
+\noalign{\vskip2mm}
+CBS$\left(1/X^{3.5}\right)$ &  & -37&844~528~6 & -37&430~523~6 & 90~863&604\tabularnewline
+CBS$\left(1/\left(X+\nicefrac{1}{2}\right)^{4}\right)$ &  & -37&844~514~2 & -37&430~514~3 & 90~862&471\tabularnewline[2mm]
+\hline
+\noalign{\vskip2mm}
+Mean ($\sqrt{\text{Variance}}$) &  & -37&844~521~4 & -37&843~051~9 & 90~863&037\tabularnewline[2mm]
+\hline
+\end{tabular*}
+\end{table}
+\par\end{center}
+}
+
 
 \subsection{Extrapolations to the complete basis set limit}
 
