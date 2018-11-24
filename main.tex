@@ -84,6 +84,7 @@ the first ionization energy of carbon to within 0.994~cm$^{-1}$ of the experimen
 \selectlanguage{english}%
 
 %\section{Introduction}
+\vspace{-18mm}
 
 In the last seven years, ionization energies (IEs) have been calculated
 with unprecedented precision for the Li atom \cite{Puchalski2010},
@@ -110,7 +111,8 @@ paper, the approach we use to calculate the NR,CPN energy of the ground
 state of C is FCIQMC (full configuration interaction quantum Monte Carlo)
 with basis sets as large as aug-cc-pCV8Z. Table \ref{tab:variational bounds} shows
 that our NR,CPN energy is at least 76~$\mu E_{\rm{Hartree}}$ higher than the
-variational upper bound obtained from FN-DMC; but since in our approach, imperfections in the description of the wavefunction for the neutral atom are almost the same as in the cation, the errors are almost completely eliminated when taking the energy difference, therefore bringing us to agreement with experiment that is comparable to what has been seen with the explicitly correlated approach for atoms as big as (but not exceeding) boron. 
+variational upper bound obtained from FN-DMC; but since in our approach, imperfections in the description of the wavefunction for the neutral atom are almost the same as in the cation, the individual errors almost completely cancel when
+calculating the energy difference. Therefore, with our approach we achieve agreement with experiment that is comparable to what has been seen with the explicitly correlated approach for atoms as big as (but not exceeding) boron. 
 
 %Table \ref{tab:variational bounds} shows
 %that the method used for the calculation has a crucial impact on the
@@ -139,7 +141,7 @@ we obtained an IE for the ground sate of C
 which is in only 0.994~cm$^{-1}$ disagreement with the best known experimental
 estimate. While this is not as impressive as the
 method of variationally optimizing parameters in an explicitly correlated
-wavefunciton ansatz has proven to be for Li and Be, the disagreement
+wavefunciton ansatz has proven to be for Li and Be, the disagreement with experiment 
 has the same order of magnitude as the latter approach for B (see
 Table \ref{tab:excitationEnergies}). We finally note that the approach
 used in this paper, of calculating FCIQMC on a basis set of non-explicitly
@@ -186,8 +188,7 @@ C & 6 & \textminus 37&843 333 & VO/ECG(1000) & 2013 Bubin & \cite{Bubin2013} &  
 
 \begin{center}
 \begin{table*}
-\caption{\label{tab:excitationEnergies}The most precisely calculated electronic
-excitation energies for the first 6 atoms, compared to the best known
+\caption{\label{tab:excitationEnergies}The most precisely calculated ionization energies for the first 6 atoms, compared to the best known
 experimental measurements to date. The last column indicates that
 if aiming for the best precision, an experimental measurement is still
 the best way to obtain the energy for most atoms, but for Be, the
@@ -223,33 +224,35 @@ We begin with our main result in Table \ref{tab:Summary}, which shows that our c
 
 \begin{center}
 \begin{table}[H]
-{\scriptsize
-\caption{\label{tab:Summary}{\small Summary of our main result. The uncertainty in the non-relativistic clamped-point-nucleus (NR-CPN) energy comes from using two different basis set extrapolation formulas. Scalar relativistic effects are included via the X2C (exact 2-component) Hamiltonian, and a further correction is added via the Breit Hamiltonian and QED terms. Finite-mass corrections are added via the diagonal Born-Oppenheimer correction (DBOC).}}
-
+{
+\caption{\label{tab:Summary}{\small Summary of our main result. All energies are between the hyperfine centre of gravity (hcog) of C$\left(^3P\right)$ and the hcog of C$^+\!\!\left(^2P\right)$ so the experimental spin-orbit lowering of 12.672508\,cm$^{-1}$ needs to be subtracted from all numbers to obtain the C$\left(^3P_0\right)\leftarrow$~C$^+\!\!\left(^2P_\nicefrac{1}{2}\right)$ energy (see Supplemental Material). The experimental uncertainty is a 68\% confidence interval, meaning that there is a 32\% chance that the true energy is outside the range spanned by the uncertainty.   %The uncertainty in the non-relativistic clamped-point-nucleus (NR-CPN) ionization energy comes from using two different basis set extrapolation formulas. Scalar relativistic effects are included via the X2C (exact 2-component) Hamiltonian, and a further correction is added via the Breit Hamiltonian and QED terms. Finite-mass corrections are added via the diagonal Born-Oppenheimer correction (DBOC). 
+}}
 
 \begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
 \hline
 \noalign{\vskip2mm}
-{\scriptsize{}Hamiltonian} &  & \multicolumn{2}{c}{{\scriptsize{}Energy in cm$^{-1}$}} & \multicolumn{2}{c}{\textcolor{black}{\scriptsize{}(Calc - Obs) in cm$^{-1}$}}\tabularnewline[2mm]
+{Hamiltonian} &  & \multicolumn{2}{c}{{{}Ionization Energy}} & \multicolumn{2}{c}{\textcolor{black}{{}(Calc - Obs) }}\tabularnewline 
+& & \multicolumn{2}{c}{[\,cm$^{-1}$\,]} & \multicolumn{2}{c}{\textcolor{black}{{}[\,cm$^{-1}$\,]}}
+\tabularnewline[2mm]
 \hline
 \hline
 \noalign{\vskip2mm}
 NR-CPN &  & 90~863&037(800) & \multicolumn{2}{c}{}\tabularnewline
-X2C{\scriptsize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
+X2C{\footnotesize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
 \multicolumn{2}{l}{\hspace{-0.75mm}Breit \& QED} & -0&5\multicolumn{2}{c}{} & \tabularnewline
  DBOC &  & -0&5 & \multicolumn{2}{c}{}\tabularnewline
 \noalign{\vskip2mm}
 \hline
 \noalign{\vskip2mm}
-Total (theory)Present  & PresentTheory (total) & \textcolor{red} {90~832}&\textcolor{red}{014(802)} & \qquad  -0&994\tabularnewline[2mm]
+Total (theory)  & Present & \textcolor{red} {90~832}&\textcolor{red}{014(802)} & \qquad  -0&994\tabularnewline[2mm]
 \hline
 \noalign{\vskip2mm}
-Experiment 2017  & 2017Experiment \cite{Haris2017}& 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
+Experiment   & 2017 \cite{Haris2017}& 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
 \hline
 \noalign{\vskip2mm}
-Theory2010 & 2010Theory \cite{Klopper2010}& 90~838&75 & \qquad 5&74\tabularnewline
-Theory2017 & 2017Theory \cite{Feller2017}& 90~840&16 & \qquad 7&15\tabularnewline
-Theory2015 & 2015Theory \cite{FN-DMC}& 90~786&66  & \qquad -46&35\tabularnewline[2mm]
+Theory & 2010 \cite{Klopper2010}& 90~838&75 & \qquad 5&74\tabularnewline
+Theory & 2017 \cite{Feller2017}& 90~840&16 & \qquad 7&15\tabularnewline
+Theory & 2015 \cite{FN-DMC}& 90~786&66  & \qquad -46&35\tabularnewline[2mm]
 \hline
 \end{tabular*}
 }
@@ -374,7 +377,7 @@ Mean ($\sigma$) &  & -37&844~521~4 & -37&843~051~9 & 90~863&037(800)\tabularnewl
 
 \vspace{-14mm}
 
-\subsection{Extrapolations to the complete basis set limit}
+\subsection{Extrapolations to the CBS (complete basis set) limit}
 
 %An excellent review of the state-of-the-art in extrapolation choices is given on Page 5 of \cite{Feller2016}. The e 
 
@@ -397,7 +400,7 @@ E_{\textrm{CBS}} & =E_{X}-\frac{A}{\left(X+\nicefrac{1}{2}\right)^n}~.\label{Mar
 \label{MartinSolved}E_{\textrm{CBS}} & =E_{X}+\frac{\left(2X-1\right)^n\left(E_X-E_{X-1}\right)}{\left(1+2X\right)^n-\left(2X-1\right)^n}~.
 \end{align}
 
-As explained on page 5 of \cite{Feller2016}, using $n=3$ in Eq.\eqref{Kutzelnigg} tends to over-estimate the extrapolation. The value of $n=3.5$ was therefore used in \cite{Feller2016}, and we have used it in this present study. The values of $E_{\textrm{CBS}}$ obtained from using $n=3.5$ in Eq.\,\eqref{KutzelniggSolved} and $n=4$ in Eq.\ref{MartinSolved}, for $X=8$ were added to the ROHF energies for $X=8$ and are presented in Table \ref{tab:finalFCIQMC}. The final NR-CPN energy was taken as the mean of both values obtained from extrapolating the correlation energy and adding it to the ROHF energy with $X=8$, and the uncertainty in this mean was estimated as the square root of the unbiased variance of the two values.
+As explained on page 5 of \cite{Feller2016}, extrapolations to the CBS limit using $n=3$ in Eq.\eqref{Kutzelnigg} tend to over-shoot the CBS limit. The value of $n=3.5$ was therefore used in \cite{Feller2016}, and we have used it in this present study. The values of $E_{\textrm{CBS}}$ obtained from using $n=3.5$ in Eq.\,\eqref{KutzelniggSolved} and $n=4$ in Eq.\eqref{MartinSolved}, for $X=8$ were added to the ROHF energies for $X=8$ and are presented in Table \ref{tab:finalFCIQMC}. The final NR-CPN energy was taken as the mean of both values obtained from extrapolating the correlation energy and adding it to the ROHF energy with $X=8$, and the uncertainty in this mean was estimated as the square root of the unbiased variance of the two values.
 
 \subsection{Estimation of relativistic, QED, and finite nuclear mass corrections corrections}
 
