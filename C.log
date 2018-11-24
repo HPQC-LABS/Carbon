@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,97 +507,57 @@ Overfull \hbox (9.04297pt too wide) in alignment at lines 179--195
 [] [] [] [] [] [] [] [] [] []
  []
 
-
-Package natbib Warning: Citation `RevModPhys.88.035009' on page 2 undefined on 
-input line 216.
-
-
-Package natbib Warning: Citation `RevModPhys.88.035009' on page 2 undefined on 
-input line 216.
-
-
-Package natbib Warning: Citation `RevModPhys.88.035009' on page 2 undefined on 
-input line 216.
-
-
-Package natbib Warning: Citation `Kandula2011' on page 2 undefined on input lin
-e 217.
-
-
-Package natbib Warning: Citation `Pachucki2017' on page 2 undefined on input li
-ne 217.
-
-
-Package natbib Warning: Citation `Bushaw2007' on page 2 undefined on input line
- 218.
-
-
-Package natbib Warning: Citation `Puchalski2008' on page 2 undefined on input l
-ine 218.
-
-
-Package natbib Warning: Citation `Beigang1983' on page 2 undefined on input lin
-e 219.
-
-
-Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
-line 219.
-
-
-Package natbib Warning: Citation `Kramida2007' on page 2 undefined on input lin
-e 220.
-
-
-Package natbib Warning: Citation `Puchalski2015' on page 2 undefined on input l
-ine 220.
-
-
-Package natbib Warning: Citation `Haris2017' on page 2 undefined on input line 
-221.
-
-
-Overfull \hbox (65.32788pt too wide) in alignment at lines 208--223
-[] [] [] [] [] [] [] [] [] [] []
- []
-
-
-LaTeX Warning: Reference `tab:Summary' on page 2 undefined on input line 233.
-
-! Missing { inserted.
-<to be read again> 
-                   \let 
-l.241 }}
-        
+)
+Runaway argument?
+{\multicolumn {2}{c}{Experiment } & & \multicolumn {2}{c}{Theory}Theo\ETC.
+! File ended while scanning use of \multicolumn.
+<inserted text> 
+                \par 
+<*> main.tex
+            
 ? e
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+H for help, X to quit.
+? 
+
+*e
+
+*
+! Interruption.
+<*> 
+    
+? X
  
 Here is how much of TeX's memory you used:
- 5179 strings out of 494953
- 66041 string characters out of 6180976
- 146118 words of memory out of 5000000
- 8382 multiletter control sequences out of 15000+600000
- 22386 words of font info for 61 fonts, out of 8000000 for 9000
+ 5166 strings out of 494953
+ 65875 string characters out of 6180976
+ 149221 words of memory out of 5000000
+ 8370 multiletter control sequences out of 15000+600000
+ 21610 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,15n,28p,1017b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/nike
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/nike/.texmf-var/
-fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/nike/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecrm0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecti0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000
-.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on C.pdf (1 page, 145362 bytes).
+ 34i,8n,31p,1126b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/nike
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/nike/.texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/nike/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecbx0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen
+/ec/ecrm0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900
+.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </ho
+me/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on C.pdf (1 page, 146352 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 304 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
