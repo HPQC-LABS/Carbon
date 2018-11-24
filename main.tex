@@ -136,18 +136,7 @@ variational upper bound obtained from FN-DMC; but since in our approach, imperfe
 %on Be \cite{Puchalski2013b} and B \cite{Puchalski2015}. 
 
 %Table \ref{tab:variational bounds} demonstrates that with
-twice as many variationally optimizable parameters, 1 fewer digit was obtained for the B atom than for the Be atom.
-This suggests that it would be very difficult to variationally optimize a fully explicitly correlated wavefunction ansatz for atoms and molecules coming from most of the periodic table. The
-best known variational bound for the NR,CPN ground state energy for
-C was calculated in 2015 using fixed-node diffusion Monte Carlo (FN-DMC)
-with the nodes of the electronic wavefunction fixed at the locations
-of a CISD/cc-pV5Z wavefunction, and the statistical uncertainty
-on the Monte Carlo was $\pm20$~$\mu E_{\textrm{Hartree}}$ \cite{FN-DMC}. However, the IE for C predicted by FN-DMC was in discrepancy with experiment by more than 40\,cm$^{-1}$. In this
-paper, the approach we use to calculate the NR,CPN energy of the ground
-state of C is FCIQMC (full configuration interaction quantum Monte Carlo)
-in an aug-cc-pCV8Z basis set. Table \ref{tab:variational bounds} shows
-that our NR,CPN energy is at least 76~$\mu E_{h}$ higher than the
-variational upper bound obtained from FN-DMC; but since in our approach, imperfections in the description of the wavefunction for the neutral atom are almost the same as in the cation, the errors are almost completely eliminated when taking the energy difference, therefore bringing us to agreement with experiment that is comparable to what has been seen with the explicitly correlated approach for atoms as big as (but not exceeding) boron. 
+
 
 After adding relativistic and quantum electrodynamics (QED) corrections, and corrections to the clamped nucleus approximation,
 we obtained an IE for the ground sate of C
@@ -269,7 +258,7 @@ Present  & Theory (total) & \textcolor{red} {90~832}&\textcolor{red}{301(810)} &
 \par\end{center}
 
 
-We begin with our main result in Table 
+We begin with our main result in Table \ref{tab:summary}, which shows that our computer-predicted ionization energy comes mainly from the Hamiltonian of a non-relativistic, clamped, point-sized nucleus (NR-CPN) Schroedinger equation.   
 
 Our calculations in this paper can be divided into five stages: (A)
 We develop larger core-valence (CV) basis sets than previously available for
