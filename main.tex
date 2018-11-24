@@ -10,6 +10,7 @@
 \usepackage{textcomp}
 \usepackage{amsmath}
 \usepackage{multirow}
+\usepackage{float}
 %\usepackage[font=small,labelfont=bf,
    %justification=justified,singlelinecheck=false,
    %format=plain]{caption}
@@ -223,7 +224,7 @@ $^{12}$C & C$^+\left(2^{2}P\right)\leftarrow~$C$\left(2^{3 }P\right)$ & 90~833&1
 \section{Methodology}
 
 \begin{center}
-\begin{table}
+\begin{table}[H]
 {\scriptsize
 \caption{\label{tab:Summary}{\scriptsize Summary of our main result. The uncertainty in the non-relativistic clamped-point-nucleus (NR-CPN) energy comes from using two different basis set extrapolation formulas. Scalar relativistic effects are included via the X2C (exact 2-component) Hamiltonian, and a further correction is added via the Breit Hamiltonian and QED terms. Finite-mass corrections are added via the diagonal Born-Oppenheimer correction (DBOC).}}
 
@@ -258,7 +259,7 @@ Present  & Theory (total) & \textcolor{red} {90~832}&\textcolor{red}{301(810)} &
 \par\end{center}
 
 
-We begin with our main result in Table \ref{tab:Ssummary}, which shows that our computer-predicted ionization energy comes mainly from the Hamiltonian of a non-relativistic, clamped, point-sized nucleus (NR-CPN) Schroedinger equation. This energy was calculated in four stages which we describe in the sub-sections below: (A) We developed larger core-valence (CV) basis sets than previously available for carbon, (B) we calculated the 1- and 2-electron integrals in these basis sets, (C) we solved the NR,CPN Schroedinger equation at the FCI level in our finite-sized basis sets of two different sizes, and (D) we extrapolated the finite basis set results to estimate the energies at the \textbf{c}omplete \textbf{b}asis \textbf{s}et (CBS) limtis. Finally, sub-section (E) describes how  we calculated the size of corrections due to special relativity, QED,  and due to the atom having an unclamed nucleus.
+We begin with our main result in Table \ref{tab:Summary}, which shows that our computer-predicted ionization energy comes mainly from the Hamiltonian of a non-relativistic, clamped, point-sized nucleus (NR-CPN) Schroedinger equation. This energy was calculated in four stages which we describe in the sub-sections below: (A) We developed larger core-valence (CV) basis sets than previously available for carbon, (B) we calculated the 1- and 2-electron integrals in these basis sets, (C) we solved the NR,CPN Schroedinger equation at the FCI level in our finite-sized basis sets of two different sizes, and (D) we extrapolated the finite basis set results to estimate the energies at the \textbf{c}omplete \textbf{b}asis \textbf{s}et (CBS) limtis. Finally, sub-section (E) describes how  we calculated the size of corrections due to special relativity, QED,  and due to the atom having an unclamed nucleus.
 
 \subsection{Optimization of `tight function' exponents for the aug-cc-pCV7Z and
 aug-cc-pCV8Z basis sets.}
