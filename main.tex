@@ -306,9 +306,7 @@ and $l$-functions appear when $X=8$. To calculate these integrals, we have used 
 
 \subsection{Calculation of NR-CPN energies in finite basis sets without truncating the possible excitation levels (FCIQMC)}
 
-A deterministic FCI calculation were possible for the 5e$^-$ system C$^{+}$ in aug-cc-pCV6Z with about 130$\,$GB of RAM to store the Davidson vectors, but were not possible for the 6e$^-$ neutral C atom in this basis set (which would require almost 9\,TB of RAM), nor for the 5e$^-$ C$^+$ ion in the aug-cc-pCV7Z basis set (which would require almost 55\,TB of RAM, and for the neutral atom would require more). T  
-
-We therefore we use FCIQMC for all NR-CPN calculations. The wavefunction of the relevant system is expanded as a sum
+A deterministic FCI (full configuration interaction) calculation for the 5e$^-$ C$^+$ ion in the aug-cc-pCV7Z basis set would require almost 55\,TB of RAM, and for the neutral atom would require more. Therefore we use FCIQMC for all NR-CPN calculations. The wavefunction of the relevant system is expanded as a sum
 of all possible Slater determinants given the basis set (full configuration interaction),
 and the coefficients are determined by the number of walkers standing
 on each determinant after a Monte Carlo sampling using the NR-CPN
@@ -339,7 +337,7 @@ the basis sets used). To ensure that $\Delta E_{{\rm initiator}}$
 can be neglected, we used a sufficiently large value of $N_{{\rm walkers}}$
 for every energy calculation, so that the energy difference between
 using $N_{{\rm walkers}}$ and $\frac{1}{2}N_{{\rm walkers}}$ was
-smaller than 1 $\mu E_{\rm{Hartree}}$. Likewise, to ensure that $\Delta E_{{\rm trial}}$ can be neglected, we used a sufficiently large number of determinants in the trial wavefunction for every energy calculation, such that $\Delta E_{{\rm trial}}$ would also be smaller than 1 $\mu E_{\rm{Hartree}}$. We then ran every calculation for enough macro-iterations $N$ such that $\Delta E_{{\rm stoch}}$ was smaller than $\Delta E_{{\rm trial}}$ and $\Delta E_{{\rm initiator}}$.
+smaller than 1 $\mu E_{\rm{Hartree}}$. Likewise, to ensure that $\Delta E_{{\rm trial}}$ can be neglected, we used a sufficiently large number of determinants in the trial wavefunction for every energy calculation, such that $\Delta E_{{\rm trial}}$ would also be smaller than 1 $\mu E_{\rm{Hartree}}$. We then ran every calculation for enough macro-iterations $N$ such that $\Delta E_{{\rm stoch}}$ was smaller than $\Delta E_{{\rm trial}}$ and $\Delta E_{{\rm initiator}}$. Further details are presented in the Supplemental Material, including tables which show that all three sources of error in our final numbers are not larger than we claim.
 
 \subsection{Extrapolations to the complete basis set limit}
 
