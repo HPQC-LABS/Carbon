@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,28 +399,8 @@ Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
 ine 93.
 
 
-LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 97.
-
-
-LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
-line 100.
-
-
-LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 126.
-
-
 Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 133
 .
-
-
-LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 136.
-
-
-LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
-line 147.
 
 
 Package natbib Warning: Citation `Thomas2015a' on page 1 undefined on input lin
@@ -562,38 +542,12 @@ ine 334.
 
 [3]
 
-LaTeX Warning: Reference `Kutzelnigg' on page 4 undefined on input line 362.
-
-
 Package natbib Warning: Citation `Kutzelnigg1992' on page 4 undefined on input 
 line 362.
 
 
-LaTeX Warning: Reference `Martin' on page 4 undefined on input line 362.
-
-
 Package natbib Warning: Citation `Martin1996' on page 4 undefined on input line
  362.
-
-
-LaTeX Warning: Reference `Kutzelnigg' on page 4 undefined on input line 362.
-
-
-LaTeX Warning: Reference `KutzelniggSolved' on page 4 undefined on input line 3
-62.
-
-
-LaTeX Warning: Reference `Martin' on page 4 undefined on input line 362.
-
-
-LaTeX Warning: Reference `MartinSolved' on page 4 undefined on input line 362.
-
-
-LaTeX Warning: Reference `KutzelniggSolved' on page 4 undefined on input line 3
-69.
-
-
-LaTeX Warning: Reference `MartinSolved' on page 4 undefined on input line 369.
 
 
 LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 369.
@@ -601,9 +555,6 @@ LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 369.
 
 Package natbib Warning: Citation `Feller2016' on page 4 undefined on input line
  369.
-
-
-LaTeX Warning: Reference `Kutzelnigg' on page 4 undefined on input line 369.
 
 
 LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 369.
@@ -627,10 +578,6 @@ Package natbib Warning: Citation `Klopper2010' on page 4 undefined on input lin
 e 379.
 
 
-LaTeX Warning: Reference `tab:x2cAndDBOC' on page 4 undefined on input line 381
-.
-
-
 Overfull \hbox (9.0pt too wide) in paragraph at lines 395--418
  []$[]$ 
  []
@@ -652,10 +599,10 @@ l.461 ...~~~~~~~ & \multirow{}{}{-37.430~412~3(5)}
 ? e
  
 Here is how much of TeX's memory you used:
- 5131 strings out of 494953
- 65599 string characters out of 6180976
+ 5133 strings out of 494953
+ 65623 string characters out of 6180976
  151872 words of memory out of 5000000
- 8337 multiletter control sequences out of 15000+600000
+ 8339 multiletter control sequences out of 15000+600000
  22071 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,14n,31p,1155b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -686,7 +633,7 @@ sy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C.pdf (4 pages, 294398 bytes).
+Output written on C.pdf (4 pages, 294245 bytes).
 PDF statistics:
  520 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
