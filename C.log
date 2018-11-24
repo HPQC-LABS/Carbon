@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,175 +392,192 @@ LaTeX Font Info:    ... okay on input line 35.
 )
 \openout3 = `CNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package natbib Warning: Citation `Puchalski2010' on page 1 undefined on input l
-ine 90.
+ine 100.
 
 
 Package natbib Warning: Citation `Puchalski2013b' on page 1 undefined on input 
-line 91.
+line 101.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
-ine 91.
+ine 101.
 
 
 Package natbib Warning: Citation `2006Schwartz' on page 1 undefined on input li
-ne 94.
+ne 104.
 
 
-Package natbib Warning: Citation `Wang' on page 1 undefined on input line 94.
+Package natbib Warning: Citation `Wang' on page 1 undefined on input line 104.
 
 
 Package natbib Warning: Citation `Puchalski2013' on page 1 undefined on input l
-ine 94.
+ine 104.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
-ine 95.
+ine 105.
 
 
 LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 95.
+line 105.
 
 
 LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
-line 98.
+line 108.
 
 
 LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 103.
+line 113.
 
 
-Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 109
+Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 119
 .
 
 
 LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 112.
+line 122.
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 105--116
+Underfull \hbox (badness 1668) in paragraph at lines 115--126
 []\T1/cmr/m/n/10 The best known vari-a-tional bound for the non-
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 105--116
+Underfull \hbox (badness 1533) in paragraph at lines 115--126
 \T1/cmr/m/n/10 relativistic, clamped, point-sized nu-cleus (NR,CPN)
  []
 
 
 LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
-line 146.
+line 156.
 
 
 Package natbib Warning: Citation `Thomas2015a' on page 1 undefined on input lin
-e 149.
+e 159.
 
 
 Package natbib Warning: Citation `Cleland2012' on page 1 undefined on input lin
-e 149.
+e 159.
 
 
 Package natbib Warning: Citation `Daday2012' on page 1 undefined on input line 
-150.
+160.
 
 
 Package natbib Warning: Citation `Booth2012a' on page 1 undefined on input line
- 151.
+ 161.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `2006Schwartz' on page 2 undefined on input li
-ne 177.
+ne 187.
 
 
-Package natbib Warning: Citation `Wang' on page 2 undefined on input line 178.
+Package natbib Warning: Citation `Wang' on page 2 undefined on input line 188.
 
 
 Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
-line 179.
+line 189.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 2 undefined on input l
-ine 180.
+ine 190.
 
 
-Package natbib Warning: Citation `FN-DMC' on page 2 undefined on input line 181
+Package natbib Warning: Citation `FN-DMC' on page 2 undefined on input line 191
 .
 
 
 Package natbib Warning: Citation `Bubin2013' on page 2 undefined on input line 
-183.
+193.
 
 
-Overfull \hbox (9.04297pt too wide) in alignment at lines 169--185
+Overfull \hbox (9.04297pt too wide) in alignment at lines 179--195
 [] [] [] [] [] [] [] [] [] []
  []
 
 
-Package natbib Warning: Citation `Kandula2011Eikema1997' on page 2 undefined on
- input line 207.
+Package natbib Warning: Citation `RevModPhys.88.035009' on page 2 undefined on 
+input line 216.
 
 
-Package natbib Warning: Citation `Pachucki2017Drake2000' on page 2 undefined on
- input line 207.
+Package natbib Warning: Citation `RevModPhys.88.035009' on page 2 undefined on 
+input line 216.
+
+
+Package natbib Warning: Citation `RevModPhys.88.035009' on page 2 undefined on 
+input line 216.
+
+
+Package natbib Warning: Citation `Kandula2011' on page 2 undefined on input lin
+e 217.
+
+
+Package natbib Warning: Citation `Pachucki2017' on page 2 undefined on input li
+ne 217.
 
 
 Package natbib Warning: Citation `Bushaw2007' on page 2 undefined on input line
- 208.
+ 218.
 
 
 Package natbib Warning: Citation `Puchalski2008' on page 2 undefined on input l
-ine 208.
+ine 218.
 
 
 Package natbib Warning: Citation `Beigang1983' on page 2 undefined on input lin
-e 209.
+e 219.
 
 
 Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
-line 209.
+line 219.
 
 
 Package natbib Warning: Citation `Kramida2007' on page 2 undefined on input lin
-e 210.
+e 220.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 2 undefined on input l
-ine 210.
+ine 220.
 
 
 Package natbib Warning: Citation `Haris2017' on page 2 undefined on input line 
-211.
+221.
 
 
-LaTeX Warning: Reference `tab:Summary' on page 2 undefined on input line 221.
+Overfull \hbox (65.32788pt too wide) in alignment at lines 208--223
+[] [] [] [] [] [] [] [] [] [] []
+ []
+
+
+LaTeX Warning: Reference `tab:Summary' on page 2 undefined on input line 233.
 
 ! Missing { inserted.
 <to be read again> 
                    \let 
-l.229 }}
+l.241 }}
         
 ? e
  
 Here is how much of TeX's memory you used:
- 5176 strings out of 494953
- 66017 string characters out of 6180976
- 145118 words of memory out of 5000000
- 8380 multiletter control sequences out of 15000+600000
- 21610 words of font info for 60 fonts, out of 8000000 for 9000
+ 5179 strings out of 494953
+ 66041 string characters out of 6180976
+ 146118 words of memory out of 5000000
+ 8382 multiletter control sequences out of 15000+600000
+ 22386 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,28p,1017b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,15n,28p,1017b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/nike
 /.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/nike/.texmf-var/
 fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/nike/.texmf-var/fonts/pk/ljf
@@ -577,9 +594,9 @@ nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
 nts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on C.pdf (1 page, 145931 bytes).
+Output written on C.pdf (1 page, 145362 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
+ 282 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
