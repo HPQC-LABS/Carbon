@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -192,6 +192,10 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin9.def
 File: latin9.def 2015/03/17 v1.2c Input encoding file
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
@@ -331,35 +335,35 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 Package Babel Warning: The package option `english' should not be used
 (Babel)                with a more specific one (like `british') on input line 
-33.
+34.
 
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 33.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 33.
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 34.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 34.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 33.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 33.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 33.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 34.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 34.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 34.
 (./C.aux)
 \openout1 = `C.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    ... okay on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -377,266 +381,161 @@ LaTeX Font Info:    ... okay on input line 33.
 )
 \openout3 = `CNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package natbib Warning: Citation `Puchalski2010' on page 1 undefined on input l
-ine 92.
-
-
-Package natbib Warning: Citation `Puchalski2013b' on page 1 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
 ine 93.
 
 
-Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 133
-.
-
-
-Package natbib Warning: Citation `Thomas2015a' on page 1 undefined on input lin
-e 150.
-
-
-Package natbib Warning: Citation `Cleland2012' on page 1 undefined on input lin
-e 150.
-
-
-Package natbib Warning: Citation `Daday2012' on page 1 undefined on input line 
-151.
-
-
-Package natbib Warning: Citation `Booth2012a' on page 1 undefined on input line
- 152.
-
-
-Package natbib Warning: Citation `2006Schwartz' on page 1 undefined on input li
-ne 179.
-
-
-Package natbib Warning: Citation `Wang' on page 1 undefined on input line 180.
-
-
 Package natbib Warning: Citation `Puchalski2013b' on page 1 undefined on input 
-line 181.
+line 94.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
-ine 182.
+ine 94.
 
 
-Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 183
+LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
+line 98.
+
+
+LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
+line 101.
+
+
+LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
+line 127.
+
+
+Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 134
+.
+
+
+LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
+line 137.
+
+
+LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
+line 148.
+
+
+Package natbib Warning: Citation `Thomas2015a' on page 1 undefined on input lin
+e 151.
+
+
+Package natbib Warning: Citation `Cleland2012' on page 1 undefined on input lin
+e 151.
+
+
+Package natbib Warning: Citation `Daday2012' on page 1 undefined on input line 
+152.
+
+
+Package natbib Warning: Citation `Booth2012a' on page 1 undefined on input line
+ 153.
+
+
+Package natbib Warning: Citation `2006Schwartz' on page 1 undefined on input li
+ne 180.
+
+
+Package natbib Warning: Citation `Wang' on page 1 undefined on input line 181.
+
+
+Package natbib Warning: Citation `Puchalski2013b' on page 1 undefined on input 
+line 182.
+
+
+Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
+ine 183.
+
+
+Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 184
 .
 
 
 Package natbib Warning: Citation `Bubin2013' on page 1 undefined on input line 
-185.
+186.
 
 
-Overfull \hbox (5.5972pt too wide) in alignment at lines 171--187
+Overfull \hbox (5.5972pt too wide) in alignment at lines 172--188
 [] [] [] [] [] [] [] [] [] []
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `Bushaw2007' on page 2 undefined on input line
- 211.
+ 212.
 
 
 Package natbib Warning: Citation `Puchalski2008' on page 2 undefined on input l
-ine 211.
+ine 212.
 
 
 Package natbib Warning: Citation `Beigang1983' on page 2 undefined on input lin
-e 212.
-
-
-Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
-line 212.
-
-
-Package natbib Warning: Citation `Kramida2007' on page 2 undefined on input lin
 e 213.
 
 
+Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
+line 213.
+
+
+Package natbib Warning: Citation `Kramida2007' on page 2 undefined on input lin
+e 214.
+
+
 Package natbib Warning: Citation `Puchalski2015' on page 2 undefined on input l
-ine 213.
+ine 214.
 
-
-Overfull \hbox (7.53984pt too wide) in alignment at lines 228--252
-[] [] [] [] [] [] []
- []
-
-
-Package natbib Warning: Citation `Feller2016' on page 2 undefined on input line
- 270.
-
-
-Package natbib Warning: Citation `Wilson1996' on page 2 undefined on input line
- 274.
-
-
-Package natbib Warning: Citation `Wilson1996' on page 2 undefined on input line
- 281.
-
-
-Package natbib Warning: Citation `MOLPRO' on page 2 undefined on input line 281
-.
-
-
-Package natbib Warning: Citation `Zhu:1997:ALF:279232.279236' on page 2 undefin
-ed on input line 281.
-
-
-Package natbib Warning: Citation `Wilson1996' on page 2 undefined on input line
- 281.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 299.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-
-Package natbib Warning: Citation `MOLCAS' on page 2 undefined on input line 299
-.
-
-[2]
-
-Package natbib Warning: Citation `Booth2009a' on page 3 undefined on input line
- 317.
-
-
-Package natbib Warning: Citation `Cleland2010' on page 3 undefined on input lin
-e 318.
-
-
-Package natbib Warning: Citation `Blunt2015' on page 3 undefined on input line 
-319.
-
-
-Package natbib Warning: Citation `NECI' on page 3 undefined on input line 320.
-
-
-Underfull \hbox (badness 2237) in paragraph at lines 325--328
- []\T1/cmr/m/n/10 Trial wave-func-tion er-ror ($\OT1/cmr/m/n/10 ^^A\OML/cmm/m/i
-t/10 E[]$\T1/cmr/m/n/10 ), which ap-
- []
-
-
-Underfull \hbox (badness 1237) in paragraph at lines 325--328
- \T1/cmr/m/n/10 proaches zero in the limit where the num-ber
- []
-
-
-Package natbib Warning: Citation `Flyvbjerg1989' on page 3 undefined on input l
-ine 334.
-
-[3]
-
-Package natbib Warning: Citation `Kutzelnigg1992' on page 4 undefined on input 
-line 362.
-
-
-Package natbib Warning: Citation `Martin1996' on page 4 undefined on input line
- 362.
-
-
-LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 369.
-
-
-Package natbib Warning: Citation `Feller2016' on page 4 undefined on input line
- 369.
-
-
-LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 369.
-
-
-Package natbib Warning: Citation `Feller2016' on page 4 undefined on input line
- 369.
-
-
-LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 369.
-
-
-Package natbib Warning: Citation `MRCC' on page 4 undefined on input line 373.
-
-
-Package natbib Warning: Citation `Klopper2010' on page 4 undefined on input lin
-e 377.
-
-
-Package natbib Warning: Citation `Klopper2010' on page 4 undefined on input lin
-e 379.
-
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 395--418
- []$[]$ 
- []
-
-
-LaTeX Warning: Reference `tab:summary' on page 4 undefined on input line 425.
-
-
-Package natbib Warning: Citation `Klopper2010' on page 4 undefined on input lin
-e 427.
-
-[4]
-! Dimension too large.
-\@xmultirow ...mpdima \@tempcnta \dp \@arstrutbox 
-                                                  \ifnum \@tempcnta <0\@temp...
-l.461 ...~~~~~~~ & \multirow{}{}{-37.430~412~3(5)}
-                                                   & \multicolumn{2}{c}{}\ta...
-
+Excluding 'comment' comment.)
+Runaway argument?
+! File ended while scanning use of \next.
+<inserted text> 
+                \par 
+<*> main.tex
+            
 ? e
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+H for help, X to quit.
+? X
  
 Here is how much of TeX's memory you used:
- 5133 strings out of 494953
- 65623 string characters out of 6180976
- 151872 words of memory out of 5000000
- 8339 multiletter control sequences out of 15000+600000
- 22071 words of font info for 62 fonts, out of 8000000 for 9000
+ 5115 strings out of 494953
+ 65185 string characters out of 6180976
+ 146751 words of memory out of 5000000
+ 8325 multiletter control sequences out of 15000+600000
+ 20065 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,14n,31p,1155b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.600pk> </home/nike
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/nike/.texmf-var/
-fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/nike/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/tcrm0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecrm0800.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700
-.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </ho
-me/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/nike/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.600pk> </home/nike/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-extra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C.pdf (4 pages, 294245 bytes).
+ 34i,12n,31p,1141b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/nike
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/nike/.texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/nike/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecrm0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen
+/ec/ecti0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000
+.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy9.pfb>
+Output written on C.pdf (1 page, 135435 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 288 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
