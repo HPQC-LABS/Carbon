@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  24 NOV 2018 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,170 +392,157 @@ LaTeX Font Info:    ... okay on input line 35.
 )
 \openout3 = `CNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package natbib Warning: Citation `Puchalski2010' on page 1 undefined on input l
-ine 94.
+ine 89.
 
 
 Package natbib Warning: Citation `Puchalski2013b' on page 1 undefined on input 
-line 95.
+line 90.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
-ine 95.
+ine 90.
+
+
+Package natbib Warning: Citation `2006Schwartz' on page 1 undefined on input li
+ne 93.
+
+
+Package natbib Warning: Citation `Wang' on page 1 undefined on input line 93.
+
+
+Package natbib Warning: Citation `Puchalski2013' on page 1 undefined on input l
+ine 93.
+
+
+Package natbib Warning: Citation `Puchalski2015' on page 1 undefined on input l
+ine 94.
 
 
 LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 99.
+line 94.
 
 
 LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
-line 102.
+line 97.
 
 
 LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 107.
+line 102.
 
 
-Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 113
+Package natbib Warning: Citation `FN-DMC' on page 1 undefined on input line 108
 .
 
 
 LaTeX Warning: Reference `tab:variational bounds' on page 1 undefined on input 
-line 116.
+line 111.
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 109--119
+Underfull \hbox (badness 1668) in paragraph at lines 104--114
 []\T1/cmr/m/n/10 The best known vari-a-tional bound for the non-
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 109--119
+Underfull \hbox (badness 1533) in paragraph at lines 104--114
 \T1/cmr/m/n/10 relativistic, clamped, point-sized nu-cleus (NR,CPN)
  []
 
 
 LaTeX Warning: Reference `tab:excitationEnergies' on page 1 undefined on input 
-line 149.
+line 144.
 
 
 Package natbib Warning: Citation `Thomas2015a' on page 1 undefined on input lin
-e 152.
+e 147.
 
 
 Package natbib Warning: Citation `Cleland2012' on page 1 undefined on input lin
-e 152.
+e 147.
 
 
 Package natbib Warning: Citation `Daday2012' on page 1 undefined on input line 
-153.
+148.
 
 
 Package natbib Warning: Citation `Booth2012a' on page 1 undefined on input line
- 154.
+ 149.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `2006Schwartz' on page 2 undefined on input li
-ne 181.
+ne 175.
 
 
-Package natbib Warning: Citation `Wang' on page 2 undefined on input line 182.
+Package natbib Warning: Citation `Wang' on page 2 undefined on input line 176.
 
 
 Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
-line 183.
+line 177.
 
 
 Package natbib Warning: Citation `Puchalski2015' on page 2 undefined on input l
-ine 184.
+ine 178.
 
 
-Package natbib Warning: Citation `FN-DMC' on page 2 undefined on input line 185
+Package natbib Warning: Citation `FN-DMC' on page 2 undefined on input line 179
 .
 
 
 Package natbib Warning: Citation `Bubin2013' on page 2 undefined on input line 
-187.
+181.
 
 
-Overfull \hbox (5.5972pt too wide) in alignment at lines 173--189
+Overfull \hbox (9.04297pt too wide) in alignment at lines 167--183
 [] [] [] [] [] [] [] [] [] []
  []
 
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \endtemplate 
+l.205 ...S\right)\leftarrow~$H$\left(1^2S\right) &
+                                                   & & \multicolumn{2}{c}{} ...
 
-Package natbib Warning: Citation `Bushaw2007' on page 2 undefined on input line
- 213.
-
-
-Package natbib Warning: Citation `Puchalski2008' on page 2 undefined on input l
-ine 213.
-
-
-Package natbib Warning: Citation `Beigang1983' on page 2 undefined on input lin
-e 214.
-
-
-Package natbib Warning: Citation `Puchalski2013b' on page 2 undefined on input 
-line 214.
-
-
-Package natbib Warning: Citation `Kramida2007' on page 2 undefined on input lin
-e 215.
-
-
-Package natbib Warning: Citation `Puchalski2015' on page 2 undefined on input l
-ine 215.
-
-
-LaTeX Warning: Reference `tab:Summary' on page 2 undefined on input line 226.
-
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.243 ...}Breit \& QED} & -0&5\multicolumn{2}{c}{}
-                                                   & \tabularnewline
 ? e
  
 Here is how much of TeX's memory you used:
- 5172 strings out of 494953
- 65945 string characters out of 6180976
- 143118 words of memory out of 5000000
- 8376 multiletter control sequences out of 15000+600000
+ 5167 strings out of 494953
+ 65885 string characters out of 6180976
+ 142118 words of memory out of 5000000
+ 8371 multiletter control sequences out of 15000+600000
  21610 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,31p,843b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/nike
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/nike/.texmf-var/
-fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/nike/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecbx0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecrm0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900
-.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </ho
-me/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on C.pdf (1 page, 156675 bytes).
+ 34i,12n,28p,634b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/nike
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/nike/.texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/nike/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecrm0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen
+/ec/ecti0900.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000
+.600pk> </home/nike/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on C.pdf (1 page, 145931 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 284 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
