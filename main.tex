@@ -166,10 +166,9 @@
     \begin{center}
     \begin{table*}
     \caption{\label{tab:variational bounds}Upper bounds for
-    total non-relativistic electronic energies. For H, the energy is exact. VO stands for variational optimization (parameters
-    in a wavefunction ansatz are optimized to yield the lowest
+    total non-relativistic electronic energies. VO stands for variational optimization (parameters in a wavefunction ansatz are optimized to yield the lowest
     energy). Hylleraas-Log indicates the use of Hylleraas functions
-    supplemented with auxiliary log functions, and ECG($N$) stands for  explicitly correlated Gaussian ansatz with $N$ optimizable parameters. FN-DMC stands for fixed-node diffusion Monte Carlo. The uncertainty in the FCIQMC energy is the uncertainty ....... do basis set extrapolation}
+    supplemented with auxiliary log functions, and ECG($N$) stands for  explicitly correlated Gaussian ansatz with $N$ optimizable parameters. Numbers in parentheses are estimated uncertainties \emph{within} the method used, so for FN-DMC does not include fixed-node error and for FCIQMC does not include basis set error. No numbers were obtained with basis set extrapolations.}
     
     
     %The uncertainties  given in parentheses do not include fixed-node error in FN-DMC or basis set incompleteness error in FCIQMC, so the lower ends of the confidence intervals may still be above the true variational limit. Knowledge of the size of these errors 
@@ -181,12 +180,12 @@
     \hline 
     \hline 
     \noalign{\vskip2mm}
-    H & 1 & -0&5 & Analytic & 1926 Schr\"{o}dinger &  &  &  & \tabularnewline
+    H & 1 & -0&5 & {Analytic \& Exact} & 1926 Schr\"{o}dinger &  &  &  & \tabularnewline
     He & 2 & -2&903 724 377 034 119 598 311 159 245 194 404 446 696 925 309 838 & VO/Hylleraas-Log & 2006 Schwartz & \cite{2006Schwartz} &  &  & \tabularnewline
     Li & 3 & -7&478 060 323 910 134 843 & VO/Hylleraas & 2011 Wang &    \cite{Wang}  &  &  & \tabularnewline
     Be & 4 & -14&667 356 494 9 & VO/ECG(4096) & 2013 Puchalski & \cite{Puchalski2013b} &  &  & \tabularnewline
     B & 5 & -24&653 867 537 & VO/ECG(8192) & 2015 Puchalski & \cite{Puchalski2015} &  &  & \tabularnewline
-    C & 6 & -37&844 48(2) & FN-DMC & 2015 Yang & \cite{FN-DMC} &  &  & \tabularnewline
+    C & 6 & -37&844 48(2) & {\footnotesize FN-DMC/CISD/cc-pV5Z} & 2015 Yang & \cite{FN-DMC} &  &  & \tabularnewline
     C & 6 & \textcolor{blue}{-37}&\textcolor{blue}{844~355~5(8)} & {\footnotesize FCIQMC/aug-cc-pCV8Z} & Present work & - &  &  & \tabularnewline
     C & 6 & \textminus 37&843 333 & VO/ECG(1000) & 2013 Bubin & \cite{Bubin2013} &  &  & \tabularnewline[2mm]
     \hline 
@@ -253,17 +252,17 @@
     \hline
     \hline
     \noalign{\vskip2mm}
-    NR-CPN &  & 90~863&03737(80000) & \multicolumn{2}{c}{}\tabularnewline
-    X2C{\footnotesize{}} &  & -30&023(050050) & \multicolumn{2}{c}{}\tabularnewline
+    NR-CPN &  & 90~863&037(800) & \multicolumn{2}{c}{}\tabularnewline
+    X2C{\footnotesize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
     \multicolumn{2}{l}{\hspace{-0.75mm}Breit \& QED} & -0&5\multicolumn{2}{c}{} & \tabularnewline
-     DBOC &  & -0&275 & \multicolumn{2}{c}{}\tabularnewline
+     DBOC &  & -0&270(004) & \multicolumn{2}{c}{}\tabularnewline
     \noalign{\vskip2mm}
     \hline
     \noalign{\vskip2mm}
-    Total (theory)  & Present & \textcolor{red} {90~832}&\textcolor{red}{244014} & \qquad  -0&777994\tabularnewline[2mm]
+    Total (theory)  & Present & \textcolor{red} {90~832}&\textcolor{red}{244} & \qquad  -0&777\tabularnewline[2mm]
     \hline
     \noalign{\vskip2mm}
-    Experiment   & 2017 \cite{Haris2017}& 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
+    Experiment   & 2017 \cite{Haris2017}& 90~833&021(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
     \hline
     \noalign{\vskip2mm}
     Theory & 2010 \cite{Klopper2010}& 90~838&75 & \qquad 5&74\tabularnewline
@@ -431,7 +430,7 @@
     (including the vacuum polarization and the self-energy terms that
     together comprise the Lamb shift) from the  state-averaged Dirac-Fock calculations done in \cite{Klopper2010}. The overall contribution from the Breit and QED correctons to the IE for C was -0.48\,cm$^{-1}$.
     
-    Diagonal Born-Oppenheimer breakdown corrections (DBOC) to the clamped nucleus approximation were calculated using $\tt{CFOUR}$, with $\tt{MRCC}$ used for the coupled-cluster part. Our value of -0.2750\,cm$^{-1}$ is more than tripdouble the value of -0.08\,cm$^{-1}$ estimated in \cite{Klopper2010}, due to including higher levels of correlation.
+    Diagonal Born-Oppenheimer breakdown corrections (DBOC) to the clamped nucleus approximation were calculated using $\tt{CFOUR}$, with $\tt{MRCC}$ used for the coupled-cluster part. Our value of -0.27\,cm$^{-1}$ is more than triple the value of -0.08\,cm$^{-1}$ estimated in \cite{Klopper2010}, due to including higher levels of correlation.
     
     The basis set and correlation convergence of the X2C and DBOC corrections is shown in the Supplemental Material and the final corrections that contributed to our final computer-predicted ionization energy are presented in Table \ref{tab:Summary}.
     
