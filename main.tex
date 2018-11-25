@@ -166,7 +166,7 @@ fair accuracy) the IEs which at present remain experimentally elusive or poorly 
 \begin{center}
 \begin{table*}
 \caption{\label{tab:variational bounds}Tight variational upper bounds for
-atomic energies. For H, the listed energy is exact, since the Hartree
+atotal electronicmic energies. For H, the listed energy is exact, since the Hartree
 energy unit is defined as twice this energy, and can be related to
 fundamental SI units through an analytic solution to the relevant
 Schr\"{o}dinger equation. VO stands for variational optimization (parameters
@@ -205,24 +205,30 @@ the best way to obtain the energy for most atoms, but for Be, the
 energy has been obtained more precisely $\textit{in silico}$ than
 in any experiment to date. The value for carbon of \textcolor{red}{90~832.014}\,cm$^{-1}$ was calculated in the present work.}}
 
-\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}ccr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lccccc}
-\hline 
+{
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lc}
+\hline
 \noalign{\vskip2mm}
- & Transition & \multicolumn{2}{c}{Experiment } & \multicolumn{2}{c}{} & Theory &  & Calc - Obs & $\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$ & More precise\tabularnewline
- &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & {[}cm$^{-1}${]} &  & {[}cm$^{-1}${]} &  & \tabularnewline[2mm]
-\hline 
-\hline 
+ & \multirow{2}{*}{Transition} & \multicolumn{2}{c}{Experiment } & \multicolumn{2}{c}{} & \multicolumn{2}{c}{Theory} &  & \multicolumn{2}{c}{Calc - Obs} & \multicolumn{2}{c}{$\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$} & \multirow{2}{*}{More precise}\tabularnewline
+ &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{{[}cm$^{-1}${]}} &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & \tabularnewline[2mm]
+\hline
+\hline
 \noalign{\vskip2mm}
-H & H$^+\left(1^1S\right)\leftarrow~$H$\left(1^2S\right)$ & & & \multicolumn{2}{c}{}  & 109~678.771~743~07(10) \footnote{This number is based on the data in \cite{PhysRevLett.95.163003} although it is not explicitly written anywhere there. Two of the authors of \cite{PhysRevLett.95.163003} have presented the number in Table III of \cite{RevModPhys.88.035009}.} &  &  &  & Theory \tabularnewline
-    $^{4}$He & He$^+\left(1^2S\right)\leftarrow~$He$\left(1^1S\right)$ & 198~310&666~37(2) & \multicolumn{2}{c}{\cite{Kandula2011}}  & 198~310.665~07(1) & \cite{Pachucki2017}  & -0.001~3 & 65.0 & Theory \tabularnewline
-$^{7}$Li & Li$^+\left(1^{1}S\right)\leftarrow~$Li$\left(2^{2}S\right)$ & 43~487&159~40(18) & \multicolumn{2}{c}{\cite{Bushaw2007}} & 43~487.159~0(8) &  \cite{Puchalski2008} & -0.000~4 & 57.1 & Experiment\tabularnewline
-$^{9}$Be & Be$^+\left(2^{2}S\right)\leftarrow~$Be$\left(2^{1}S\right)$ & 75~192&64(6) & \multicolumn{2}{c}{\cite{Beigang1983}} & 75~192.699(7) &  \cite{Puchalski2013b} & 0.059 & 0.98 & Theory\tabularnewline
-$^{11}$B & B$^+\left(2^{1}S\right)\leftarrow~$B$\left(2^{2}P\right)$ & 66~928&036(22) & \multicolumn{2}{c}{\cite{Kramida2007}} & 66~927.91(21) & \cite{Puchalski2015} & -0.126 & 5.7 & Experiment\tabularnewline
-$^{12}$C & C$^+\left(2^{2}P\right)\leftarrow~$C$\left(2^{3}P\right)$ & 90~833&008(009) & \multicolumn{2}{c}{\cite{Haris2017}} & \textcolor{red}{{90~832.014}}  & - & 0.994 &  &Experiment\tabularnewline[2mm]
-\hline 
-\end{tabular*}
+$^{1}$H & H$^{+}\left(1^{1}S\right)\leftarrow\text{H}\left(1^{2}S\right)$ & \multicolumn{2}{c}{-} & \multicolumn{2}{c}{-} & 109~678&771~743~07(10) & \footnote{This number is based on the data in \cite{PhysRevLett.95.163003} although it is not explicitly written anywhere there. Two of the authors of \cite{PhysRevLett.95.163003} have presented the number in Table III of \cite{RevModPhys.88.035009}.} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & Theory\tabularnewline
+$^{4}$He & He$^{+}\left(1^{2}S\right)\leftarrow\text{He}\left(1^{1}S\right)$ & 198~310&666~37(2) & \multicolumn{2}{c}{\cite{Kandula2011}} & 198~310&665~07(1) & \cite{Pachucki2017} & ~~~-0&001~3 & ~~~~~~65&00 & Theory\tabularnewline
+$^{3}$Li & Li$^{+}\left(1^{1}S\right)\leftarrow\text{Li}\left(2^{2}S\right)$ & 3~487&159~40(18) & \multicolumn{2}{c}{\cite{Bushaw2007}} & 43~487&159~0(8) & \cite{Puchalski2008} & ~~~-0&000~4 & ~~~~~~2&22 & Experiment\tabularnewline
+$^{9}$Be & Be$^{+}\left(2^{2}S\right)\leftarrow\text{Be}\left(2^{1}S\right)$ & 75~192&64(6) & \multicolumn{2}{c}{\cite{Beigang1983}} & 75~192&699(7) & \cite{Puchalski2013b} & ~~~0&059 & ~~~~~~0&98 & Theory\tabularnewline
+$^{11}$B & B$^{+}\left(2^{1}S\right)\leftarrow\text{B}\left(2^{2}P\right)$ & 66~928&036(22) & \multicolumn{2}{c}{\cite{Kramida2007}} & 66~927&91(21) & \cite{Puchalski2015} & ~~~-0&126 & ~~~~~~5&73 & Experiment\tabularnewline
+$^{12}$C & C$^{+}\left(2^{2}P\right)\leftarrow\text{C}\left(2^{3}P\right)$ & 90~833&008(009) & \multicolumn{2}{c}{\cite{Haris2017}} & \textcolor{red}{90~832}&\textcolor{red}{014} & - & ~~~0&994 & ~~~~~~110&44 & Experiment\tabularnewline[2mm]
+\hline
+\end{tabular*}{\small \par}
 \end{table*}
 \par\end{center}
+
+
+
+
+
 
 \vspace{-20mm}
 
@@ -247,7 +253,7 @@ We begin with our main result in Table \ref{tab:Summary}, which shows that our c
 & & \multicolumn{2}{c}{[\,cm$^{-1}$\,]} & \multicolumn{2}{c}{\textcolor{black}{{}[\,cm$^{-1}$\,]}}
 \tabularnewline[2mm]
 \hline
-\hline  
+\hline
 \noalign{\vskip2mm}
 NR-CPN &  & 90~863&037(800) & \multicolumn{2}{c}{}\tabularnewline
 X2C{\footnotesize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
