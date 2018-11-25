@@ -1,633 +1,566 @@
-    %% LyX 2.2.2 created this file.  For more info, see http://www.lyx.org/.
-    %% Do not edit unless you really know what you are doing.
-    \documentclass[british,english,showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,twocolumn]{revtex4-1}
-    \usepackage[T1]{fontenc}
-    \usepackage[latin9]{inputenc}
-    \setcounter{secnumdepth}{3}
-    \usepackage{comment}
-    \usepackage{color}
-    \usepackage{units}
-    \usepackage{textcomp}
-    \usepackage{amsmath}
-    \usepackage{multirow}
-    \usepackage{float}
-    %\usepackage[font=small,labelfont=bf,
-       %justification=justified,singlelinecheck=false,
-       %format=plain]{caption}
-    
-    %\captionsetup{justification=raggedright,singlelinecheck=false,format=plain}
-    
-    %\captionsetup{justification=justified,singlelinecheck=false,format=plain}
-    
-    \makeatletter
-    
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-    %% Because html converters don't know tabularnewline
-    \providecommand{\tabularnewline}{\\}
-    
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-    \usepackage{amsfonts}
-    %\usepackage{palatino}
-    
-    \makeatother
-    
-    \usepackage{babel}
-    \begin{document}
-    
-    %\title{\textcolor{black}{\normalsize{}Bound on quantum electrodynamics effects beyond $\alpha^4$ in the carbon atom with $\pm1$~cm$^{-1}$  precision}}
-    \title{\textcolor{black}{ Computer-predicted ionization energy of carbon within $1$\,cm$^{-1}$ of the best experiment}}
-    
-    \author{Nike Dattani}
-    \email{n.dattani@cfa.harvard.edu}
-    
-    
-    
-    \affiliation{Harvard-Smithsonian Center for Astrophysics, Atomic and 
-    Molecular Physics Division, 02138, Cambridge, MA, USA,}
-    \affiliation{McMaster University, Department of Chemistry and Chemical Biology, 606-8103, Hamilton, ON, Canada,}
-    \affiliation{Kyoto University, Fukui Institute for Fundamental Chemistry, 606-8103, Kyoto, Japan.}
-    
-    %\vspace{10mm}
-    
-    %\affiliation{Oxford University, Hertford College, OX1 3BW, Oxford, UK.}
-    
-    
-    \author{Giovanni LiManni}
-    \email{g.limanni@fkf.mpg.de}
-    
-    \selectlanguage{british}%
-    
-    \affiliation{Max Planck Institute for Solid State Systems, Department of Electronic Structure Theory, Suttgart, Germany.}
-    
-    
-    \author{David Feller}
-    \email{dfeller@owt.com }
-    
-    \selectlanguage{british}%
-    
-    \affiliation{Washington State University, Department of Chemistry, Pullman, Washington
-    99164-4630, USA,}
-    \affiliation{University of Alabama, Department of Chemistry, Tuscaloosa, Alabama
-    35487-0336, USA,}
-    
-    
-    \author{Jacek Koput}
-    \email{koput@amu.edu.pl}
-    
-    \selectlanguage{british}%
-    
-    \affiliation{Adam Mickiewicz University, Department of Chemistry, 61\textendash 614
-    Poznan, Poland.}
-    \selectlanguage{english}%
-    
-    %\vspace{10mm}
-    
-    \date{\today}
-    \begin{abstract}
-    We show that we can predict
-    the first ionization energy of carbon to within 0.994~cm$^{-1}$ of the experimental value. This is an improvement of more than a factor of 5 over the preceding best prediction in [Phys. Rev. A \textbf{81}, 022503] and comparable to the accuracies achieved for the smaller atoms up to boron.% The sum of all error contributions in our calculations up to the fifth power of the fine structure constant is estimated to be at most 0.802~cm$^{-1}$, which yields our estimate of contributions in the sixth and higher powers to be: 0.994$~\pm~$0.802~cm$^{-1}$.  
-    \end{abstract}
-    \selectlanguage{british}%
-    
-    \maketitle
-    \selectlanguage{english}%
-    
-    %\section{Introduction}
-    \vspace{-20mm}
-    %\vspace{10mm}
-    
-    In the last seven years, ionization energies (IEs) have been calculated
-    with unprecedented precision for the Li atom \cite{Puchalski2010},
-    Be atom \cite{Puchalski2013b} and B atom \cite{Puchalski2015}. Tight
-    variational bounds for non-relativistic ground state energies assuming
-    a clamped, point-sized nucleus have reached 49 digits in units of
-    Hartree for He \cite{2006Schwartz}, 19 digits for Li \cite{Wang}, 12 digits for Be \cite{Puchalski2013}, and 11 digits for
-    B \cite{Puchalski2015} (see Table \ref{tab:variational bounds}). Calculated
-    IEs have been made in agreement with experiment to
-    within $10^{-3}$~cm$^{-1}$ for $^{7}$Li, $10^{-1}$~cm$^{-1}$
-    for $^{9}$Be and $1$~cm$^{-1}$ for $^{11}$B (see Table \ref{tab:excitationEnergies}). 
-    
-    %Boron agreement was 0.12cm-1. Not quite good enough to say "within 0.1cm-1"
-    
-    For the C atom, before this present study, no high-precision calculation had been reported to predict an IE to within $\sim1$~cm$^{-1}$
-    agreement with experiment. Table \ref{tab:variational bounds} shows that the method used for the smaller atoms up to boron has not had success for carbon. With twice as many variationally optimizable parameters, one fewer digit was obtained for the B atom than for the Be atom, which also suggests that it would be very difficult to variationally optimize a fully explicitly correlated wavefunction ansatz for atoms and molecules coming from the rest of the periodic table. 
-    
-    The best known variational bound for the non-relativistic, clamped, point-sized nucleus (NR,CPN) ground state energy for
-    C was calculated in 2015 using fixed-node diffusion Monte Carlo (FN-DMC)
-    with the nodes of the electronic wavefunction fixed at the locations
-    of a CISD/cc-pV5Z wavefunction, and the statistical uncertainty
-    based on the stochastic fluctuations was $\pm20$~$\mu E_{\textrm{Hartree}}$ \cite{FN-DMC}. However, the IE for C predicted by FN-DMC was in discrepancy with experiment by more than 40\,cm$^{-1}$. In this
-    paper, the approach we use to calculate the NR,CPN energy of the ground
-    state of C is FCIQMC (full configuration interaction quantum Monte Carlo)
-    with basis sets as large as aug-cc-pCV8Z. Table \ref{tab:variational bounds} shows
-    that our NR,CPN energy is at least 76~$\mu E_{\rm{Hartree}}$ higher than the
-    variational upper bound obtained from FN-DMC; but since in our approach, imperfections in the description of the wavefunction for the neutral atom are almost the same as in the cation, the individual errors almost completely cancel when
-    calculating the energy difference. Therefore, with our approach we achieve agreement with experiment that is comparable to what has been seen with the explicitly correlated approach for atoms as big as (but not exceeding) boron. 
-    
-    %Table \ref{tab:variational bounds} shows
-    %that the method used for the calculation has a crucial impact on the
-    %precision obtainable: the best variational bound on the non-relativistic,
-    %clamped, point-nucleus (NR,CPN), ground state energy of Li is believed
-    %to be 8 orders of magnitude more accurate than that of the Be atom,
-    %because analytic expressions for the multi-center integrals of Hylleraas
-    %wavefunctions are only known for up to 3e$^{-}$, and it would be
-    %very slow to calculate them numerically for 4e$^{-}$. For 4e$^{-}$
-    %and greater, ECGs (\textbf{e}xplicitly \textbf{c}orrelated \textbf{G}aussian
-    %wavefunction\textbf{s)} are used. ECGs mimic the theoretical shape
-    %of the wavefunction less accurately (e.g. they are rounded rather
-    %than cusp-like in the limit of vanishing electron-electron distance,
-    %and in the infinite electron-electron distance limit they decay as
-    %$\nicefrac{1}{r^{2}}$ rather than $\nicefrac{1}{r}$), so more parameters
-    %are needed than when using Hylleraas wavefunctions. However, the integrals
-    %of ECGs are known analytically, regardless of the number of electrons,
-    %which is why it has been possible to do very high-precision calculations
-    %on Be \cite{Puchalski2013b} and B \cite{Puchalski2015}. 
-    
-    %Table \ref{tab:variational bounds} demonstrates that with
-    
-    
-    After adding relativistic and quantum electrodynamics (QED) corrections, and corrections to the clamped nucleus approximation,
-    we obtained an IE for the ground state of C
-    which is in only 0.994~cm$^{-1}$ disagreement with the best known experimental
-    estimate. While this is not as impressive as the
-    method of variationally optimizing parameters in an explicitly correlated
-    wavefunciton ansatz has proven to be for Li and Be, the disagreement with experiment 
-    has the same order of magnitude as the latter approach for B (see
-    Table \ref{tab:excitationEnergies}). We finally note that the approach
-    used in this paper, of calculating FCIQMC on a basis set of non-explicitly
-    correlated orbitals has successfully treated systems with far more
-    electrons (transition metal atoms \cite{Thomas2015a}, diatomics \cite{Cleland2012},
-    larger molecules such as butadiene \cite{Daday2012}, and even solid
-    state systems \cite{Booth2012a}), so it is conceivable that the approach used in this paper may in the near future be able to determine (with
-    fair accuracy) the IEs which at present remain experimentally elusive or poorly known. These include arsenic (whose experimental IE has an uncertainty of $\pm2$\,\textrm{cm}$^{-1}$), Pm, Pa, Fm, Md, No, Sg, Bh and Hs (whose IEs are only known based on extrapolations of other experimental data and have uncertainties between $\pm$140\,cm$^{-1}$ and $\pm$4000\,cm$^{-1}$), Rf and Db (whose IEs are only known from theoretical calculations), and Mt, Ds, Rg, Cn, Nh, Fl, Mc, Lv, Ts, and Og (for which no IE is given in NIST's most recent databases).
-    
-    % http://physics.nist.gov/PhysRefData/Handbook/Tables/astatinetable5.htm doesn't give anything for At.
-    
-    \begin{center}
-    \begin{table*}
-    \caption{\label{tab:variational bounds}Tight variational upper bounds for
-    total electronic energies. For H, the listed energy is exact, since the Hartree
-    energy unit is defined as twice this energy, and can be related to
-    fundamental SI units through an analytic solution to the relevant
-    Schr\"{o}dinger equation. VO stands for variational optimization (parameters
-    in a wavefunction ansatz are optimized in attempt to obtain the lowest
-    possible energy). Hylleraas-Log indicates the use of Hylleraas functions
-    supplemented with auxiliary log functions, and ECG($N$) indicates
-    the use of explicitly correlated Gaussians
-    with $N$ variationally optimizable parameters. FN-DMC stands for fixed node diffusion Monte Carlo.}
-    
-    \begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}ccr@{\extracolsep{0pt}.}lcccccc}
-    \hline 
-    \noalign{\vskip2mm}
-     &  & \multicolumn{2}{c}{Total non-relativistic clamped point-nucleus (NR,CPN) energy {[}Hartree{]}} & Method/Ansatz type & Reference &  &  &  & \tabularnewline[2mm]
-    \hline 
-    \hline 
-    \noalign{\vskip2mm}
-    H & 1 & -0&5 & Analytic & 1926 Schr\"{o}dinger &  &  &  & \tabularnewline
-    He & 2 & -2&903 724 377 034 119 598 311 159 245 194 404 446 696 925 309 838 & VO/Hylleraas-Log & 2006 Schwartz & \cite{2006Schwartz} &  &  & \tabularnewline
-    Li & 3 & -7&478 060 323 910 134 843 & VO/Hylleraas & 2011 Wang &    \cite{Wang}  &  &  & \tabularnewline
-    Be & 4 & -14&667 356 494 9 & VO/ECG(4096) & 2013 Puchalski & \cite{Puchalski2013b} &  &  & \tabularnewline
-    B & 5 & -24&653 867 537 & VO/ECG(8192) & 2015 Puchalski & \cite{Puchalski2015} &  &  & \tabularnewline
-    C & 6 & -37&844 48(2) & FN-DMC & 2015 Yang & \cite{FN-DMC} &  &  & \tabularnewline
-    C & 6 & \textcolor{blue}{-37}&\textcolor{blue}{844~355~5(08)} & {\footnotesize FCIQMC/aug-cc-pCV8Z} & Present work & - &  &  & \tabularnewline
-    C & 6 & \textminus 37&843 333 & VO/ECG(1000) & 2013 Bubin & \cite{Bubin2013} &  &  & \tabularnewline[2mm]
-    \hline 
-    \end{tabular*}
-    \end{table*}
-    \par\end{center}
-    
-    \begin{center}
-    \begin{table*}
-    {\small \caption{\label{tab:excitationEnergies}The most precisely calculated ionization energies for the first 6 atoms, compared to the best known
-    experimental measurements to date. The last column indicates that
-    if aiming for the best precision, an experimental measurement is still
-    the best way to obtain the energy for most atoms, but for Be, the
-    energy has been obtained more precisely $\textit{in silico}$ than
-    in any experiment to date. The value for carbon of \textcolor{red}{90~832.014}\,cm$^{-1}$ was calculated in the present work.}}
-    
-    {
-    \begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lc}
-    \hline
-    \noalign{\vskip2mm}
-     & \multirow{2}{*}{Transition} & \multicolumn{2}{c}{Experiment } & \multicolumn{2}{c}{} & \multicolumn{2}{c}{Theory} &  & \multicolumn{2}{c}{Calc - Obs} & \multicolumn{2}{c}{$\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$} & \multirow{2}{*}{More precise}\tabularnewline
-     &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{{[}cm$^{-1}${]}} &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & \tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    $^{1}$H & H$^{+}\left(1^{1}S\right)\leftarrow\text{H}\left(1^{2}S\right)$ & \multicolumn{2}{c}{-} & \multicolumn{2}{c}{-} & 109~678&771~743~07(10) & \footnote{This number is based on the data in \cite{PhysRevLett.95.163003} although it is not explicitly written anywhere there. Two of the authors of \cite{PhysRevLett.95.163003} have presented the number in Table III of \cite{RevModPhys.88.035009}.} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & Theory\tabularnewline
-    $^{4}$He & He$^{+}\left(1^{2}S\right)\leftarrow\text{He}\left(1^{1}S\right)$ & 198~310&666~37(2) & \multicolumn{2}{c}{\cite{Kandula2011}} & 198~310&665~07(1) & \cite{Pachucki2017} & ~~~-0&001~3 & ~~~~~~65&00 & Theory\tabularnewline
-    $^{3}$Li & Li$^{+}\left(1^{1}S\right)\leftarrow\text{Li}\left(2^{2}S\right)$ & 3~487&159~40(18) & \multicolumn{2}{c}{\cite{Bushaw2007}} & 43~487&159~0(8) & \cite{Puchalski2008} & ~~~-0&000~4 & ~~~~~~2&22 & Experiment\tabularnewline
-    $^{9}$Be & Be$^{+}\left(2^{2}S\right)\leftarrow\text{Be}\left(2^{1}S\right)$ & 75~192&64(6) & \multicolumn{2}{c}{\cite{Beigang1983}} & 75~192&699(7) & \cite{Puchalski2013b} & ~~~0&059 & ~~~~~~0&98 & Theory\tabularnewline
-    $^{11}$B & B$^{+}\left(2^{1}S\right)\leftarrow\text{B}\left(2^{2}P\right)$ & 66~928&036(22) & \multicolumn{2}{c}{\cite{Kramida2007}} & 66~927&91(21) & \cite{Puchalski2015} & ~~~-0&126 & ~~~~~~5&73 & Experiment\tabularnewline
-    $^{12}$C & C$^{+}\left(2^{2}P\right)\leftarrow\text{C}\left(2^{3}P\right)$ & 90~833&008(009) & \multicolumn{2}{c}{\cite{Haris2017}} & \textcolor{red}{90~832}&\textcolor{red}{014} & - & ~~~0&994 & ~~~~~~110&44 & Experiment\tabularnewline[2mm]
-    \hline
-    \end{tabular*}{\small \par}
-    \end{table*}
-    \par\end{center}
-    
-    
-    
-    
-    
-    
-    \vspace{-20mm}
-    
-    %\vspace{-5mm}
-    
-    \section{Methodology}
-    
-    We begin with our main result in Table \ref{tab:Summary}, which shows that our computer-predicted ionization energy comes mainly from the NR-CPN Hamiltonian. This energy was calculated in four stages which we describe in the sub-sections below: (A) We developed larger core-valence (CV) basis sets than previously available for carbon, (B) we calculated the 1- and 2-electron integrals in these basis sets, (C) we solved the NR,CPN Schr\"{o}dinger equation at the FCI level in our finite-sized basis sets of two different sizes, and (D) we extrapolated the finite basis set results to estimate the energies at the \textbf{c}omplete \textbf{b}asis \textbf{s}et (CBS) limits. Finally, sub-section (E) describes how  we added the corrections due to special relativity, QED,  and due to the atom having an unclamped nucleus.
-    
-    \vspace{-5mm}
-    
-    \begin{center}
-    \begin{table}[H]
-    {
-    \caption{\label{tab:Summary}{\small Summary of our main result. All energies are between the hyperfine centre of gravity (hcog) of C$\left(^3P\right)$ and the hcog of C$^+\!\!\left(^2P\right)$ so the experimental spin-orbit lowering of 12.672508\,cm$^{-1}$ needs to be subtracted from all numbers to obtain the C$\left(^3P_0\right)\leftarrow$~C$^+\!\!\left(^2P_\nicefrac{1}{2}\right)$ energy (see Supplemental Material). The experimental uncertainty is a 68\% confidence interval, meaning that there is a 32\% chance that the true energy is outside the range spanned by the uncertainty.   %The uncertainty in the non-relativistic clamped-point-nucleus (NR-CPN) ionization energy comes from using two different basis set extrapolation formulas. Scalar relativistic effects are included via the X2C (exact 2-component) Hamiltonian, and a further correction is added via the Breit Hamiltonian and QED terms. Finite-mass corrections are added via the diagonal Born-Oppenheimer correction (DBOC). 
-    }}
-    
-    \begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
-    \hline
-    \noalign{\vskip2mm}
-    {Hamiltonian} &  & \multicolumn{2}{c}{{{}Ionization Energy}} & \multicolumn{2}{c}{\textcolor{black}{{}(Calc - Obs) }}\tabularnewline 
-    & & \multicolumn{2}{c}{[\,cm$^{-1}$\,]} & \multicolumn{2}{c}{\textcolor{black}{{}[\,cm$^{-1}$\,]}}
-    \tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    NR-CPN &  & 90~863&037(800) & \multicolumn{2}{c}{}\tabularnewline
-    X2C{\footnotesize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
-    \multicolumn{2}{l}{\hspace{-0.75mm}Breit \& QED} & -0&5\multicolumn{2}{c}{} & \tabularnewline
-     DBOC &  & -0&5 & \multicolumn{2}{c}{}\tabularnewline
-    \noalign{\vskip2mm}
-    \hline
-    \noalign{\vskip2mm}
-    Total (theory)  & Present & \textcolor{red} {90~832}&\textcolor{red}{014} & \qquad  -0&994\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    Experiment   & 2017 \cite{Haris2017}& 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    Theory & 2010 \cite{Klopper2010}& 90~838&75 & \qquad 5&74\tabularnewline
-    Theory & 2017 \cite{2017Feller}& 90~840&16 & \qquad 7&15\tabularnewline
-    Theory & 2015 \cite{FN-DMC}& 90~786&66  & \qquad -46&35\tabularnewline[2mm]
-    \hline
-    \end{tabular*}
-    }
-    \end{table}
-    \par\end{center}
-    
-    \vspace{-16mm}
-    
-    \subsection{{\scriptsize Optimization of `tight function' exponents for the aug-cc-pCV7Z and
-    aug-cc-pCV8Z basis sets.}}
-    
-    The largest basis sets known for C prior to this work were the (aug-cc-pV$X$Z,
-    $X=$7,8,9) sets used by Feller in 2016 \cite{Feller2016}. These basis sets
-    did not contain `tight' exponent functions for capturing the effects
-    of the correlation between the core $(1s^{2},2s^{2})$ electrons and
-    the valence electrons $(2p^{2}$). The largest known basis set for carbon prior
-    to this work including the CV (core-valence) correction was the aug-cc-pCV6Z \cite{Wilson1996} set. In this work we start by optimizing the `tight' exponents for
-    the CV correction to Feller's 2016 aug-cc-pV7Z and aug-cc-pV8Z basis
-    sets, yielding the first aug-cc-pCV7Z basis set for carbon, and the
-    first aug-cc-pCV8Z basis set known.
-    
-    The final aug-cc-pCV$X$Z basis sets have $X$ new tight functions of $s$-type, $X-1$ of $p$-type, $X-2$ of $d$-type, and so forth, up to the final $i$-type function for $X=7$ and the final $k$-type function for $X=8$. The $j^\textrm{th}$ exponent corresponding to a function of type $L$ is named $\gamma_{X,L,j}$, and is assumed to follow an ``even-tempered'' model: $\gamma_{X,L,j}=\alpha_{X,L,j}\beta_{X,L,j}^{j-1}$.
-    
-    In the non-linear optimization procedure to obtain $\alpha_{7,L,j}$ and $\beta_{7,L,j}$, the starting values were chosen to be the $\alpha_{6,L,j}$ and $\beta_{6,L,j}$ values that were already optimized in \cite{Wilson1996}. These were then treated as free parameters to minimize the difference between the frozen core and all-electron CISD energies of the carbon atom with all other exponent functions fixed. The $\tt{MOLPRO}$ program \cite{MOLPRO} was used to calculate the CISD energies, and the $\tt{L}$-$\tt{BFGS}$-$\tt{B}$ program of \cite{Zhu:1997:ALF:279232.279236} was used to optimize the free parameters. The $s$-type functions were added first, then once they were optimized they were held fixed while the $p$-type functions were added and optimized. Then both the $s$- and $p$-type functions were held fixed while the $d$-type functions were added, and so on up to the single $i$-type function. The procedure for $X=8$ was the same, except the procedure continued to $k$-type functions, and the starting values came from the newly optimized $X=7$ case rather than the $X=6$ case from \cite{Wilson1996}. $\tt{MOLPRO}$ does not support $k$-functions, so we calculated the CISD energy at three points using $\tt{GAUSSIAN}$ \cite{g16} and found the minimum using a quadratic fit. 
-    
-    The tight exponents optimized in this work for aug-cc-pCV7Z and aug-cc-pCV8Z are presented in the Supplemental Material.
-    
-    %Table \ref{tab:tightFunctions}
-    
-    
-    \vspace{-6mm}
-    
-    \subsection{{\scriptsize Calculation of 1- and 2-electron integrals including $k$- and $l$-
-    functions}}
-    
-    %The calculation of the 1-and 2-electron integrals for the (aug)-cc-p(C)VXZ basis sets, that include up to k- and l- functions, 
-    
-    The calculation of the 1- and 2-electron integrals for (aug)-cc-p(C)V$X$Z
-    basis sets with $X\ge7$ is not possible with most quantum chemistry
-    packages, since  very few software packages support $k$-
-    and $l$- functions, but for first row elements, $k$-functions appear in $X=7$ basis sets
-    and $l$-functions appear when $X=8$. To calculate these integrals, we have used a locally modified version of {\tt MOLCAS 8.0} \cite{MOLCAS} which supports larger basis sets including larger an. The 1- and 2-electron integrals for C and C$^+$ were evaluated in the basis of the optimized CASSCF(6,5) and CASSCF(5,5) orbitals respectively, with the five active orbitals being the 1$s$, 2$s$, 2$p_x$, 2$p_y$ and 2$p_z$ of the C atom/ion. This active space is the minimal active space including all electrons, that is able to provide balanced orbitals for the three degenerate states of the $^3P$ state of the C atom, or the $^2P$ state of the C$^+$ ion.
-    
-    %The MO-integrals have been evaluated in the basis of the optimized CASSCF(6,5) and CASSCF(5,5) MO orbitals, with the five active orbitals being the 1s, 2s, 2px, 2py and 2pz of the C atom. This active space is the minimal active space able to provide balanced orbitals for the three degenerate states of the 3P state of C atom
-    
-    
-    
-    %We have used ${\tt MOLCAS}$
-    %to write the 1- and 2-electron integrals after a CAS(6,5)SCF  for C and CAS(5,5)SCF for C$^+$. In both cases, the 6 orbitals included were $1s,2s,2p_x,2p_y,2p_z$. The commercial version of ${\tt MOLCAS}$ had a
-    %memory leak when printing the 56~GB file containing the 1- and 2-electron integrals for aug-cc-pCV8Z, so we needed to turn off the storage of density matrices which previously were calculated automatically in ${\tt MOLCAS}$. 
-    
-    \subsection{{\scriptsize Calculation of NR-CPN energies in finite basis sets without truncating the possible excitation levels (FCIQMC)}}
-    
-    A deterministic FCI (full configuration interaction) calculation for the 5e$^-$ C$^+$ ion in the aug-cc-pCV7Z basis set would require almost 55\,TB of RAM, and for the neutral atom would require more. Therefore we use FCIQMC for all NR-CPN calculations. %The wavefunction of the relevant system is expanded as a sum
-    %of all possible Slater determinants given the basis set,
-    %and the coefficients are determined by the number of walkers standing
-    %on each determinant after a Monte Carlo sampling using the NR-CPN
-    %Hamiltonian. 
-    The method was introduced in \cite{Booth2009a}, and
-    we use the initiator method first described in \cite{Cleland2010},
-    and the semi-stochastic method as described in \cite{Blunt2015}.
-    The calculations are performed using the developer version of the software ${\tt NECI}$ \cite{NECI}. 
-    
-    Within a given Hamiltonian (in this case the NR-CPN Hamiltonian) and
-    basis set, there are three sources of error in the FCIQMC energy calculations: 
-    \begin{enumerate}
-    \item Trial wavefunction error ($\Delta E_{{\rm trial}}$), which approaches
-    zero in the limit where the number of determinants used in the trial
-    wavefunction approaches the number of determinants in the FCIQMC wavefunction; 
-    \item Initiator error ($\Delta E_{{\rm initiator}}$), which approaches
-    zero in the limit where the number of walkers $N_{{\rm walkers}}$
-    gets sufficiently large; and 
-    \item Stochastic error ($\Delta E_{{\rm stoch}}$), which for a given number
-    of walkers is estimated as the square root of the unbiased variance
-    among different estimates $E_{i}$ of the energy from their mean $\bar{E}$
-    after different numbers $N$ of Monte Carlo macro-iterations (determined using the Flyvbjerg-Petersen blocking analysis \cite{Flyvbjerg1989}) after the walkers
-    have reached equilibrium: $\Delta E_{{\rm stochastic}}\approx\sqrt{\frac{\sum_{i=1}^{N}\left(E_{i}-\bar{E}\right)^{2}}{N-1}}=\mathcal{O}\left(\nicefrac{1}{\sqrt{N}}\right)$.
-    \end{enumerate}
-    
-    Our goal was to obtain all energies to a precision of $\pm\epsilon$
-    where $\epsilon\le1\mu E_{{\rm Hartree}}\approx0.2$~cm$^{-1}$ (within
-    the basis sets used). To ensure that $\Delta E_{{\rm initiator}}$
-    can be neglected, we used a sufficiently large value of $N_{{\rm walkers}}$
-    for every energy calculation, so that the energy difference between
-    using $N_{{\rm walkers}}$ and $\frac{1}{2}N_{{\rm walkers}}$ was
-    smaller than 1 $\mu E_{\rm{Hartree}}$. Likewise, to ensure that $\Delta E_{{\rm trial}}$ can be neglected, we used a sufficiently large number of determinants in the trial wavefunction for every energy calculation, such that $\Delta E_{{\rm trial}}$ would also be smaller than 1 $\mu E_{\rm{Hartree}}$. We then ran every calculation for enough macro-iterations $N$ such that $\Delta E_{{\rm stoch}}$ was smaller than $\Delta E_{{\rm trial}}$ and $\Delta E_{{\rm initiator}}$. Further details are presented in the Supplemental Material, including tables which show that all three sources of error in our final numbers are not larger than we claim.
-    
-    \vspace{-6mm}
-    
-    \begin{center}
-    \begin{table}[H]
-     \caption{\label{tab:finalFCIQMC}{\small Final NR-CPN energies. The break-down of how
-    these energies were obtained, and the Hartree-Fock energies that were
-    used for the extrapolations are available in the Supplemental Material.
-    Numbers in parenthesis indicate uncertainties in the last digit(s)
-    shown, and their determination is described in the Supplemental Material.}}
-    
-    {\scriptsize
-    \begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
-    \hline
-    \noalign{\vskip2mm}
-     &  & \multicolumn{2}{c}{C$\left(^{3}P\right)$ } & \multicolumn{2}{c}{C$^{+}$$\left(^{2}P\right)$} & \multicolumn{2}{c}{$2^{3}P\rightarrow2^{2}P$~{}}\tabularnewline 
-     & & \multicolumn{2}{c}{ $\left[E_{{\rm Hartree}}\right]$} &  \multicolumn{2}{c}{ $\left[E_{{\rm Hartree}}\right]$} &  \multicolumn{2}{c}{~{[}cm$^{-1}${]}}
-    \tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    aug-cc-pCV7Z &  & -37&844~251~5(05) & -37&430~345~1(01) & 90~841&955(028)\tabularnewline
-    \multirow{1}{*}{aug-cc-pCV8Z} &  & -37&844~355~5(08) & -37&430~412~5(05) & 90~849&987(054)\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    Eq.\eqref{KutzelniggSolved}, $n=3.5$ &  & -37&844~528~6 & -37&430~523~6 & 90~863&604\tabularnewline
-    Eq.\eqref{MartinSolved}, $n=4$ &  & -37&844~514~2 & -37&430~514~3 & 90~862&471\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    Mean ($\sigma$) &  & -37&844~521~4 & -37&8430~0519~09 & 90~863&037\tabularnewline[2mm]
-    \hline
-    \end{tabular*}
-    \end{table}
-    \par\end{center}
-    }
-    
-    \vspace{-14mm}
-    
-    \subsection{{\scriptsize Extrapolations to the CBS (complete basis set) limit}}
-    
-    %An excellent review of the state-of-the-art in extrapolation choices is given on Page 5 of \cite{Feller2016}. The e 
-    
-    We use two different families of formulas to extrapolate the correlation energies (FCIQMC energies with the ROHF energies subtracted out) from $E_{X-1}$ and $E_{X}$ to $E_{\textrm{CBS}}$:
-    
-    %\begin{align}
-    %E_{\textrm{corr,CBS}} & %=E_{\textrm{corr},X}-\frac{A}{X^{n}}~,\\
-    %E_{\textrm{corr,CBS}} & %=E_{\textrm{corr},X}-\frac{A}{\left(X+\nice%frac{1}{2}\right)^n}~.
-    %\end{align}
-    
-    \vspace{-5mm}
-    
-    \begin{align}
-    \label{Kutzelnigg}E_{\textrm{CBS}} & =E_{X}-\frac{A}{X^{n}}~,\\
-    E_{\textrm{CBS}} & =E_{X}-\frac{A}{\left(X+\nicefrac{1}{2}\right)^n}~.\label{Martin}
-    \end{align}
-    
-    \noindent If we set $n=3$ in Eq.\,\eqref{Kutzelnigg}, we recover the formula originally proposed in \cite{Kutzelnigg1992}. If we set $n=4$ in Eq.\,\eqref{Martin}, we recover the formula originally proposed in \cite{Martin1996}.  If we have values for $E_{X}$ at two different $X$ values, we can eliminate $A$ in both cases, so Eq.\eqref{Kutzelnigg} leads to Eq.\eqref{KutzelniggSolved} and Eq.\eqref{Martin} leads to Eq.\eqref{MartinSolved}:
-    
-    \begin{align}
-    \label{KutzelniggSolved}E_{\textrm{CBS}} & =\frac{X^nE_{X}-\left(X-1\right)^nE_{X-1}}{X^n-\left(X-1\right)^n}~,\\
-    \label{MartinSolved}E_{\textrm{CBS}} & =E_{X}+\frac{\left(2X-1\right)^n\left(E_X-E_{X-1}\right)}{\left(1+2X\right)^n-\left(2X-1\right)^n}~.
-    \end{align}
-    
-    As explained on page 5 of \cite{Feller2016}, extrapolations to the CBS limit using $n=3$ in Eq.\eqref{Kutzelnigg} tend to over-shoot the CBS limit. The value of $n=3.5$ was therefore used in \cite{Feller2016}, and we have used it in this present study. The values of $E_{\textrm{CBS}}$ obtained from using $n=3.5$ in Eq.\,\eqref{KutzelniggSolved} and $n=4$ in Eq.\eqref{MartinSolved}, for $X=8$ were added to the ROHF energies for $X=8$ and are presented in Table \ref{tab:finalFCIQMC}. The final NR-CPN energy was taken as the mean of both values obtained from extrapolating the correlation energy and adding it to the ROHF energy with $X=8$, and the uncertainty in this mean was estimated as the square root of the unbiased variance of the two values.
-    
-    \vspace{-5mm}
-    
-    \subsection{{\scriptsize Estimation of relativistic, QED, and finite nuclear mass corrections corrections}}
-    
-    Scalar relativistic corrections were calculated by comparing the energies using the spin-free version of the 1e$^-$ X2C (exact 2-component) Hamiltonian, to the energies of the NR-CPN Hamiltonian. %The spin-free 1e$^-$ version of the X2C Hamiltonian is equivalent to infinite-order DKH. 
-    The integrals of our X2C Hamiltonian with ROHF orbitals were done in the $\tt{CFOUR}$ program, and were calculated at various levels of coupled cluster theory with the $\tt{MRCC}$ program \cite{MRCC}.
-    
-    Further scalar relativistic effects were included by adding the Breit and QED corrections
-    (including the vacuum polarization and the self-energy terms that
-    together comprise the Lamb shift) from the  state-averaged Dirac-Fock calculations done in \cite{Klopper2010}. The overall contribution from the Breit and QED correctons to the IE for C was -0.48\,cm$^{-1}$.
-    
-    Diagonal Born-Oppenheimer breakdown corrections (DBOC) to the clamped nucleus approximation were calculated using $\tt{CFOUR}$, with $\tt{MRCC}$ used for the coupled-cluster part. Our value of -0.50\,cm$^{-1}$ is more than double the value of -0.08\,cm$^{-1}$ estimated in \cite{Klopper2010}, due to including higher levels of correlation.
-    
-    The basis set and correlation convergence of the X2C and DBOC corrections is shown in the Supplemental Material and the final corrections that contributed to our final computer-predicted ionization energy are presented in Table \ref{tab:Summary}.
-    
-    
-    \vspace{-6mm}
-    
-    \section{Conclusion}
-    
-    Table \ref{tab:Summary} summarizes the various contributions to our value of the IE, and compares our final value to experiment and to three recent theoretical estimates. Our value is 0.994\,cm$^{-1}$ smaller than the best experimental value. %Since we included all known contributions up to the fifth power of the fine structure constant in the QED expansion of the energies, we estimate that the contributions of all terms of sixth power and beyond add up to (0.994$\pm$0.802)\,cm$^{-1}$.
-    
-    The best theoretical estimate of the IE before this work was in \cite{Klopper2010}, and was in disagreement with experiment by more than a factor of 5 more than our present result. We believe that this could have been due to any or all of three things: (1) approximations inherent to the F12 approach used for their NR-CPN energy, (2) the perturbative nature of their scalar relativistic corrections (i.e. use the mass velocity and Darwin terms, rather than the X2C Hamiltonian used in the present work) and (3) the CCSD approximation made in their DBOC correction  (as opposed to the CCSDTQ used in the present work which we have shown appears to be converged to the FCI limit).
-    
-    
-    
-    
-    
-    %\section{Dicsussion}
-    
-    %\clearpage
-    %\newpage
-    
-    \selectlanguage{british}%
-    \bibliographystyle{apsrev4-1}
-    \bibliography{bib.bib}
-    \selectlanguage{english}%
-    
-    \clearpage
-    \newpage
-    
-    
-    \end{document}
-    
-    
-    
-    
-    \begin{center}
-    \begin{table}
-    \caption*{Supplemental Material: Tight exponents for aug-cc-pCV6Z and aug-cc-pCV7Z.}
-    
-    \begin{tabular*}{0.4\textwidth}{@{\extracolsep{\fill}}cr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
-    \hline
-    \noalign{\vskip2mm}
-     & \multicolumn{2}{c}{aug-cc-pCV7Z} & \multicolumn{2}{c}{aug-cc-pCV8Z}\tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    $s$-type & 276&12 & 365&52\tabularnewline
-     & 158&30 & 232&20\tabularnewline
-     & 90&75 & 147&51\tabularnewline
-     & 52&026 & 93&707\tabularnewline
-     & 29&826 & 59&529\tabularnewline
-     & 17&099 & 37&817\tabularnewline
-     & \multicolumn{2}{c}{} & 24&024\tabularnewline[2mm]
-    $p$-type & 299&20 & 372&10\tabularnewline
-     & 149&46 & 198&95\tabularnewline
-     & 74&657 & 106&37\tabularnewline
-     & 37&293 & 56&868\tabularnewline
-     & 18&629 & 30&405\tabularnewline
-     & 9&3054 & 16&256\tabularnewline
-     & \multicolumn{2}{c}{} & 8&6911\tabularnewline[2mm]
-    $d$-type & 255&63 & 337&98\tabularnewline
-     & 111&57 & 191&20\tabularnewline
-     & 55&17 & 108&17\tabularnewline
-     & 27&282 & 61&193\tabularnewline
-     & 13&491 & 34&618\tabularnewline
-     & \multicolumn{2}{c}{} & 19&584\tabularnewline[2mm]
-    $f$-type & 132&26 & 207&91\tabularnewline
-     & 56&375 & 103&16\tabularnewline
-     & 24&030 & 51&185\tabularnewline
-     & 10&243 & 25&397\tabularnewline
-     & \multicolumn{2}{c}{} & 12&601\tabularnewline[2mm]
-    $g$-type & 94&488 & 155&52\tabularnewline
-     & 36&762 & 72&601\tabularnewline
-     & 14&302 & 33&891\tabularnewline
-     & \multicolumn{2}{c}{} & 15&821\tabularnewline[2mm]
-    $h$-type & 66&227 & 100&23\tabularnewline
-     & 22&68 & 39&552\tabularnewline
-     & \multicolumn{2}{c}{} & 15&608\tabularnewline[2mm]
-    $i$-type & 48&32 & 78&691\tabularnewline
-     & \multicolumn{2}{c}{} & 28&941\tabularnewline[2mm]
-    $k$-type & \multicolumn{2}{c}{} & \multicolumn{2}{c}{}\tabularnewline[2mm]
-    \hline
-    \end{tabular*}
-    \end{table}
-    \par\end{center}
-    
-    
-    
-    
-    
-    
-    \begin{center}
-    \begin{table}
-    \caption{\label{tab:x2cAndDBOC}Basis set and correlation convergence of the
-    X2C and DBOC corrections to the C$\left(^{3}P\right)\rightarrow$$\text{C}^{+}\left(^{2}P\right)$
-    ionization energy in cm$^{-1}$. The difference between CCSDT and
-    FCI for the smallest two basis sets is denoted by $\Delta_{{\rm correlaton}}$
-    and the values at aCV3Z are added to the CCSDT energies for all larger
-    basis sets (resulting in FCI estimates presented in \emph{italic}
-    font). The numbers in parentheses for the CBS (complete basis set)
-    estimates denote our assigned uncertainties in the last digits presented,
-    which we believe to be very conservative. aCV$X$Z is short for aug-cc-pCV$X$Z-uncontracted.}
-    
-    \begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}}ccccccc}
-    \hline
-    \noalign{\vskip2mm}
-     & {\footnotesize{}aCV2Z} & {\footnotesize{}aCV3Z} & {\footnotesize{}aCV4Z} & {\footnotesize{}aCV5Z} & {\footnotesize{}aCV6Z} & {\footnotesize{}CBS}\tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    \multicolumn{7}{c}{{\footnotesize{}X2C}}\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    {\footnotesize{}CCSDT} & {\footnotesize{}-31.055} & {\footnotesize{}-30.144} & {\footnotesize{}-30.037} & {\footnotesize{}-30.004} & {\footnotesize{}-30.001} & {\footnotesize{}-29.999(003)}\tabularnewline
-    {\footnotesize{}FCI} & {\footnotesize{}-31.074} & {\footnotesize{}-30.168} & \emph{\footnotesize{}-30.060}{\footnotesize{}} & \emph{\footnotesize{}-30.028}{\footnotesize{}} & \emph{\footnotesize{}-30.025} & \textcolor{red}{\emph{\footnotesize{}-30.023(050)}}\tabularnewline
-    {\footnotesize{}$\Delta_{{\rm correlation}}$} & {\footnotesize{}-0.019} & {\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024(050)}\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    \multicolumn{7}{c}{{\footnotesize{}DBOC}}\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    {\footnotesize{}CCSDT} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5}\tabularnewline
-    {\footnotesize{}FCI} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & \emph{\footnotesize{}-0.5} & \emph{\footnotesize{}-0.5} & \emph{\footnotesize{}-0.5} & \textcolor{red}{\emph{\footnotesize{}-0.5}}\tabularnewline
-    {\footnotesize{}$\Delta_{{\rm correlation}}$} & {\footnotesize{}0.0} & {\footnotesize{}0.0} & \emph{\footnotesize{}0.0} & \emph{\footnotesize{}0.0} & \emph{\footnotesize{}0.0} & \emph{\footnotesize{}0.0}\tabularnewline[2mm]
-    \hline
-    \end{tabular*}
-    \end{table}
-    \par\end{center}
-    
-    
-    \begin{center}  
-    \begin{table*}
-    \caption{\label{tab:summary}Summary}
-    
-    \begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lclccr@{\extracolsep{0pt}.}l}
-    \hline
-    \noalign{\vskip2mm}
-     &  &  & \multicolumn{2}{c}{$E=\frac{\left\langle \psi_{N_{{\rm trial}}}\left|H_{{\rm NR-CPN}}\right|\psi_{{\rm FCIQMC}}\right\rangle }{\left\langle \psi_{{\rm N_{{\rm trial}}}}\left.\right|\psi_{{\rm FCIQMC}}\right\rangle }$} & \multicolumn{2}{c}{$E_{{\rm excitation}}$}\tabularnewline[2mm]
-    \noalign{\vskip2mm}
-    $N_{{\rm walkers}}$ & $N_{{\rm trial}}$  & Uncertainty & $2^{3}P$~{[}$E_{{\rm Hartree}}]$ & $2^{2}P$~{[}$E_{{\rm Hartree}}]$ & \multicolumn{2}{c}{$2^{3}P\rightarrow2^{2}P$~{[}cm$^{-1}${]}}\tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    \multicolumn{7}{c}{aug-cc-pCV7Z}\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    $64\times10^{6}$ & 1 &  & -37.844~251~5(15) ~~~~~~~ & -37.430~345~0(03) & 90~841&955\tabularnewline
-     & 1000 &  & -37.844~251~5(08) ~~~~~~~ & -37.430~345~0(01) & 90~841&977\tabularnewline
-     &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&02\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    $128\times10^{6}$ & 1 &  & -37.844~251~5(0?) & -37.430~345~0(02) & 90~841&977\tabularnewline
-     & 1000 &  & -37.844~251~5(05) & -37.430~345~1(01) & 90841&955\tabularnewline
-     &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&02\tabularnewline
-     &  & $\Delta E_{{\rm initiator}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&02\tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    \multicolumn{7}{c}{aug-cc-pCV8Z}\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    $64\times10^{6}$ & 1    &  & -37.844~3??~?(??)~~~~~~~ & \multirow{}{}{-37.430~412~3(5)} & \multicolumn{2}{c}{}\tabularnewline
-                     & 1000 &  & -37.844~355~5(10)~~~~~~~ & \multirow{}{}{-37.430~412~3(5)} & \multicolumn{2}{c}{}\tabularnewline
-    & & $\Delta E_{{\rm trial}}$ & $<\,$0.000~001~1~~~~~~~ & \multirow{}{}{0.430~412~3(5)} & \multicolumn{2}{c}{}\tabularnewline
-    $128\times10^{6}$ & 1 &  & -37.844~35?~?(08)~~~~~~~ &  & \multicolumn{2}{c}{}\tabularnewline
-     & 1000 &  & -37.844~355~5(08)~~~~~~~ &  & \multicolumn{2}{c}{}\tabularnewline
-     &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~001~3~~~~~~~ &  & \multicolumn{2}{c}{}\tabularnewline
-     &  & $\Delta E_{{\rm initiator}}$ & $<\,$0.000~000~4~~~~~~~ &  & \multicolumn{2}{c}{}\tabularnewline[2mm]
-    \hline
-    \hline
-    \noalign{\vskip2mm}
-    \multicolumn{7}{c}{CBS Extrapolation }\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    $1/X^{3}$ &  &  & -37.844~697~1 & -37.430~741~9 & 90~852&665\tabularnewline
-    $1/X^{3.5}$ &  &  & -37.844~645~6 & -37.430~696~0 & 90~851&416\tabularnewline
-    $1/\left(X+\nicefrac{1}{2}\right)^{4}$ &  &  & -37.844~625~1 & -37.430~677~8 & 90~850&925\tabularnewline
-     &  & $\Delta_{\text{basis set}}$ &  \approx0.000~037~0 & \approx 0.000~033~0 & 0&90\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    \multicolumn{4}{l}{Non-relativistic, clamped nucleus (FCIQMC)} &  & \textcolor{red}{90~851}&\textcolor{red}{69(90)}\tabularnewline
-    \multicolumn{4}{l}{X2C Relativistic correction} &  & -30&02(05)\tabularnewline
-    \multicolumn{4}{l}{Breit + QED (from )} &  & -0&48\tabularnewline
-    \multicolumn{4}{l}{DBOC unclamped nucleus correction} &  & -0&50(01)\tabularnewline[2mm]
-    \hline
-    \noalign{\vskip2mm}
-    Theory & (Present Work) & \multicolumn{3}{l}{FCIQMC + X2C + Breit + QED + DBOC} & \textcolor{blue}{90~820}&\textcolor{blue}{46(95)}\tabularnewline
-    Experiment & (1990) &  &  &  & 90~820&45(10)\tabularnewline
-    Theory & (2010) & \multicolumn{3}{l}{CCSD-F12 + HLC + MV + Darwin + Breit + QED + DBOC} & 90~826&09\tabularnewline
-    Theory & (2017) & \multicolumn{3}{l}{R/UCCSD(T) + HLC + DKH + Breit + QED + DBOC} & 90~827&50\tabularnewline
-    Theory & (2015) & \multicolumn{2}{l}{FN-DMC} &  & 90~774&\tabularnewline[2mm]
-    
-    \hline
-    \end{tabular*}
-    
-    \end{table*}
-    \par\end{center}
+%% LyX 2.2.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[british,english,showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,twocolumn]{revtex4-1}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\setcounter{secnumdepth}{3}
+\usepackage{color}
+\usepackage{array}
+\usepackage{float}
+\usepackage{units}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{amsfonts}
+%\usepackage{palatino}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{\textcolor{black}{\normalsize{}Computer-predicted excitation energy
+of carbon in agreement with experiment to within $1$~cm$^{-1}$}}
+\selectlanguage{british}%
+
+\author{Nike Dattani}
+\email{dattani.nike@hertford.ox.ac.uk}
+
+\selectlanguage{british}%
+
+\affiliation{Oxford University, Hertford College, OX1 3BW, Oxford, UK,}
+
+\affiliation{Kyoto University, Fukui Institute for Fundamental Chemistry, 606-8103,
+Kyoto, Japan,}
+
+\author{David Feller}
+\email{dfeller@owt.com }
+
+\selectlanguage{british}%
+
+\affiliation{Department of Chemistry, Washington State University, Pullman, Washington
+99164-4630, USA,}
+
+\author{Jacek Koput}
+\email{koput@amu.edu.pl}
+
+\selectlanguage{british}%
+
+\affiliation{Department of Chemistry, Adam Mickiewicz University, 60\textendash 780
+Poznan, Poland.}
+\selectlanguage{english}%
+
+\date{\today}
+\begin{abstract}
+We show that with non-explicitly correlated basis sets, we can predict
+the first excitation energy in carbon to within 1~cm$^{-1}$ of the
+experimental value.
+\end{abstract}
+\selectlanguage{british}%
+
+\author{}
+
+\author{}
+\maketitle
+\selectlanguage{english}%
+
+\section{Introduction}
+
+In the last three years, excitation energies have been calculated
+with unprecedented precision for the Li atom \cite{Puchalski2013},
+Be atom \cite{Puchalski2013b} and B atom \cite{Puchalski2015}. Tight
+variational bounds for non-relativistic ground state energies assuming
+a clamped, point-sized nucleus have reached 49 digits in units of
+Hartree for He, 19 digits for Li, 12 digits for Be, 11 digits for
+B, and 6 digits for C (see Table \ref{tab:variational bounds}). Calculated
+excitation energies have been made in agreement with experiment to
+within $10^{-3}$~cm$^{-1}$ for $^{7}$Li, $10^{-1}$~cm$^{-1}$
+for $^{9}$Be and $1$~cm$^{-1}$ for $^{10}$B (see Table \ref{tab:excitationEnergies}). 
+
+For the C atom, before this present study, no high-precision calculation
+had been reported to predict an excitation energy to within $1$~cm$^{-1}$
+agreement with experiment. Table \ref{tab:variational bounds} shows
+that the method used for the calculation has a crucial impact on the
+precision obtainable: the best variational bound on the non-relativistic,
+clamped, point-nucleus (NR,CPN), ground state energy of Li is believed
+to be 8 orders of magnitude more accurate than that of the Be atom,
+because analytic expressions for the multi-center integrals of Hylleraas
+wavefunctions are only known for up to 3e$^{-}$, and it would be
+very slow to calculate them numerically for 4e$^{-}$. For 4e$^{-}$
+and greater, ECGs (\textbf{e}xplicitly \textbf{c}orrelated \textbf{g}aussian
+wavefunction\textbf{s)} are used. ECGs mimic the theoretical shape
+of the wavefunction less accurately (e.g. they are rounded rather
+than cusp-like in the limit of vanishing electron-electron distance,
+and in the infinite electron-electron distance limit they decay as
+$\nicefrac{1}{r^{2}}$ rather than $\nicefrac{1}{r}$), so more parameters
+are needed than when using Hylleraas wavefunctions. However, the integrals
+of ECGs are known analytically, regardless of the number of electrons,
+which is why it has been possible to do very high-precision calculations
+on Be \cite{Puchalski2013b} and B \cite{Puchalski2015}. 
+
+Table \ref{tab:variational bounds} demonstrates though, that with
+twice as many variationally optimizable parameters, the authors obtained
+convergence in 1 fewer digit for the B atom than for the Be atom.
+This suggests that it would be very difficult to use the ECG approach
+for atoms and molecules coming from most of the periodic table. The
+best known variational bound for the NR,CPN ground state energy for
+C was calculated in 2015 using fixed-node diffusion Monte Carlo (FN-DMC)
+with the nodes of the electronic wavefunction fixed at the locations
+of the CISD/cc-pV5Z wavefunction, and the statistical uncertainty
+on the Monte Carlo was $\pm2$~$E_{h}$. However, FN-DMC has not
+yet been able to calculate the energies of excitated states. In this
+paper, the approach we use to calculate the NR,CPN energy of the ground
+state of C is FCIQMC (full configuration interaction Monte Carlo)
+in an aug-cc-pCV7Z basis set. Fig \ref{tab:variational bounds} shows
+that our NR,CPN energy is at least 210~$\mu E_{h}$ higher than the
+variational upper bound obtained from FN-DMC; but since it is straightforward
+to calcualte excited state energies with FCIQMC, unlike FN-DMC, we
+are easily able to calculate the first excitation energy for carbon
+$(2^{2}P\leftarrow2^{1}D)$ with high precision in this work. 
+
+After adding estimates for the correction to the non-relativistic
+approximation, and for the correction to the clamped nucleus approximation,
+we obtained a $(2^{2}P\leftarrow2^{1}D)$ excitation energy for C
+which is within 1~cm$^{-1}$ disagreement with the best known experimental
+estimate for this transition. While this is not as impressive as the
+method of variationally optimizing parameters in an explicitly correlated
+wavefunciton ansatz has proven to be for Li and Be, the disagreement
+has the same order of magnitude as the latter approach for B (see
+Table \ref{tab:excitationEnergies}). We finally note that the approach
+used in this paper, of calculating FCIQMC on a basis set of non-explicitly
+correlated orbitals has successfully treated systems with far more
+electrons (transition metal atoms \cite{Thomas2015a}, diatomics \cite{Cleland2012},
+larger molecules such as butadiene \cite{Daday2012}, and even solid
+state systems \cite{Booth2012a}), so it is conceivable that the approach
+used in this paper may in the near future be able to determine (with
+good accuracy) the first excitation energy for astatine, which at
+present remains experimentally elusive. 
+\begin{center}
+\begin{table}[H]
+\caption{\label{tab:finalFCIQMC}Final NR-CPN energies. The break-down of how
+these energies were obtained, and the Hartree-Fock energies that were
+used for the extrapolations are available in the Supplemental Material.
+Numbers in parenthesis indicate uncertainties in the last digit(s)
+shown, and their determination is described in the Supplemental Material.}
+
+\begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
+\hline 
+\noalign{\vskip2mm}
+ &  & \multicolumn{2}{c}{C$\left(^{3}P\right)$ $\left[E_{{\rm Hartree}}\right]$} & \multicolumn{2}{c}{C$^{+}$$\left(^{2}P\right)\left[E_{{\rm Hartree}}\right]$} & \multicolumn{2}{c}{$2^{3}P\rightarrow2^{2}P$~{[}cm$^{-1}${]}}\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+aug-cc-pCV7Z &  & -37&844~251~5(005) & -37&430~345~1(001) & 90~841&955(020)\tabularnewline
+\multirow{1}{*}{aug-cc-pCV8Z} &  & -37&844~355~5(008) & -37&430~412~5(005) & 90~849&987(050)\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+CBS$\left(1/X^{3.5}\right)$ &  & -37&844~528~6 & -37&430~523~6 & 90~863&604\tabularnewline
+CBS$\left(1/\left(X+\nicefrac{1}{2}\right)^{4}\right)$ &  & -37&844~514~2 & -37&430~514~3 & 90~862&471\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+Mean ($\sqrt{\text{Variance}}$) &  & -37&844~521~4 & -37&843~051~9 & 90~863&037\tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table}
+\par\end{center}
+
+\begin{center}
+\begin{table}[H]
+\caption{\label{tab:Summary}Summary of our main result.}
+
+\begin{tabular*}{1\columnwidth}{@{\extracolsep{\fill}}llr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
+\hline 
+\noalign{\vskip2mm}
+ & Hamiltonian & \multicolumn{2}{c}{Energy in cm$^{-1}$} & \multicolumn{2}{c}{\textcolor{black}{\scriptsize{}(Obs - Calc) in cm$^{-1}$}}\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+$m\alpha^{2}$ & NR-CPN & 90~863&324(810) & \multicolumn{2}{c}{}\tabularnewline
+\multirow{2}{*}{$m\alpha^{4},m\alpha^{5}$} & X2C & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
+ & Breit \& QED & -0&5 & \multicolumn{2}{c}{}\tabularnewline
+$\left(\frac{m^{2}}{m+m_{N}}\right)\alpha^{2}$ & DBOC & -0&5 & \multicolumn{2}{c}{}\tabularnewline
+\hline 
+\noalign{\vskip2mm}
+Present  & Total theory & \textcolor{red}{90~832}&\textcolor{red}{301(810)} & 0&707\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+2017  & Experiment & 90~833&008(009)  & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+2010 & Theory & 90~838&75 & -5&74\tabularnewline
+2017 & Theory & 90~840&16 & -7&15\tabularnewline
+2015 & Theory & 90~786&66  & 46&35\tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table}
+\par\end{center}
+
+\begin{center}
+\begin{table*}
+\caption{\label{tab:variational bounds}Tight variational upper bounds for
+atomic energies. For H, the listed energy is exact, since the Hartree
+energy unit is defined as twice this energy, and can be related to
+fundamental SI units through an analytic solution to the relavent
+Schroedinger equation. VO stands for variational optimization (parameters
+in a wavefunction ansatz are optimized in attempt to obtain the lowest
+possible energy). Hylleraas-Log indicates the use of Hylleraas functions
+supplemented with auxiliary log functions, and ECG($N$) indicates
+the use of \textbf{e}xplicitly \textbf{c}orrelated \textbf{g}aussians
+with $N$ variationally optimizable parameters. FN-DMC stands for
+fixed node diffusion Monte Carlo.}
+
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}ccr@{\extracolsep{0pt}.}lcccccc}
+\hline 
+\noalign{\vskip2mm}
+ &  & \multicolumn{2}{c}{Total non-relativistic clamped point-nucleus (NR,CPN) energy {[}Hartree{]}} & Method/Ansatz type & Reference &  &  &  & \tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+H & 1 & -0&5 & Analytic & 1926 Schroedinger &  &  &  & \tabularnewline
+He & 2 & -2&903 724 377 034 119 598 311 159 245 194 404 446 696 925 309 838 & VO/Hylleraas-Log & 2006 Schwartz &  &  &  & \tabularnewline
+Li & 3 & -7&478 060 323 910 134 843 & VO/Hylleraas & 2011 Wang &  &  &  & \tabularnewline
+Be & 4 & -14&667 356 494 9 & VO/ECG(4096) & 2013 Puchalski & \cite{Puchalski2013b} &  &  & \tabularnewline
+B & 5 & -24&653 867 537 & VO/ECG(8192) & 2015 Puchalski & \cite{Puchalski2015} &  &  & \tabularnewline
+C & 6 & -37&844 48(2) & FN-DMC & 2015 Yang &  &  &  & \tabularnewline
+C & 6 & \textcolor{blue}{-37}&\textcolor{blue}{844~251~5(08)} & FCIQMC/aCV7Z & Present work & - &  &  & \tabularnewline
+C & 6 & \textminus 37&843 333 & VO/ECG(1000) & 2013 Bubin & \cite{Bubin2013} &  &  & \tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table*}
+\par\end{center}
+
+\begin{center}
+\begin{table*}
+\caption{\label{tab:excitationEnergies}The most precisely calculated electronic
+excitation energies for the first 6 atoms, compared to the best known
+experimental measurements to date. The last column indicates that
+if aiming for the best precision, an experimental measurement is still
+the best way to obtain the energy for most atoms, but for Be, the
+energy has been obtained more precisely $\textit{in silico}$ than
+in any experiment to date.}
+
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lc}
+\hline 
+\noalign{\vskip2mm}
+ & \multirow{2}{*}{{\small{}Transition}} & \multicolumn{2}{c}{{\small{}Experiment }} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{{\small{}Theory}} &  & \multicolumn{2}{c}{{\small{}Calc - Obs}} & \multicolumn{2}{c}{\multirow{2}{*}{{\small{}$\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$}}} & \multirow{2}{*}{{\small{}More precise}}\tabularnewline
+ &  & \multicolumn{2}{c}{{\small{}{[}cm$^{-1}${]}}} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{{\small{}{[}cm$^{-1}${]}}} &  & \multicolumn{2}{c}{{\small{}{[}cm$^{-1}${]}}}\multicolumn{2}{c}{\multirow{2}{*}{{\small{}$\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$}}} &  & \tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+{\small{}$^{1}$H} & {\small{}H$^{+}\left(1^{1}S\right)\leftarrow\text{H}\left(1^{2}S\right)$} & & & \multicolumn{2}{c}{} & {\small{}109~678}&{\small{}771~743~07(10)} &  & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & {\small{}Theory}\tabularnewline
+{\small{}$^{4}$He} & {\small{}He$^{+}\left(1^{2}S\right)\leftarrow\text{He}\left(1^{1}S\right)$} & {\small{}198~310}&{\small{}666~37(2)} & \multicolumn{2}{c}{} & {\small{}198~310}&{\small{}665~07(1)} &  & {\small{}-0}&{\small{}001~3} & {\small{}65}&{\small{}0} & {\small{}Theory}\tabularnewline
+{\small{}$^{3}$Li} & {\small{}Li$^{+}\left(1^{1}S\right)\leftarrow\text{Li}\left(2^{2}S\right)$} & {\small{}3~487}&{\small{}159~40(18)} & \multicolumn{2}{c}{{\small{}\cite{Brown2013}}} & {\small{}43~487}&{\small{}159~0(8)} & {\small{} \cite{Puchalski2013}} & {\small{}-0}&{\small{}000~4} & {\small{}57}&{\small{}1} & {\small{}Experiment}\tabularnewline
+{\small{}$^{9}$Be} & {\small{}Be$^{+}\left(2^{2}S\right)\leftarrow\text{Be}\left(2^{1}S\right)$} & {\small{}75~192}&{\small{}64(6)} & \multicolumn{2}{c}{} & {\small{}75~192}&{\small{}699(7)} & {\small{} \cite{Puchalski2013b}} & {\small{}0}&{\small{}059} & {\small{}0}&{\small{}98} & {\small{}Theory}\tabularnewline
+{\small{}$^{11}$B} & {\small{}B$^{+}\left(2^{1}S\right)\leftarrow\text{B}\left(2^{2}P\right)$} & {\small{}66~928}&{\small{}036(22)} & \multicolumn{2}{c}{} & {\small{}66~927}&{\small{}91(21)} & {\small{}\cite{Puchalski2015}} & {\small{}-0}&{\small{}126} & {\small{}5}&{\small{}7} & {\small{}Experiment}\tabularnewline
+{\small{}$^{12}$C} & {\small{}C$^{+}\left(2^{2}P\right)\leftarrow\text{C}\left(2^{3}P\right)$} & {\small{}90~833}&{\small{}008(009)} & \multicolumn{2}{c}{} & \textcolor{red}{\small{}90~832}&\textcolor{red}{\small{}014} & {\small{}-} & {\small{}0}&{\small{}994} & {\small{}110}&{\small{}4} & {\small{}Experiment}\tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table*}
+\par\end{center}
+
+\begin{center}
+\begin{table*}
+\caption{\label{tab:excitationEnergies-2}The most precisely calculated electronic
+excitation energies for the first 6 atoms, compared to the best known
+experimental measurements to date. The last column indicates that
+if aiming for the best precision, an experimental measurement is still
+the best way to obtain the energy for most atoms, but for Be, the
+energy has been obtained more precisely $\textit{in silico}$ than
+in any experiment to date.}
+
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}ccr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
+\hline 
+\noalign{\vskip2mm}
+ &  & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{}\tabularnewline
+ &  & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+$\alpha^{2}$ & $\eta^{0}$ & \multicolumn{2}{c}{} & \textcolor{red}{90~863}&\textcolor{red}{037(800)} & \multicolumn{2}{c}{}\tabularnewline
+$\alpha^{4}$ & $\eta^{0}$ & \multicolumn{2}{c}{\multirow{1}{*}{}} & \multirow{2}{*}{-30&503(050)} & \multicolumn{2}{c}{}\tabularnewline
+$\alpha^{5}$ & $\eta^{0}$ & \multicolumn{2}{c}{} & \multirow{2}{*}{-30&503(050)} & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\noalign{\vskip2mm}
+$\alpha^{2}$ & $\eta^{1}$ & \multicolumn{2}{c}{} & -0&500(000) & \multicolumn{2}{c}{}\tabularnewline
+$\alpha^{4}$ & $\eta^{1}$ & \multicolumn{2}{c}{} & 0&000~0(000~4) & \multicolumn{2}{c}{}\tabularnewline
+$\alpha^{5}$ & $\eta^{1}$ & \multicolumn{2}{c}{} & 0&000~0(000~1) & \multicolumn{2}{c}{}\tabularnewline
+$\alpha^{6}$ & $\eta^{1}$ & \multicolumn{2}{c}{} & 0&000~00(000~02) & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\noalign{\vskip2mm}
+$\alpha^{2}$ & $\eta^{2}$ & \multicolumn{2}{c}{} & 0&000~0(000~6) & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\noalign{\vskip2mm}
+\multicolumn{2}{l}{Total (present)} & \multicolumn{2}{c}{} & \textcolor{blue}{90~832}&\textcolor{blue}{034(802)} & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\multicolumn{2}{l}{Experiment} & \multicolumn{2}{c}{} & 90~833&11(10) & \multicolumn{2}{c}{}\tabularnewline
+\multicolumn{2}{l}{Theory (2010)} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{}\tabularnewline
+\multicolumn{2}{c}{Theory (2017)} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{}\tabularnewline
+\multicolumn{2}{c}{Theory (2015)} & \multicolumn{2}{c}{} & 90~774& & -59&\tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table*}
+\par\end{center}
+
+\begin{center}
+\begin{table}
+\caption{\label{tab:x2cAndDBOC}Basis set and correlation convergence of the
+X2C and DBOC corrections to the C$\left(^{3}P\right)\rightarrow$$\text{C}^{+}\left(^{2}P\right)$
+ionization energy in cm$^{-1}$. The difference between CCSDT and
+FCI for the smallest two basis sets is denoted by $\Delta_{{\rm correlaton}}$
+and the values at aCV3Z are added to the CCSDT energies for all larger
+basis sets (resulting in FCI estimates presented in \emph{italic}
+font). The numbers in parentheses for the CBS (complete basis set)
+estimates denote our assigned uncertainties in the last digits presented,
+which we believe to be very conservative. aCVXZ is short for aug-cc-pCVXZ-uncontracted.}
+
+\begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}}ccccccc}
+\hline 
+\noalign{\vskip2mm}
+ & {\footnotesize{}aCV2Z} & {\footnotesize{}aCV3Z} & {\footnotesize{}aCV4Z} & {\footnotesize{}aCV5Z} & {\footnotesize{}aCV6Z} & {\footnotesize{}CBS}\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+\multicolumn{7}{c}{{\footnotesize{}X2C}}\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+{\footnotesize{}CCSDT} & {\footnotesize{}-31.055} & {\footnotesize{}-30.144} & {\footnotesize{}-30.037} & {\footnotesize{}-30.004} & {\footnotesize{}-30.001} & {\footnotesize{}-29.999(003)}\tabularnewline
+{\footnotesize{}FCI} & {\footnotesize{}-31.074} & {\footnotesize{}-30.168} & \emph{\footnotesize{}-30.060}{\footnotesize{}} & \emph{\footnotesize{}-30.028}{\footnotesize{}} & \emph{\footnotesize{}-30.025} & \textcolor{red}{\emph{\footnotesize{}-30.023(050)}}\tabularnewline
+{\footnotesize{}$\Delta_{{\rm correlation}}$} & {\footnotesize{}-0.019} & {\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024} & \emph{\footnotesize{}-0.024(050)}\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+\multicolumn{7}{c}{{\footnotesize{}DBOC}}\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+{\footnotesize{}CCSDT} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5}\tabularnewline
+{\footnotesize{}FCI} & {\footnotesize{}-0.5} & {\footnotesize{}-0.5} & \emph{\footnotesize{}-0.5} & \emph{\footnotesize{}-0.5} & \emph{\footnotesize{}-0.5} & \textcolor{red}{\emph{\footnotesize{}-0.5}}\tabularnewline
+{\footnotesize{}$\Delta_{{\rm correlation}}$} & {\footnotesize{}0.0} & {\footnotesize{}0.0} & \emph{\footnotesize{}0.0} & \emph{\footnotesize{}0.0} & \emph{\footnotesize{}0.0} & \emph{\footnotesize{}0.0}\tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table}
+\par\end{center}
+
+\begin{center}
+\begin{table}
+\caption{\label{tab:tightFunctions} Tight exponents for aug-cc-pCV6Z and aug-cc-pCV7Z.}
+
+\begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}}cr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}l}
+\hline 
+\noalign{\vskip2mm}
+ & \multicolumn{2}{c}{aug-cc-pCV7Z} & \multicolumn{2}{c}{aug-cc-pCV8Z}\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+$s$-type & 276&12 & 365&52\tabularnewline
+ & 158&30 & 232&20\tabularnewline
+ & 90&75 & 147&51\tabularnewline
+ & 52&026 & 93&707\tabularnewline
+ & 29&826 & 59&529\tabularnewline
+ & 17&099 & 37&817\tabularnewline
+ & \multicolumn{2}{c}{} & 24&024\tabularnewline[2mm]
+$p$-type & 299&20 & 372&10\tabularnewline
+ & 149&46 & 198&95\tabularnewline
+ & 74&657 & 106&37\tabularnewline
+ & 37&293 & 56&868\tabularnewline
+ & 18&629 & 30&405\tabularnewline
+ & 9&3054 & 16&256\tabularnewline
+ & \multicolumn{2}{c}{} & 8&6911\tabularnewline[2mm]
+$d$-type & 255&63 & 337&98\tabularnewline
+ & 111&57 & 191&20\tabularnewline
+ & 55&17 & 108&17\tabularnewline
+ & 27&282 & 61&193\tabularnewline
+ & 13&491 & 34&618\tabularnewline
+ & \multicolumn{2}{c}{} & 19&584\tabularnewline[2mm]
+$f$-type & 132&26 & 207&91\tabularnewline
+ & 56&375 & 103&16\tabularnewline
+ & 24&030 & 51&185\tabularnewline
+ & 10&243 & 25&397\tabularnewline
+ & \multicolumn{2}{c}{} & 12&601\tabularnewline[2mm]
+$g$-type & 94&488 & 155&52\tabularnewline
+ & 36&762 & 72&601\tabularnewline
+ & 14&302 & 33&891\tabularnewline
+ & \multicolumn{2}{c}{} & 15&821\tabularnewline[2mm]
+$h$-type & 66&227 & 100&23\tabularnewline
+ & 22&68 & 39&552\tabularnewline
+ & \multicolumn{2}{c}{} & 15&608\tabularnewline[2mm]
+$i$-type & 48&32 & 78&691\tabularnewline
+ & \multicolumn{2}{c}{} & 28&941\tabularnewline[2mm]
+$k$-type & \multicolumn{2}{c}{} & \multicolumn{2}{c}{}\tabularnewline[2mm]
+\hline 
+\end{tabular*}
+\end{table}
+\par\end{center}
+
+\section{Methodology}
+
+Our calculations in this paper can be divided into four stages: (A)
+We develop more accurate basis sets than previously available for
+carbon, (B) we calculate the 1- and 2-electron integrals in these
+basis sets, (C) we attempt to solve the NR,CPN Schroedinger equation
+at the FCI level, and (D) we estimate the size of corrections due
+to special relativity and due to the atom having an unclamed nucleus.
+
+\subsection{Optimization of `tight function' exponents for the aug-cc-pCV7Z and
+aug-cc-pCV8Z basis sets.}
+
+The largest basis sets known for C prior to this work were the (aug-cc-pV$X$Z,
+$X=$7,8,9) sets used by Feller earlier this year. These basis sets
+did not contain `tight' exponent functions for capturing the effects
+of the correlation between the core $(1s^{2},2s^{2})$ electrons and
+the valence electrons $(2p^{2}$). The largest known basis set prior
+to this work including the CV (core-valence) correction was the aug-cc-pCV6Z
+set. In this work we start by optimizing the `tight' exponents for
+the CV correction to Feller's 2016 aug-cc-pV7Z and aug-cc-pV8Z basis
+sets, yielding the first aug-cc-pCV7Z basis set for carbon, and the
+first aug-cc-pCV8Z basis set known.
+
+Optimizing exponents for such large basis sets can be quite a challenging
+task. We employ two different approaches for the optimization of the
+`tight' functions in our CV corrections. \textcolor{red}{{[}David's
+approach, and Jacek's approach{]}.}
+
+\subsection{Calculation of 1- and 2-electron integrals including $k$- and $l$-
+functions}
+
+The calculation of the 1- and 2-electron integrals for (aug)-cc-p(C)V$X$Z
+basis sets with $X\ge7$ is not possible with most quantum chemistry
+packages, since  very few software packages can write 1- and 2-electron
+integrals in ${\tt FCIDUMP}$ format, while also supporting $k$-
+and $l$- functions, but $k$-functions appear in $X=7$ basis sets
+and $l$-functions appear when $X=8$. We have used ${\tt MOLCAS}$
+to write the ${\tt FCIDUMP}$ files, and we used a CAS(6,6) for the
+$^{1}$D state.... The commercial verison of ${\tt MOLCAS}$ had a
+memory leak when printing the 56~GB ${\tt FCIDUMP}$ file for aug-cc-pCV8Z,
+so we had to make some changes to ${\tt MOLCAS}$ ...
+
+\subsection{Calculation of non-relativistic energies including all possible levels
+of excitation (with FCIQMC)}
+
+We expand the wavefunction of the relavent electornic state as a sum
+of all possible Slater determinants (full configuration interaction),
+and the coefficients are determined by the number of walkers standing
+on each determinant after a Monte Carlo sampling using the NR-CPN
+Hamiltonian. The method was introduced in \cite{Booth2009a}, and
+we use the initiator method first described in \cite{Cleland2010},
+and the semi-stochastic method as described in \cite{Blunt2015}.
+The calculations are performed using Version X.X of the software ${\tt NECI}$.
+
+Within a given Hamiltonian (in this case the NR-CPN Hamiltonian) and
+basis set, there are three sources of error in the FCIQMC energy calculations: 
+\begin{enumerate}
+\item Trial wavefunction error ($\Delta E_{{\rm trial}}$), which approaches
+zero in the limit where the number of determinants used in the trial
+wavefunction approaches the number of determinants in the FCIQMC wavefunction; 
+\item Initiator error ($\Delta E_{{\rm initiator}}$), which approaches
+zero in the limit where the number of walkers $N_{{\rm walkers}}$
+gets sufficiently large; and 
+\item Stochastic error ($\Delta E_{{\rm stoch}}$), which for a given number
+of walkers is estimated as the square root of the unbiased variance
+among different estimates $E_{i}$ of the energy from their mean $\bar{E}$
+after different numbers $N$ of Monte Carlo iterations after the walkers
+have reached equilibrium: $\Delta E_{{\rm stochastic}}\approx\sqrt{\frac{\sum_{i=1}^{N}\left(E_{i}-\bar{E}\right)^{2}}{N-1}}=\mathcal{O}\left(\nicefrac{1}{\sqrt{N}}\right)$.
+\end{enumerate}
+Our goal was to obtian all energies to a precision of $\pm\epsilon$
+where $\epsilon\le1\mu E_{{\rm Hartree}}\approx0.2$~cm$^{-1}$ (within
+the aug-cc-pCV7Z basis set used). Therefore, every calculation was
+run for enough iterations $N$ such that $\Delta E_{{\rm stoch}}$
+was smaller than $1\mu E_{{\rm Hartree}}$. To ensure that $\Delta E_{{\rm initiator}}$
+can be neglected, we used a sufficiently large value of $N_{{\rm walkers}}$
+for every energy calculation, so that the energy difference between
+using $N_{{\rm walkers}}$ and $\frac{1}{2}N_{{\rm walkers}}$ was
+at least an order of magnitude smaller than $\Delta E_{{\rm stochastic}}$.
+Likewise, to ensure that $\Delta E_{{\rm estimator}}$ can be neglected,
+we used a sufficiently large number of determinants for every energy
+calculation, such that $\Delta E_{{\rm estimator}}$ would be at least
+an order of magnitude smaller than $\Delta E_{{\rm stochastic}}$.
+
+
+\subsection{Estimation of relativistic corrections and finite nuclear mass corrections}
+
+\begin{align}
+E_{\textrm{corr,CBS}} & =E_{\textrm{corr},X}-\nicefrac{A}{X^{3}},~\textrm{and}.\\
+E_{\textrm{corr,CBS}} & =E_{\textrm{corr},X}-\nicefrac{A}{\left(X+\nicefrac{1}{2}\right)}^{2}
+\end{align}
+
+
+\section{Results}
+\begin{center}
+\begin{table*}
+\caption{\label{tab:excitationEnergies-1}FCIQMC}
+
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lclclr@{\extracolsep{0pt}.}l}
+\hline 
+\noalign{\vskip2mm}
+ &  &  & \multicolumn{2}{c}{$E=\frac{\left\langle \psi_{N_{{\rm trial}}}\left|H_{{\rm NR-CPN}}\right|\psi_{{\rm FCIQMC}}\right\rangle }{\left\langle \psi_{{\rm N_{{\rm trial}}}}\left.\right|\psi_{{\rm FCIQMC}}\right\rangle }$} & \multicolumn{2}{c}{$E_{{\rm excitation}}$}\tabularnewline[2mm]
+\noalign{\vskip2mm}
+$N_{{\rm walkers}}$ & $N_{{\rm trial}}$  & Uncertainty & $2^{3}P$~{[}$E_{{\rm hartree}}]$ & $2^{2}P$~{[}$E_{{\rm hartree}}]$ & \multicolumn{2}{c}{$2^{3}P\rightarrow2^{2}P$~{[}cm$^{-1}${]}}\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+\multicolumn{7}{c}{aug-cc-pCV7Z}\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+$64\times10^{6}$ & 1 &  & -37.844~251~5(15) ~~~~~~~ & -37.430~345~0(03) & 90~841&955\tabularnewline
+ & 1000 &  & -37.844~251~5(08) ~~~~~~~ & -37.430~345~0(01) & 90~841&977\tabularnewline
+ &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&02\tabularnewline
+$128\times10^{6}$ & 1 &  & -37.844~251~5(0?) & -37.430~345~0(02) & 90~841&977\tabularnewline
+ & 1000 &  & -37.844~251~5(05) & -37.430~345~1(01) & 90841&955\tabularnewline
+ &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&02\tabularnewline
+ &  & $\Delta E_{{\rm initiator}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&02\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+\multicolumn{7}{c}{aug-cc-pCV8Z}\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+$64\times10^{6}$ & 1 &  & -37.844~355~5(10) ~~~~~~~ & -37.430~412~3(05) & 90~850&031\tabularnewline
+ & 1000 &  & -37.844~355~5(10) ~~~~~~~ & -37.430~412~3(05) & 90~850&031\tabularnewline
+ &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&001\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+$128\times10^{6}$ & 1 &  & -37.844~355~5(08) & -37.430~412~5(05) & 90~849&987\tabularnewline
+ & 1000 &  & -37.844~355~5(08) & -37.430~412~5(05) & 90~849&987\tabularnewline
+ &  & $\Delta E_{{\rm trial}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~1~~~~~~~ & $<\,$0&001\tabularnewline
+ &  & $\Delta E_{{\rm initiator}}$ & $<\,$0.000~000~1~~~~~~~ & $<\,$0.000~000~2~~~~~~~ & $<\,$0&05\tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+\multicolumn{7}{c}{CBS Extrapolation }\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+$1/X^{3.5}$ &  &  & -37.844~528~6 & -37.430~523~6 & 90~863&604\tabularnewline
+$1/\left(X+\nicefrac{1}{2}\right)^{4}$ &  &  & -37.844~514~2 & -37.430~514~3 & 90~862&471\tabularnewline
+Mean &  &  & -37.844~521~4 & -37.843~051~9 & 90~863&037\tabularnewline
+ &  & $\Delta_{\text{basis set}}$ &  &  & 0&800\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+\multicolumn{4}{l}{Non-relativistic, clamped nucleus (FCIQMC)} &  & \textcolor{red}{90~863}&\textcolor{red}{037(800)}\tabularnewline
+\multicolumn{4}{l}{X2C Relativistic correction} &  & -30&023(050)\tabularnewline
+\multicolumn{4}{l}{Breit + QED (from )} &  & -0&480\tabularnewline
+\multicolumn{4}{l}{DBOC unclamped nucleus correction} &  & -0&500(010)\tabularnewline[2mm]
+\hline 
+\noalign{\vskip2mm}
+Theory & (Present Work) & \multicolumn{3}{l}{FCIQMC + X2C + Breit + QED + DBOC} & \textcolor{blue}{90~832}&\textcolor{blue}{034(802)}\tabularnewline
+Experiment & (1990) & \multicolumn{3}{l}{(with spin-orbit raising)} & 90~833&11(10)\tabularnewline
+Experiment &  & \multicolumn{2}{l}{According to Feller} &  & 90~831&89\tabularnewline
+Theory & (2010) & \multicolumn{3}{l}{CCSD-F12 + HLC + MV + Darwin + Breit + QED + DBOC} & 90~826&09\tabularnewline
+Theory & (2017) & \multicolumn{3}{l}{R/UCCSD(T) + HLC + DKH + Breit + QED + DBOC} & 90~827&50\tabularnewline
+Theory & (2015) & \multicolumn{2}{l}{FN-DMC} &  & 90~774&\tabularnewline[2mm]
+\hline 
+QED &  &  &  &  & +1&076~$\pm0.806$\tabularnewline[2mm]
+\end{tabular*}
+
+\end{table*}
+\par\end{center}
+
+\section{Dicsussion}
+
+\selectlanguage{british}%
+\bibliographystyle{apsrev4-1}
+\bibliography{\string"/home/nike/pCloud Sync/library\string",\string"/Users/leroy/Dropbox (Personal)/NSD/Papers/library\string",C:/Users/Nike/Desktop/Dropbox/NSD/Papers/library,C:/Users/Richard/Documents/Bibtex/library,apssamp}
+\selectlanguage{english}%
+
+\end{document}

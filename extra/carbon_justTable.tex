@@ -1,0 +1,77 @@
+%% LyX 2.2.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[british,english,showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,twocolumn]{revtex4-1}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\setcounter{secnumdepth}{3}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{amsfonts}
+%\usepackage{palatino}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{\textcolor{black}{\normalsize{}Computer-predicted excitation energy
+of carbon in agreement with experiment to within $1$~cm$^{-1}$}}
+\selectlanguage{british}%
+
+\author{Nike Dattani}
+\email{dattani.nike@hertford.ox.ac.uk}
+
+\selectlanguage{british}%
+
+\affiliation{Oxford University, Hertford College, OX1 3BW, Oxford, UK,}
+
+\affiliation{Kyoto University, Fukui Institute for Fundamental Chemistry, 606-8103,
+Kyoto, Japan,}
+\maketitle
+\selectlanguage{english}%
+\begin{center}
+\begin{table*}
+\caption{\label{tab:excitationEnergies}The most precisely calculated electronic
+excitation energies for the first 6 atoms, compared to the best known
+experimental measurements to date. The last column indicates that
+if aiming for the best precision, an experimental measurement is still
+the best way to obtain the energy for most atoms, but for Be, the
+energy has been obtained more precisely $\textit{in silico}$ than
+in any experiment to date.}
+
+{\small{}}%
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lcr@{\extracolsep{0pt}.}lr@{\extracolsep{0pt}.}lc}
+\hline 
+\noalign{\vskip2mm}
+ & \multirow{2}{*}{Transition} & \multicolumn{2}{c}{Experiment } & \multicolumn{2}{c}{} & \multicolumn{2}{c}{Theory} &  & \multicolumn{2}{c}{Calc - Obs} & \multicolumn{2}{c}{$\lvert\frac{\text{Calc - Obs}}{\text{Uncertainty in obs}}\rvert$} & \multirow{2}{*}{More precise}\tabularnewline
+ &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{{[}cm$^{-1}${]}} &  & \multicolumn{2}{c}{{[}cm$^{-1}${]}} & \multicolumn{2}{c}{} & \tabularnewline[2mm]
+\hline 
+\hline 
+\noalign{\vskip2mm}
+$^{1}$H & H$^{+}\left(1^{1}S\right)\leftarrow\text{H}\left(1^{2}S\right)$ & \multicolumn{2}{c}{-} & \multicolumn{2}{c}{-} & 109~678&771~743~07(10) &  & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & Theory\tabularnewline
+$^{4}$He & He$^{+}\left(1^{2}S\right)\leftarrow\text{He}\left(1^{1}S\right)$ & 198~310&666~37(2) & \multicolumn{2}{c}{\cite{Kandula2011}} & 198~310&665~07(1) &  & ~~~-0&001~3 & ~~~~~~65&00 & Theory\tabularnewline
+$^{3}$Li & Li$^{+}\left(1^{1}S\right)\leftarrow\text{Li}\left(2^{2}S\right)$ & 3~487&159~40(18) & \multicolumn{2}{c}{} & 43~487&159~0(8) & \cite{Puchalski2013} & ~~~-0&000~4 & ~~~~~~2&22 & Experiment\tabularnewline
+$^{9}$Be & Be$^{+}\left(2^{2}S\right)\leftarrow\text{Be}\left(2^{1}S\right)$ & 75~192&64(6) & \multicolumn{2}{c}{} & 75~192&699(7) & \cite{Puchalski2013b} & ~~~0&059 & ~~~~~~0&98 & Theory\tabularnewline
+$^{11}$B & B$^{+}\left(2^{1}S\right)\leftarrow\text{B}\left(2^{2}P\right)$ & 66~928&036(22) & \multicolumn{2}{c}{} & 66~927&91(21) & \cite{Puchalski2015} & ~~~-0&126 & ~~~~~~5&73 & Experiment\tabularnewline
+$^{12}$C & C$^{+}\left(2^{2}P\right)\leftarrow\text{C}\left(2^{3}P\right)$ & 90~833&008(009) & \multicolumn{2}{c}{} & \textcolor{red}{90~832}&\textcolor{red}{014} & - & ~~~0&994 & ~~~~~~110&44 & Experiment\tabularnewline[2mm]
+\hline 
+\end{tabular*}{\small \par}
+\end{table*}
+\par\end{center}
+
+\selectlanguage{british}%
+\bibliographystyle{apsrev4-1}
+\bibliography{\string"/home/nike/pCloud Sync/library\string",\string"/Users/leroy/Dropbox (Personal)/NSD/Papers/library\string",C:/Users/Nike/Desktop/Dropbox/NSD/Papers/library,C:/Users/Richard/Documents/Bibtex/library,apssamp}
+\selectlanguage{english}%
+
+\end{document}
