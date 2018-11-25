@@ -85,7 +85,7 @@
     \date{\today}
     \begin{abstract}
     We show that we can predict
-    the first ionization energy of carbon to within 0.994~cm$^{-1}$ of the experimental value. This is an improvement of more than a factor of 5 over the preceding best prediction in [Phys. Rev. A \textbf{81}, 022503] and comparable to the accuracies achieved for the smaller atoms up to boron.% The sum of all error contributions in our calculations up to the fifth power of the fine structure constant is estimated to be at most 0.802~cm$^{-1}$, which yields our estimate of contributions in the sixth and higher powers to be: 0.994$~\pm~$0.802~cm$^{-1}$.  
+    the first ionization energy of carbon to within 0.994~cm$^{-1}$ of the experimental value. This is an improvement of more than a factor of 5 over the preceding best prediction in [Phys. Rev. A \textbf{81}, 022503], and opens the door to achieving sub-cm$^{-1}$ accuracy for \textit{ab initio} predictions in larger elements of the periodic table.% The sum of all error contributions in our calculations up to the fifth power of the fine structure constant is estimated to be at most 0.802~cm$^{-1}$, which yields our estimate of contributions in the sixth and higher powers to be: 0.994$~\pm~$0.802~cm$^{-1}$.  
     \end{abstract}
     \selectlanguage{british}%
     
@@ -101,7 +101,7 @@
     Be atom \cite{Puchalski2013b} and B atom \cite{Puchalski2015}. Tight
     variational bounds for non-relativistic ground state energies assuming
     a clamped, point-sized nucleus have reached 49 digits in units of
-    Hartree for He \cite{2006Schwartz}, 19 digits for Li \cite{Wang}, 12 digits for Be \cite{Puchalski2013}, and 11 digits for
+    Hartree for He \cite{2006Schwartz}, 16 digits for Li \cite{Wang2017}, 12 digits for Be \cite{Puchalski2013}, and 11 digits for
     B \cite{Puchalski2015} (see Table \ref{tab:variational bounds}). Calculated
     IEs have been made in agreement with experiment to
     within $10^{-3}$~cm$^{-1}$ for $^{7}$Li, $10^{-1}$~cm$^{-1}$
@@ -122,7 +122,7 @@
     with basis sets as large as aug-cc-pCV8Z. Table \ref{tab:variational bounds} shows
     that our NR,CPN energy is at least 76~$\mu E_{\rm{Hartree}}$ higher than the
     variational upper bound obtained from FN-DMC; but since in our approach, imperfections in the description of the wavefunction for the neutral atom are almost the same as in the cation, the individual errors almost completely cancel when
-    calculating the energy difference. Therefore, with our approach we achieve agreement with experiment that is comparable to what has been seen with the explicitly correlated approach for atoms as big as (but not exceeding) boron. 
+    calculating the energy difference. Therefore, with our approach we achieve agreement with experiment that is comparable within an order of magnitude to what has been seen with the explicitly correlated approach for atoms as big as (but not exceeding) boron. 
     
     %Table \ref{tab:variational bounds} shows
     %that the method used for the calculation has a crucial impact on the
@@ -168,7 +168,7 @@
     \caption{\label{tab:variational bounds}Upper bounds for
     total non-relativistic electronic energies. VO stands for variational optimization (parameters in a wavefunction ansatz are optimized to yield the lowest
     energy). Hylleraas-Log indicates the use of Hylleraas functions
-    supplemented with auxiliary log functions, and ECG($N$) stands for  explicitly correlated Gaussian ansatz with $N$ optimizable parameters. Numbers in parentheses are estimated uncertainties \emph{within} the method used, so for FN-DMC does not include fixed-node error and for FCIQMC does not include basis set error. No numbers were obtained with basis set extrapolations.}
+    supplemented with auxiliary log functions, and ECG($MN$) stands for  explicitly correlated Gaussian ansatz with $MN$ optimizable parameters. Numbers in parentheses are estimated uncertainties \emph{within} the method used, so for FN-DMC does not include fixed-node error and for FCIQMC does not include basis set error. No numbers were obtained with basis set extrapolations.}
     
     
     %The uncertainties  given in parentheses do not include fixed-node error in FN-DMC or basis set incompleteness error in FCIQMC, so the lower ends of the confidence intervals may still be above the true variational limit. Knowledge of the size of these errors 
@@ -182,7 +182,7 @@
     \noalign{\vskip2mm}
     H & 1 & -0&5 & {Analytic \& Exact} & 1926 Schr\"{o}dinger &  &  &  & \tabularnewline
     He & 2 & -2&903 724 377 034 119 598 311 159 245 194 404 446 696 925 309 838 & VO/Hylleraas-Log & 2006 Schwartz & \cite{2006Schwartz} &  &  & \tabularnewline
-    Li & 3 & -7&478 060 323 910 134 843 & VO/Hylleraas & 2011 Wang &    \cite{Wang}  &  &  & \tabularnewline
+    Li & 3 & -7&478 060 323 910 150 & VO/Hylleraas & 2017 Wang &    \cite{Wang2017}  &  &  & \tabularnewline
     Be & 4 & -14&667 356 494 9 & VO/ECG(4096) & 2013 Puchalski & \cite{Puchalski2013b} &  &  & \tabularnewline
     B & 5 & -24&653 867 537 & VO/ECG(8192) & 2015 Puchalski & \cite{Puchalski2015} &  &  & \tabularnewline
     C & 6 & -37&844 48(2) & {\footnotesize FN-DMC/CISD/cc-pV5Z} & 2015 Yang & \cite{FN-DMC} &  &  & \tabularnewline
@@ -195,7 +195,7 @@
     
     \begin{center}
     \begin{table*}
-    {\small \caption{\label{tab:excitationEnergies}The most precisely calculated ionization energies for the first 6 atoms, compared to the best known
+    {\small \caption{\label{tab:excitationEnergies}The most precisely calculated ionization energies for the first six6 atoms, compared to the best known
     experimental measurements to date. The last column indicates that
     if aiming for the best precision, an experimental measurement is still
     the best way to obtain the energy for most atoms, but for Be, the
@@ -254,7 +254,7 @@
     \noalign{\vskip2mm}
     NR-CPN &  & 90~863&037(800) & \multicolumn{2}{c}{}\tabularnewline
     X2C{\footnotesize{}} &  & -30&023(050) & \multicolumn{2}{c}{}\tabularnewline
-    \multicolumn{2}{l}{\hspace{-0.75mm}Breit \& QED} & -0&5\multicolumn{2}{c}{} & \tabularnewline
+    \multicolumn{2}{l}{\hspace{-0.75mm}Breit \& QED} & -0&48\multicolumn{2}{c}{} & \tabularnewline
      DBOC &  & -0&270(004) & \multicolumn{2}{c}{}\tabularnewline
     \noalign{\vskip2mm}
     \hline
@@ -279,7 +279,7 @@
     \subsection{{\scriptsize Optimization of `tight function' exponents for the aug-cc-pCV7Z and
     aug-cc-pCV8Z basis sets.}}
     
-    The largest basis sets known for C prior to this work were the (aug-cc-pV$X$Z,
+    The largest orbital basis sets known for C prior to this work were the (aug-cc-pV$X$Z,
     $X=$7,8,9) sets used by Feller in 2016 \cite{Feller2016}. These basis sets
     did not contain `tight' exponent functions for capturing the effects
     of the correlation between the core $(1s^{2},2s^{2})$ electrons and
@@ -289,9 +289,9 @@
     sets, yielding the first aug-cc-pCV7Z basis set for carbon, and the
     first aug-cc-pCV8Z basis set known.
     
-    The final aug-cc-pCV$X$Z basis sets have $X$ new tight functions of $s$-type, $X-1$ of $p$-type, $X-2$ of $d$-type, and so forth, up to the final $i$-type function for $X=7$ and the final $k$-type function for $X=8$. The $j^\textrm{th}$ exponent corresponding to a function of type $L$ is named $\gamma_{X,L,j}$, and is assumed to follow an ``even-tempered'' model: $\gamma_{X,L,j}=\alpha_{X,L,j}\beta_{X,L,j}^{j-1}$.
+    The final aug-cc-pCV$X$Z basis sets have $X$ new tight functions of $s$-type, $X-1$ of $p$-type, $X-2$ of $d$-type, and so forth, up to the final $i$-type function for $X=7$ and the final $k$-type function for $X=8$. The $j^\textrm{th}$ exponent corresponding to a function of type $L$ is named $\gamma_{X,L,j}$, and is assumed to follow an `even-tempered' model: $\gamma_{X,L,j}=\alpha_{X,L,j}\beta_{X,L,j}^{j-1}$.
     
-    In the non-linear optimization procedure to obtain $\alpha_{7,L,j}$ and $\beta_{7,L,j}$, the starting values were chosen to be the $\alpha_{6,L,j}$ and $\beta_{6,L,j}$ values that were already optimized in \cite{Wilson1996}. These were then treated as free parameters to minimize the difference between the frozen core and all-electron CISD energies of the carbon atom with all other exponent functions fixed. The $\tt{MOLPRO}$ program \cite{MOLPRO} was used to calculate the CISD energies, and the $\tt{L}$-$\tt{BFGS}$-$\tt{B}$ program of \cite{Zhu:1997:ALF:279232.279236} was used to optimize the free parameters. The $s$-type functions were added first, then once they were optimized they were held fixed while the $p$-type functions were added and optimized. Then both the $s$- and $p$-type functions were held fixed while the $d$-type functions were added, and so on up to the single $i$-type function. The procedure for $X=8$ was the same, except the procedure continued to $k$-type functions, and the starting values came from the newly optimized $X=7$ case rather than the $X=6$ case from \cite{Wilson1996}. $\tt{MOLPRO}$ does not support $k$-functions, so we calculated the CISD energy at three points using $\tt{GAUSSIAN}$ \cite{g16} and found the minimum using a quadratic fit. 
+    In the non-linear optimization procedure to obtain $\alpha_{7,L,j}$ and $\beta_{7,L,j}$, the starting values were chosen to be the $\alpha_{6,L,j}$ and $\beta_{6,L,j}$ values that were already optimized in \cite{Wilson1996}. These were then treated as free parameters to minimize the difference between the frozen core and all-electron CISD energies of the carbon atom with all other exponent functions fixed. The $\tt{MOLPRO}$ program \cite{MOLPRO} was used to calculate the CISD energies, and the $\tt{L}$-$\tt{BFGS}$-$\tt{B}$ program of \cite{Zhu:1997:ALF:279232.279236} was used to optimize the free parameters. The $s$-type functions were added first, then once they were optimized they were held fixed while the $p$-type functions were added and optimized. Then both the $s$- and $p$-type functions were held fixed while the $d$-type functions were added, and so on up to the single $i$-type function. The procedure for $X=8$ was the same, except the procedure continued to $k$-type functions, and the starting values came from the newly optimized $X=7$ case rather than the $X=6$ case from \cite{Wilson1996}. $\tt{MOLPRO}$ does not support $k$-functions, so to optimize the $k$-function we calculated the CISD energy at three points using $\tt{GAUSSIAN}$ \cite{g16} and estimatedfound the $k$-function exponent and contraction coefficient yielding the lowest energy by using a quadratic fit. 
     
     The tight exponents optimized in this work for aug-cc-pCV7Z and aug-cc-pCV8Z are presented in the Supplemental Material.
     
@@ -341,7 +341,7 @@
     zero in the limit where the number of walkers $N_{{\rm walkers}}$
     gets sufficiently large; and 
     \item Stochastic error ($\Delta E_{{\rm stoch}}$), which for a given number
-    of walkers is estimated as the square root of the unbiased variance
+    of walkers and trial wavefunction determinants is estimated as the square root of the unbiased variance
     among different estimates $E_{i}$ of the energy from their mean $\bar{E}$
     after different numbers $N$ of Monte Carlo macro-iterations (determined using the Flyvbjerg-Petersen blocking analysis \cite{Flyvbjerg1989}) after the walkers
     have reached equilibrium: $\Delta E_{{\rm stochastic}}\approx\sqrt{\frac{\sum_{i=1}^{N}\left(E_{i}-\bar{E}\right)^{2}}{N-1}}=\mathcal{O}\left(\nicefrac{1}{\sqrt{N}}\right)$.
@@ -362,7 +362,7 @@
      \caption{\label{tab:finalFCIQMC}{\small Final NR-CPN energies. The break-down of how
     these energies were obtained, and the Hartree-Fock energies that were
     used for the extrapolations are available in the Supplemental Material.
-    Numbers in parenthesis indicate uncertainties in the last digit(s)
+    Numbers within parentheseis indicate uncertainties in the last digit(s)
     shown, and their determination is described in the Supplemental Material.}}
     
     {\scriptsize
@@ -441,7 +441,7 @@
     
     Table \ref{tab:Summary} summarizes the various contributions to our value of the IE, and compares our final value to experiment and to three recent theoretical estimates. Our value is 0.994\,cm$^{-1}$ smaller than the best experimental value. %Since we included all known contributions up to the fifth power of the fine structure constant in the QED expansion of the energies, we estimate that the contributions of all terms of sixth power and beyond add up to (0.994$\pm$0.802)\,cm$^{-1}$.
     
-    The best theoretical estimate of the IE before this work was in \cite{Klopper2010}, and was in disagreement with experiment by more than a factor of 5 more than our present result. We believe that this could have been due to any or all of three things: (1) approximations inherent to the F12 approach used for their NR-CPN energy, (2) the perturbative nature of their scalar relativistic corrections (i.e. use the mass velocity and Darwin terms, rather than the X2C Hamiltonian used in the present work) and (3) the CCSD approximation made in their DBOC correction  (as opposed to the CCSDTQ used in the present work which we have shown appears to be converged to the FCI limit).
+    The best theoretical estimate of the IE before this work was in \cite{Klopper2010}, and was in disagreement with experiment by more than a factor of 5 more than our present result. We believe that this could have been due to any or all of three things: (1) approximations inherent to the F12 approach used for their NR-CPN energy, (2) the perturbative nature of their scalar relativistic corrections (i.e. usinge the mass velocity and Darwin terms, rather than the X2C Hamiltonian used in the present work) and (3) the CCSD approximation made in their DBOC correction  (as opposed to the CCSDTQ used in the present work which we have shown appears to be converged to the FCI limit).
     
     
     
