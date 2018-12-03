@@ -530,7 +530,7 @@ status open
 \begin_layout Plain Layout
 
 \size small
-How well does this formula work? No further degeneracies liften in QED/QFD/QCD
+How well does this formula work? No further degeneracies lifted in QED/QFD/QCD
  ?
 \end_layout
 
@@ -627,8 +627,8 @@ Details about the experimental energies (in cm
 \end_inset
 
 ).
- The line labelled by [*] is the Chang & Geller value but using 90883.854(15)-63.3
-9509(2) as described in 
+ The line labeled by [*] is the Chang & Geller value but using 90883.854(15)-63.39
+509(2) as described in 
 \size small
 
 \begin_inset CommandInset citation
@@ -643,7 +643,7 @@ literal "true"
 \begin_inset Quotes eld
 \end_inset
 
-centres of gravity
+centers of gravity
 \begin_inset Quotes erd
 \end_inset
 
@@ -1074,7 +1074,7 @@ In Section 1C of the main paper, we said that we would present details about
  how we arrived at our FCIQMC energies and uncertainties in them, for the
  aug-cc-pCV7Z and aug-cc-pCV8Z basis sets.
  Our best FCIQMC calculations (largest number of walkers, and largest number
- of configuration interaction Slater determinents included in 
+ of configuration interaction Slater determinants included in 
 \begin_inset Formula $|\psi_{{\rm trial}}\rangle$
 \end_inset
 
@@ -3064,7 +3064,7 @@ reference "tab:excitationEnergies-1-1"
 
 \end_inset
 
-, the differene between projecting onto only the Hartree-Fock determinant,
+, the difference between projecting onto only the Hartree-Fock determinant,
  or projecting onto a trial wavefunction with the leading 1000 Slater determinan
 ts is at most 0.000
 \begin_inset space ~
@@ -3187,8 +3187,8 @@ cm
 \begin_layout Standard
 
 \size small
-The numbers in parentheses, which denote the stochastic flucuations in each
- number of Table 
+The numbers in parentheses, which denote the stochastic fluctuations in
+ each number of Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:excitationEnergies-1-1"
@@ -3306,7 +3306,7 @@ The next table shows, for each basis set size
 \end_inset
 
  which are needed to extrapolate to the CBS (complete basis set) limit using
- the fomulas given in Eqs (1-4).
+ the formulas given in Eqs (1-4).
  Hartree-Fock energies are labeled ROHF to denote that we used Restricted
  Open Shell Hartree-Fock.
 \end_layout
@@ -4746,7 +4746,7 @@ Next, for each basis set size
 \end_inset
 
 , to obtain a second CBS estimate of the correlation energy.
- These corelation energies are added to the CBS estimate of the Hartree-Fock
+ These correlation energies are added to the CBS estimate of the Hartree-Fock
  energy, which we estimate to be the aug-cc-pCV8Z Hartree-Fock energy, to
  get CBS estimates of the total energies of C and 
 \begin_inset Formula $\text{C}^{+}$
@@ -4799,7 +4799,7 @@ indeed converged much more than the total energies (a phenomenon quite common
 \begin_inset Formula $X$
 \end_inset
 
-, these two esitimates of the ionization energy can be averaged, and the
+, these two estimates of the ionization energy can be averaged, and the
  unbiased variance around the mean can be calculated.
  This is what we present in the next table.
 \size default
@@ -8765,7 +8765,8 @@ status open
 \lang british
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "../../../../library,/Users/leroy/Dropbox (Personal)/NSD/Papers/library,C:/Users/Nike/Desktop/Dropbox/NSD/Papers/library,C:/Users/Richard/Documents/Bibtex/library,apssamp"
+btprint "btPrintCited"
+bibfiles "/home/nike/pCloud Sync/library,apssamp"
 options "apsrev4-1"
 
 \end_inset
