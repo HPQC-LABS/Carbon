@@ -64,8 +64,8 @@
 \bibitem [{\citenamefont {Drake}()}]{Drake2018}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~W.}\ \bibnamefont
-  {Drake}},\ } {} {\bibinfo  {journal} {Private Communication from
-  4-5 June 2018}\ }\BibitemShut {NoStop}%
+  {Drake}},\ } {} {\bibinfo  {journal} {Private Communication from 4
+  to 5 June 2018}\ }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Puchalski}\ \emph {et~al.}(2010)\citenamefont
   {Puchalski}, \citenamefont {K\ifmmode~\mbox{\k{e}}\else \k{e}\fi{}dziera},\
   and\ \citenamefont {Pachucki}}]{Puchalski2010}%
@@ -102,8 +102,8 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
   {{Schwartz}}},\ } {} {\bibfield  {journal} {\bibinfo  {journal}
-  {ArXiv Mathematical Physics eprints}\ } (\bibinfo {year} {2006})},\ 
-  {math-ph/0605018} \BibitemShut
+  {ArXiv Mathematical Physics e-prints}\ } (\bibinfo {year} {2006})},\
+  {http://arxiv.org/abs/math-ph/0605018} {math-ph/0605018} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Puchalski}\ \emph
   {et~al.}(2013{\natexlab{b}})\citenamefont {Puchalski}, \citenamefont
@@ -132,7 +132,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
   {Haris}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Kramida}},\ }\href {http://arxiv.org/abs/1704.07474} {\  (\bibinfo {year}
-  {2017})},\  {arXiv:1704.07474}
+  {2017})},\  {http://arxiv.org/abs/1704.07474} {arXiv:1704.07474}
   \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bresteau}\ \emph {et~al.}(2016)\citenamefont
   {Bresteau}, \citenamefont {Drag},\ and\ \citenamefont
