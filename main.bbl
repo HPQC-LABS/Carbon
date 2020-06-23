@@ -64,7 +64,7 @@
 \bibitem [{\citenamefont {Drake}()}]{Drake2018}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~W.}\ \bibnamefont
-  {Drake}},\ } {} {\bibinfo  {journal} {Private Communication from 4
+  {Drake}},\ }\href@noop {} {\bibinfo  {journal} {Private Communication from 4
   to 5 June 2018}\ }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Puchalski}\ \emph {et~al.}(2010)\citenamefont
   {Puchalski}, \citenamefont {K\ifmmode~\mbox{\k{e}}\else \k{e}\fi{}dziera},\
@@ -101,8 +101,8 @@
 \bibitem [{\citenamefont {{Schwartz}}(2006)}]{2006Schwartz}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {{Schwartz}}},\ } {} {\bibfield  {journal} {\bibinfo  {journal}
-  {ArXiv Mathematical Physics e-prints}\ } (\bibinfo {year} {2006})},\
+  {{Schwartz}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {ArXiv Mathematical Physics e-prints}\ } (\bibinfo {year} {2006})},\ \Eprint
   {http://arxiv.org/abs/math-ph/0605018} {math-ph/0605018} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Puchalski}\ \emph
@@ -132,7 +132,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
   {Haris}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Kramida}},\ }\href {http://arxiv.org/abs/1704.07474} {\  (\bibinfo {year}
-  {2017})},\  {http://arxiv.org/abs/1704.07474} {arXiv:1704.07474}
+  {2017})},\ \Eprint {http://arxiv.org/abs/1704.07474} {arXiv:1704.07474}
   \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bresteau}\ \emph {et~al.}(2016)\citenamefont
   {Bresteau}, \citenamefont {Drag},\ and\ \citenamefont
@@ -320,7 +320,7 @@
 \bibitem [{\citenamefont {Johansson}(1966)}]{Johansson1966}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Johansson}},\ } {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Johansson}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Arkiv Fysik}\ }\textbf {\bibinfo {volume} {31}},\ \bibinfo {pages} {201}
   (\bibinfo {year} {1966})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Klopper}\ \emph {et~al.}(2010)\citenamefont
@@ -379,8 +379,8 @@
   {author} {\bibfnamefont {G.}~\bibnamefont {Rauhut}}, \bibinfo {author}
   {\bibfnamefont {K.~R.}\ \bibnamefont {Shamasundar}}, \bibinfo {author}
   {\bibfnamefont {T.~B.}\ \bibnamefont {Adler}}, \bibinfo {author}
-  {\bibfnamefont {R.~D.}\ \bibnamefont {Amos}},  \emph {et~al.},\ }
-  {} { {\bibinfo {title} {Molpro, version 2015.1, a package of ab
+  {\bibfnamefont {R.~D.}\ \bibnamefont {Amos}},  \emph {et~al.},\ }\href@noop
+  {} {\enquote {\bibinfo {title} {Molpro, version 2015.1, a package of ab
   initio programs},}\ } (\bibinfo {year} {2015}),\ \bibinfo {note} {see
   http://www.molpro.net}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zhu}\ \emph {et~al.}(1997)\citenamefont {Zhu},
@@ -417,37 +417,97 @@
   {Marenich}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Bloino}},
   \bibinfo {author} {\bibfnamefont {B.~G.}\ \bibnamefont {Janesko}}, \bibinfo
   {author} {\bibfnamefont {R.}~\bibnamefont {Gomperts}}, \bibinfo {author}
-  {\bibfnamefont {B.}~\bibnamefont {Mennucci}},  \emph {et~al.},\ }
-  {} { {\bibinfo {title} {Gaussian 16 {R}evision {A}.03},}\ } (\bibinfo
+  {\bibfnamefont {B.}~\bibnamefont {Mennucci}},  \emph {et~al.},\ }\href@noop
+  {} {\enquote {\bibinfo {title} {Gaussian 16 {R}evision {A}.03},}\ } (\bibinfo
   {year} {2016}),\ \bibinfo {note} {{G}aussian Inc. Wallingford,
   CT}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Aquilante}\ \emph {et~al.}(2016)\citenamefont
-  {Aquilante}, \citenamefont {Autschbach}, \citenamefont {Carlson},
-  \citenamefont {Chibotaru}, \citenamefont {Delcey}, \citenamefont {De~Vico},
-  \citenamefont {Fdez.~Galv{\'a}n}, \citenamefont {Ferr{\'e}}, \citenamefont
-  {Frutos}, \citenamefont {Gagliardi}, \citenamefont {Garavelli}, \citenamefont
-  {Giussani}, \citenamefont {Hoyer}, \citenamefont {Li~Manni}, \citenamefont
-  {Lischka}, \citenamefont {Ma} \emph {et~al.}}]{MOLCAS}%
+\bibitem [{\citenamefont {Fdez.~Galván}\ \emph {et~al.}(2019)\citenamefont
+  {Fdez.~Galván}, \citenamefont {Vacher}, \citenamefont {Alavi}, \citenamefont
+  {Angeli}, \citenamefont {Aquilante}, \citenamefont {Autschbach},
+  \citenamefont {Bao}, \citenamefont {Bokarev}, \citenamefont {Bogdanov},
+  \citenamefont {Carlson}, \citenamefont {Chibotaru}, \citenamefont
+  {Creutzberg}, \citenamefont {Dattani}, \citenamefont {Delcey}, \citenamefont
+  {Dong}, \citenamefont {Dreuw}, \citenamefont {Freitag}, \citenamefont
+  {Frutos}, \citenamefont {Gagliardi}, \citenamefont {Gendron}, \citenamefont
+  {Giussani}, \citenamefont {González}, \citenamefont {Grell}, \citenamefont
+  {Guo}, \citenamefont {Hoyer}, \citenamefont {Johansson}, \citenamefont
+  {Keller}, \citenamefont {Knecht}, \citenamefont {Kovačević}, \citenamefont
+  {Källman}, \citenamefont {Li~Manni}, \citenamefont {Lundberg}, \citenamefont
+  {Ma}, \citenamefont {Mai}, \citenamefont {Malhado}, \citenamefont
+  {Malmqvist}, \citenamefont {Marquetand}, \citenamefont {Mewes}, \citenamefont
+  {Norell}, \citenamefont {Olivucci}, \citenamefont {Oppel}, \citenamefont
+  {Phung}, \citenamefont {Pierloot}, \citenamefont {Plasser}, \citenamefont
+  {Reiher}, \citenamefont {Sand}, \citenamefont {Schapiro}, \citenamefont
+  {Sharma}, \citenamefont {Stein}, \citenamefont {Sørensen}, \citenamefont
+  {Truhlar}, \citenamefont {Ugandi}, \citenamefont {Ungur}, \citenamefont
+  {Valentini}, \citenamefont {Vancoillie}, \citenamefont {Veryazov},
+  \citenamefont {Weser}, \citenamefont {Wesołowski}, \citenamefont {Widmark},
+  \citenamefont {Wouters}, \citenamefont {Zech}, \citenamefont {Zobel},\ and\
+  \citenamefont {Lindh}}]{MOLCAS}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Aquilante}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Autschbach}}, \bibinfo {author} {\bibfnamefont {R.~K.}\ \bibnamefont
-  {Carlson}}, \bibinfo {author} {\bibfnamefont {L.~F.}\ \bibnamefont
-  {Chibotaru}}, \bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
-  {Delcey}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {De~Vico}},
-  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Fdez.~Galv{\'a}n}},
-  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Ferr{\'e}}}, \bibinfo
-  {author} {\bibfnamefont {L.~M.}\ \bibnamefont {Frutos}}, \bibinfo {author}
-  {\bibfnamefont {L.}~\bibnamefont {Gagliardi}}, \bibinfo {author}
-  {\bibfnamefont {M.}~\bibnamefont {Garavelli}}, \bibinfo {author}
-  {\bibfnamefont {A.}~\bibnamefont {Giussani}}, \bibinfo {author}
-  {\bibfnamefont {C.~E.}\ \bibnamefont {Hoyer}}, \bibinfo {author}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Fdez.~Galván}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Vacher}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Alavi}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Angeli}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Aquilante}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Autschbach}}, \bibinfo {author}
+  {\bibfnamefont {J.~J.}\ \bibnamefont {Bao}}, \bibinfo {author} {\bibfnamefont
+  {S.~I.}\ \bibnamefont {Bokarev}}, \bibinfo {author} {\bibfnamefont {N.~A.}\
+  \bibnamefont {Bogdanov}}, \bibinfo {author} {\bibfnamefont {R.~K.}\
+  \bibnamefont {Carlson}}, \bibinfo {author} {\bibfnamefont {L.~F.}\
+  \bibnamefont {Chibotaru}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Creutzberg}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Dattani}},
+  \bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont {Delcey}}, \bibinfo
+  {author} {\bibfnamefont {S.~S.}\ \bibnamefont {Dong}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Dreuw}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Freitag}}, \bibinfo {author} {\bibfnamefont {L.~M.}\
+  \bibnamefont {Frutos}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Gagliardi}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Gendron}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Giussani}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {González}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Grell}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Guo}}, \bibinfo {author} {\bibfnamefont {C.~E.}\
+  \bibnamefont {Hoyer}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Johansson}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Keller}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Knecht}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Kovačević}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Källman}}, \bibinfo {author}
   {\bibfnamefont {G.}~\bibnamefont {Li~Manni}}, \bibinfo {author}
-  {\bibfnamefont {H.}~\bibnamefont {Lischka}}, \bibinfo {author} {\bibfnamefont
-  {D.}~\bibnamefont {Ma}},  \emph {et~al.},\ }\href {\doibase
-  10.1002/jcc.24221} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
-  {C}omputational {C}hemistry}\ }\textbf {\bibinfo {volume} {37}},\ \bibinfo
-  {pages} {506} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+  {\bibfnamefont {M.}~\bibnamefont {Lundberg}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Ma}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Mai}}, \bibinfo {author} {\bibfnamefont {J.~P.}\
+  \bibnamefont {Malhado}}, \bibinfo {author} {\bibfnamefont {P.~�.}\
+  \bibnamefont {Malmqvist}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Marquetand}}, \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
+  {Mewes}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Norell}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Olivucci}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Oppel}}, \bibinfo {author}
+  {\bibfnamefont {Q.~M.}\ \bibnamefont {Phung}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Pierloot}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Plasser}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Reiher}}, \bibinfo {author} {\bibfnamefont {A.~M.}\
+  \bibnamefont {Sand}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Schapiro}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Sharma}},
+  \bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont {Stein}}, \bibinfo
+  {author} {\bibfnamefont {L.~K.}\ \bibnamefont {Sørensen}}, \bibinfo {author}
+  {\bibfnamefont {D.~G.}\ \bibnamefont {Truhlar}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Ugandi}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Ungur}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Valentini}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Vancoillie}}, \bibinfo {author} {\bibfnamefont
+  {V.}~\bibnamefont {Veryazov}}, \bibinfo {author} {\bibfnamefont
+  {O.}~\bibnamefont {Weser}}, \bibinfo {author} {\bibfnamefont {T.~A.}\
+  \bibnamefont {Wesołowski}}, \bibinfo {author} {\bibfnamefont {P.-O.}\
+  \bibnamefont {Widmark}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Wouters}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Zech}},
+  \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Zobel}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lindh}},\ }\href
+  {\doibase 10.1021/acs.jctc.9b00532} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo
+  {volume} {15}},\ \bibinfo {pages} {5925} (\bibinfo {year} {2019})},\ \bibinfo
+  {note} {pMID: 31509407},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.9b00532}
+  {https://doi.org/10.1021/acs.jctc.9b00532} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Booth}\ \emph {et~al.}(2009)\citenamefont {Booth},
   \citenamefont {Thom},\ and\ \citenamefont {Alavi}}]{Booth2009a}%
   \BibitemOpen
@@ -481,8 +541,7 @@
   {184107} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{NEC()}]{NECI}%
   \BibitemOpen
-   {} { {\bibinfo {title} {Public version is available here:
-  \url{https://github.com/ghb24/NECI_STABLE}.}}\ }\BibitemShut {NoStop}%
+  \href@noop {} {}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Flyvbjerg}\ and\ \citenamefont
   {Petersen}(1989)}]{Flyvbjerg1989}%
   \BibitemOpen
@@ -541,7 +600,7 @@
   {B.}~\bibnamefont {Ladoczki}}, \bibinfo {author} {\bibfnamefont
   {K.}~\bibnamefont {Petrov}}, \bibinfo {author} {\bibfnamefont
   {M.}~\bibnamefont {Farkas}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {B.}~\bibnamefont {Hegely}},\ } {} { {\bibinfo {title}
+  {B.}~\bibnamefont {Hegely}},\ }\href@noop {} {\enquote {\bibinfo {title}
   {{MRCC}, a quantum chemical program suite.}}\ }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kallay}\ and\ \citenamefont
   {Surjan}(2001)}]{Kallay2001}%
