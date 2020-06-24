@@ -358,31 +358,14 @@
   {\bibinfo  {journal} {Journal of Molecular Structure: THEOCHEM}\ }\textbf
   {\bibinfo {volume} {388}},\ \bibinfo {pages} {339} (\bibinfo {year}
   {1996})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Werner}\ \emph {et~al.}(2015)\citenamefont {Werner},
-  \citenamefont {Knowles}, \citenamefont {Knizia}, \citenamefont {Manby},
-  \citenamefont {{Sch\"{u}tz}}, \citenamefont {Celani}, \citenamefont
-  {Gy\"orffy}, \citenamefont {Kats}, \citenamefont {Korona}, \citenamefont
-  {Lindh}, \citenamefont {Mitrushenkov}, \citenamefont {Rauhut}, \citenamefont
-  {Shamasundar}, \citenamefont {Adler}, \citenamefont {Amos} \emph
-  {et~al.}}]{MOLPRO}%
+\bibitem [{\citenamefont {Werner}\ \emph {et~al.}(2015)\citenamefont {Werner}
+  \emph {et~al.}}]{MOLPRO}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
-  {Werner}}, \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Knowles}},
-  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Knizia}}, \bibinfo
-  {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Manby}}, \bibinfo {author}
-  {\bibfnamefont {M.}~\bibnamefont {{Sch\"{u}tz}}}, \bibinfo {author}
-  {\bibfnamefont {P.}~\bibnamefont {Celani}}, \bibinfo {author} {\bibfnamefont
-  {W.}~\bibnamefont {Gy\"orffy}}, \bibinfo {author} {\bibfnamefont
-  {D.}~\bibnamefont {Kats}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Korona}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lindh}},
-  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mitrushenkov}}, \bibinfo
-  {author} {\bibfnamefont {G.}~\bibnamefont {Rauhut}}, \bibinfo {author}
-  {\bibfnamefont {K.~R.}\ \bibnamefont {Shamasundar}}, \bibinfo {author}
-  {\bibfnamefont {T.~B.}\ \bibnamefont {Adler}}, \bibinfo {author}
-  {\bibfnamefont {R.~D.}\ \bibnamefont {Amos}},  \emph {et~al.},\ }\href@noop
-  {} {\enquote {\bibinfo {title} {Molpro, version 2015.1, a package of ab
-  initio programs},}\ } (\bibinfo {year} {2015}),\ \bibinfo {note} {see
-  http://www.molpro.net}\BibitemShut {NoStop}%
+  {Werner}} \emph {et~al.},\ }\href@noop {} {\enquote {\bibinfo {title}
+  {Molpro, version 2015.1, a package of ab initio programs},}\ } (\bibinfo
+  {year} {2015}),\ \bibinfo {note} {see http://www.molpro.net}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Zhu}\ \emph {et~al.}(1997)\citenamefont {Zhu},
   \citenamefont {Byrd}, \citenamefont {Lu},\ and\ \citenamefont
   {Nocedal}}]{Zhu:1997:ALF:279232.279236}%
@@ -394,56 +377,21 @@
   10.1145/279232.279236} {\bibfield  {journal} {\bibinfo  {journal} {ACM Trans.
   Math. Softw.}\ }\textbf {\bibinfo {volume} {23}},\ \bibinfo {pages} {550}
   (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Frisch}\ \emph {et~al.}(2016)\citenamefont {Frisch},
-  \citenamefont {Trucks}, \citenamefont {Schlegel}, \citenamefont {Scuseria},
-  \citenamefont {Robb}, \citenamefont {Cheeseman}, \citenamefont {Scalmani},
-  \citenamefont {Barone}, \citenamefont {Petersson}, \citenamefont {Nakatsuji},
-  \citenamefont {Li}, \citenamefont {Caricato}, \citenamefont {Marenich},
-  \citenamefont {Bloino}, \citenamefont {Janesko}, \citenamefont {Gomperts},
-  \citenamefont {Mennucci} \emph {et~al.}}]{g16}%
+\bibitem [{\citenamefont {Frisch}\ \emph {et~al.}(2016)\citenamefont {Frisch}
+  \emph {et~al.}}]{g16}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
-  {Frisch}}, \bibinfo {author} {\bibfnamefont {G.~W.}\ \bibnamefont {Trucks}},
-  \bibinfo {author} {\bibfnamefont {H.~B.}\ \bibnamefont {Schlegel}}, \bibinfo
-  {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Scuseria}}, \bibinfo {author}
-  {\bibfnamefont {M.~A.}\ \bibnamefont {Robb}}, \bibinfo {author}
-  {\bibfnamefont {J.~R.}\ \bibnamefont {Cheeseman}}, \bibinfo {author}
-  {\bibfnamefont {G.}~\bibnamefont {Scalmani}}, \bibinfo {author}
-  {\bibfnamefont {V.}~\bibnamefont {Barone}}, \bibinfo {author} {\bibfnamefont
-  {G.~A.}\ \bibnamefont {Petersson}}, \bibinfo {author} {\bibfnamefont
-  {H.}~\bibnamefont {Nakatsuji}}, \bibinfo {author} {\bibfnamefont
-  {X.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Caricato}}, \bibinfo {author} {\bibfnamefont {A.~V.}\ \bibnamefont
-  {Marenich}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Bloino}},
-  \bibinfo {author} {\bibfnamefont {B.~G.}\ \bibnamefont {Janesko}}, \bibinfo
-  {author} {\bibfnamefont {R.}~\bibnamefont {Gomperts}}, \bibinfo {author}
-  {\bibfnamefont {B.}~\bibnamefont {Mennucci}},  \emph {et~al.},\ }\href@noop
-  {} {\enquote {\bibinfo {title} {Gaussian 16 {R}evision {A}.03},}\ } (\bibinfo
-  {year} {2016}),\ \bibinfo {note} {{G}aussian Inc. Wallingford,
-  CT}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Fdez.~Galvan}\ \emph {et~al.}(2019)\citenamefont
-  {Fdez.~Galván}, \citenamefont {Vacher}, \citenamefont {Alavi}, \citenamefont
-  {Angeli}, \citenamefont {Aquilante}, \citenamefont {Autschbach},
-  \citenamefont {Bao}, \citenamefont {Bokarev}, \citenamefont {Bogdanov},
-  \citenamefont {Carlson}, \citenamefont {Chibotaru}, \citenamefont
-  {Creutzberg}, \citenamefont {Dattani} \emph {et~al.}}]{MOLCAS}%
+  {Frisch}} \emph {et~al.},\ }\href@noop {} {\enquote {\bibinfo {title}
+  {Gaussian 16 {R}evision {A}.03},}\ } (\bibinfo {year} {2016}),\ \bibinfo
+  {note} {{G}aussian Inc. Wallingford, CT}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Galvan}\ \emph {et~al.}(2019)\citenamefont {Galvan}
+  \emph {et~al.}}]{MOLCAS}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
-  {Fdez.~Galván}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Vacher}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Alavi}},
-  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Angeli}}, \bibinfo
-  {author} {\bibfnamefont {F.}~\bibnamefont {Aquilante}}, \bibinfo {author}
-  {\bibfnamefont {J.}~\bibnamefont {Autschbach}}, \bibinfo {author}
-  {\bibfnamefont {J.~J.}\ \bibnamefont {Bao}}, \bibinfo {author} {\bibfnamefont
-  {S.~I.}\ \bibnamefont {Bokarev}}, \bibinfo {author} {\bibfnamefont {N.~A.}\
-  \bibnamefont {Bogdanov}}, \bibinfo {author} {\bibfnamefont {R.~K.}\
-  \bibnamefont {Carlson}}, \bibinfo {author} {\bibfnamefont {L.~F.}\
-  \bibnamefont {Chibotaru}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Creutzberg}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Dattani}},
-   \emph {et~al.},\ }\href {\doibase 10.1021/acs.jctc.9b00532} {\bibfield
-  {journal} {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\
-  }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {5925} (\bibinfo {year}
-  {2019})},\ \bibinfo {note} {pMID: 31509407},\ \Eprint
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Galvan}} \emph {et~al.},\ }\href {\doibase 10.1021/acs.jctc.9b00532}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Chemical Theory and
+  Computation}\ }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {5925}
+  (\bibinfo {year} {2019})},\ \bibinfo {note} {pMID: 31509407},\ \Eprint
   {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.9b00532}
   {https://doi.org/10.1021/acs.jctc.9b00532} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Booth}\ \emph {et~al.}(2009)\citenamefont {Booth},
@@ -522,24 +470,11 @@
   {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume}
   {135}},\ \bibinfo {pages} {244104} (\bibinfo {year} {2011})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Kallay}\ \emph {et~al.}()\citenamefont {Kallay},
-  \citenamefont {Rolik}, \citenamefont {Csontos}, \citenamefont {Nagy},
-  \citenamefont {Samu}, \citenamefont {Mester}, \citenamefont {Ladjanszki},
-  \citenamefont {Szegedy}, \citenamefont {Ladoczki}, \citenamefont {Petrov},
-  \citenamefont {Farkas},\ and\ \citenamefont {Hegely}}]{MRCC}%
+\bibitem [{\citenamefont {Kallay}\ \emph {et~al.}()\citenamefont {Kallay} \emph
+  {et~al.}}]{MRCC}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Kallay}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Rolik}},
-  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Csontos}}, \bibinfo
-  {author} {\bibfnamefont {P.}~\bibnamefont {Nagy}}, \bibinfo {author}
-  {\bibfnamefont {G.}~\bibnamefont {Samu}}, \bibinfo {author} {\bibfnamefont
-  {D.}~\bibnamefont {Mester}}, \bibinfo {author} {\bibfnamefont
-  {I.}~\bibnamefont {Ladjanszki}}, \bibinfo {author} {\bibfnamefont
-  {L.}~\bibnamefont {Szegedy}}, \bibinfo {author} {\bibfnamefont
-  {B.}~\bibnamefont {Ladoczki}}, \bibinfo {author} {\bibfnamefont
-  {K.}~\bibnamefont {Petrov}}, \bibinfo {author} {\bibfnamefont
-  {M.}~\bibnamefont {Farkas}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {B.}~\bibnamefont {Hegely}},\ }\href@noop {} {\enquote {\bibinfo {title}
+  {Kallay}} \emph {et~al.},\ }\href@noop {} {\enquote {\bibinfo {title}
   {{MRCC}, a quantum chemical program suite.}}\ }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kallay}\ and\ \citenamefont
   {Surjan}(2001)}]{Kallay2001}%
